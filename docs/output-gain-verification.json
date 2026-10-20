@@ -1,0 +1,68 @@
+{
+  "summary": [
+    {
+      "epoch": 100,
+      "before_mean_lufs": -18.437,
+      "after_mean_lufs": -18.437,
+      "test_count": 3
+    },
+    {
+      "epoch": 110,
+      "before_mean_lufs": -29.947,
+      "after_mean_lufs": -18.467,
+      "test_count": 3
+    },
+    {
+      "epoch": 120,
+      "before_mean_lufs": -30.37,
+      "after_mean_lufs": -18.44,
+      "test_count": 3
+    },
+    {
+      "epoch": 130,
+      "before_mean_lufs": -29.937,
+      "after_mean_lufs": -18.43,
+      "test_count": 3
+    },
+    {
+      "epoch": 140,
+      "before_mean_lufs": -30.253,
+      "after_mean_lufs": -18.47,
+      "test_count": 3
+    },
+    {
+      "epoch": 160,
+      "before_mean_lufs": -30.563,
+      "after_mean_lufs": -18.503,
+      "test_count": 3
+    },
+    {
+      "epoch": 170,
+      "before_mean_lufs": -29.99,
+      "after_mean_lufs": -18.423,
+      "test_count": 3
+    },
+    {
+      "epoch": 180,
+      "before_mean_lufs": -29.87,
+      "after_mean_lufs": -18.447,
+      "test_count": 3
+    },
+    {
+      "epoch": 190,
+      "before_mean_lufs": -29.937,
+      "after_mean_lufs": -18.447,
+      "test_count": 3
+    },
+    {
+      "epoch": 200,
+      "before_mean_lufs": -29.7,
+      "after_mean_lufs": -18.447,
+      "test_count": 3
+    }
+  ],
+  "clip_count": 0,
+  "fixed_wav_count": 46,
+  "max_200_true_peak": -1.53,
+  "semantic_check": "Whisper-small: three 200epoch transcripts remain consistent with pre-calibration results; proper-name/kippu recognition differences persist."
+}

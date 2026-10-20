@@ -1,12 +1,12 @@
-# 花園トキネ COEIROINK（通常版 100epoch）
+# 花園トキネ COEIROINK（100epoch・200epoch）
 
 テキスト読み上げソフトウェア「COEIROINK」向けの合成音声モデル（MYCOEIROINK）です。
-本リポジトリでは、100epoch学習モデルおよびアイコン・立ち絵・音声を梱包した通常版パッケージを公開しています。
+100epochと200epochの2スタイルに、アイコン・立ち絵・サンプル音声を同梱しています。v1.1.1は200epochの出力レベルを100epochに合わせた音量補正版です。
 
 ## 概要
 
 - **話者名**: 花園トキネ
-- **スタイル**: ノーマル（100epoch）
+- **スタイル**: 100epoch、200epoch
 - **バージョン**: 2.1.0
 - **形式**: COEIROINK v2 形式
 
@@ -14,7 +14,7 @@
 
 最新の配布パッケージ（ZIP）は [Releases](https://github.com/sotwat/hanazono-tokine-coeiroink/releases/latest) よりダウンロードいただけます。
 
-- **ファイル名**: `hanazono-tokine-coeiroink-100epoch.zip`
+- **ファイル名**: `hanazono-tokine-coeiroink-100-200epoch-v1.1.1.zip`
 
 ## 導入方法（COEIROINK v2）
 
@@ -51,3 +51,7 @@ COEIROINK:花園トキネ
 ## 関連リンク
 - COEIROINK 公式サイト: https://coeiroink.com/
 - 花園トキネDS（歌声音源）: https://github.com/sotwat/hanazono-tokine-ds
+
+## 音量補正の再現
+
+[測定方法とモデルの変更範囲](docs/output-gain.md)を参照してください。
