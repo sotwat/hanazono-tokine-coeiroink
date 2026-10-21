@@ -1,0 +1,10 @@
+{
+  "broadband_floor": {
+    "comb_mean_db": 0.05644879868681731,
+    "comb_lines_over_3db": 0
+  },
+  "injected_comb": {
+    "comb_mean_db": 27.089827065478932,
+    "comb_lines_over_3db": 17
+  }
+}
