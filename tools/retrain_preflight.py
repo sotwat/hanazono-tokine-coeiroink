@@ -19,7 +19,7 @@ def main():
     args = GANTTSTask.get_parser().parse_args(['--config', str(run / 'train.yaml')])
     assert len(args.token_list) == 47
     assert args.token_list == yaml.safe_load((run / 'config180.yaml').read_text())['token_list']
-    assert args.max_epoch == 185 and args.resume
+    assert args.max_epoch == 200 and args.resume
     assert Path(args.output_dir) == run / 'model'
     preprocess = GANTTSTask.build_preprocess_fn(args, train=True)
     data = dict(line.split(maxsplit=1) for line in Path(args.train_data_path_and_name_and_type[0][0]).read_text().splitlines())
@@ -32,7 +32,7 @@ def main():
     state = torch.load(run / 'model/checkpoint.pth', map_location='cpu')
     model.load_state_dict(state['model'], strict=True)
     epoch = state['reporter']['epoch']
-    assert 180 <= epoch < 185, epoch
+    assert 180 <= epoch < 200, epoch
     assert len(optimizers) == len(state['optimizers']) == 2
     counts = []
     for optimizer, saved in zip(optimizers, state['optimizers']):

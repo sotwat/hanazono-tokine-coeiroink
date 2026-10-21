@@ -31,7 +31,14 @@ Driveの`MYCOEIROINK_WORK/retrain_180_20261021/`に保存する。モデル出�
 - `tools/retrain_preflight.py`: strictなモデル復元、両optimizerの状態・momentumの形状と有限値を検査。
 - `tools/retrain_start.sh`: 検査成功後に学習開始。
 
-## 比較と再開の条件
+## 200epochへの続行（2026-10-22）
+
+本人からの明示指示『200epochまでやらせて』により、旧185上限／200延長禁止を撤回し、185完全checkpointから186〜200epochへ学習を続行する。
+- 185checkpoint（`model/checkpoint.pth`）および `train.yaml` の別名バックアップ（`checkpoint_185.pth`、`train_185.yaml`）を作成して整合性確認後にresume。
+- 旧exp200や補正済みモデルは使用禁止。
+- 47音素順序、無加工652WAV、ESPnet202211、torch1.12.1+cu113、NumPy1.23.5、optimizer/scheduler設定を完全維持し、`max_epoch: 200` のみ更新。
+- `retrain_prepare.py` と `retrain_preflight.py` の185固定ガードを200へ更新。
+
 
 まず181〜185の同文音声を生成し、180原本に対する約689Hz間隔の周期ピーク、音量、発音を比較する。EQやノイズ除去で比較結果を加工しない。高域改善が未検証のまま既存COEIROINK登録や配布ZIPを置き換えない。
 

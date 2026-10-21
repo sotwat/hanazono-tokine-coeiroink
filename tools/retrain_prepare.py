@@ -90,7 +90,7 @@ def main():
     config.pop('version', None)
     config.pop('required', None)
     config.pop('distributed', None)
-    config.update(output_dir=str(modeldir), max_epoch=185, resume=True, init_param=[], keep_nbest_models=10)
+    config.update(output_dir=str(modeldir), max_epoch=200, resume=True, init_param=[], keep_nbest_models=10)
     (RUN / 'train.yaml').write_text(yaml.safe_dump(config, allow_unicode=True, sort_keys=False))
     (RUN / 'data_manifest.json').write_text(json.dumps({'source_zip_sha256': hashlib.sha256(archives[0].read_bytes()).hexdigest(), 'audio': audio}, ensure_ascii=False, indent=2))
     print('PREPARED_SAME_LENGTHS_AND_TOKEN_LIST', flush=True)
