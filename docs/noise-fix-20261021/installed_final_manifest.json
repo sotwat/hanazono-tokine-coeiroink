@@ -1,0 +1,36 @@
+[
+  {
+    "epoch": 190,
+    "styleId": 860190,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26214727759361267,
+    "dc_phase_std_before": 0.013883830048143864,
+    "dc_phase_std_after": 0.006941915024071932,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "d4c7e25da0e94e4275d8bdf6bbeb044ca25db1a46642a92940ce971fb279449a",
+    "output_sha256": "3f8c208ae4d1891808bdfbb4eca274ecb233af70b1a45635990aaa6d559a8822"
+  },
+  {
+    "epoch": 200,
+    "styleId": 860200,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26248350739479065,
+    "dc_phase_std_before": 0.013898087665438652,
+    "dc_phase_std_after": 0.006949044298380613,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "5cc7c30b8edd68b98d633afb6d0f450142950379656a8e6cc326a407dde78f03",
+    "output_sha256": "ede96bb765fe066a47c7117f8dcd324c125761dc891b1070c628c6079282e031"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "path": "model/1190/190epoch.pth",
+    "sha256": "3f8c208ae4d1891808bdfbb4eca274ecb233af70b1a45635990aaa6d559a8822"
+  },
+  {
+    "path": "voice_samples/1190_001.wav",
+    "sha256": "b4288aec5b1a336065e3802982057c44b92e9cb869e472edd2f305a292581044"
+  },
+  {
+    "path": "voice_samples/1190_002.wav",
+    "sha256": "0671dea348fc80466823cccf49c4683114a3a46b0bb7b37287a8243f2c8b26eb"
+  },
+  {
+    "path": "voice_samples/1190_003.wav",
+    "sha256": "d992353b352356cc21c5ce1322fcef7fe79de57dbe3cec698bc7d0af5e3ea179"
+  },
+  {
+    "path": "model/1200/200epoch.pth",
+    "sha256": "ede96bb765fe066a47c7117f8dcd324c125761dc891b1070c628c6079282e031"
+  },
+  {
+    "path": "voice_samples/1200_001.wav",
+    "sha256": "cea04ce463528bddeebde492be42a9767bb765fa31a286309496b22953c707e6"
+  },
+  {
+    "path": "voice_samples/1200_002.wav",
+    "sha256": "2efc0f639fa9db1353339215e0e2278ca6d53e90876834469bb49ae1fb2f803e"
+  },
+  {
+    "path": "voice_samples/1200_003.wav",
+    "sha256": "bb607d1e8aa9565f6661c0fe420493fae21e129dfa8d9c5f7763be21e3a634a3"
+  }
+]

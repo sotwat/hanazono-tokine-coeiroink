@@ -1,0 +1,306 @@
+[
+  {
+    "epoch": 182,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26177796721458435,
+    "dc_phase_std_before": 0.013874877244234085,
+    "dc_phase_std_after": 0.0069374386221170425,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "43ee172c6dc722496396bb55af1b3d82a3f1d0fe67b0f34167a1312ac92c92dd",
+    "output_sha256": "a9e427d46fbe5caefa8644c7503a3412901b38a81f68e0984da7f9e6fc7337d5"
+  },
+  {
+    "epoch": 183,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26185524463653564,
+    "dc_phase_std_before": 0.01387594360858202,
+    "dc_phase_std_after": 0.00693797180429101,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "fb1c6b53f6d7a08667f64c923b89fa52ebdf8677036717a4e20e0177e880edbf",
+    "output_sha256": "7c49c681846df8b5aa37a4c3f881fa0944ab96c6a18714148a1c31d03ebc7e03"
+  },
+  {
+    "epoch": 184,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26191434264183044,
+    "dc_phase_std_before": 0.013877065852284431,
+    "dc_phase_std_after": 0.006938532926142216,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "f86f298fc253c50f43def5fbb17d14bd9c12af51109cdaca69d6d8a169bdc212",
+    "output_sha256": "f16c63789dadbf945967a0b417018150c1f47a229df9b3a844f54952329f6540"
+  },
+  {
+    "epoch": 185,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26195934414863586,
+    "dc_phase_std_before": 0.013878710567951202,
+    "dc_phase_std_after": 0.006939355283975601,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "d47135ca02d1908df57f91f116dd3fc71d06f037063dd7fc69567b9c9bc8d42c",
+    "output_sha256": "8ba0aa23f299017a5efdb2ab55201d6a406c3b02651f1db0e74882acd689fbe6"
+  },
+  {
+    "epoch": 186,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2619682252407074,
+    "dc_phase_std_before": 0.013877734541893005,
+    "dc_phase_std_after": 0.006938867270946503,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "4dabd36ab744b7a741101a136cf10c26bb80a0bb00506253160a0d34cf3d2841",
+    "output_sha256": "a9461a06a238ee27e3193484535e48505e89a3d2a629ef0863fe12fc8b9a5fd2"
+  },
+  {
+    "epoch": 187,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2619988024234772,
+    "dc_phase_std_before": 0.01387604046612978,
+    "dc_phase_std_after": 0.00693802023306489,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "a616e641faec9c24837131c440bbf22ec3c0bd6ec116e980ae6c7aff3cea2e55",
+    "output_sha256": "c7a783b2c1d8e6fbcb2d91f41313310230168e58c1c2b1224f01a2b9df7bc6ae"
+  },
+  {
+    "epoch": 188,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2620362937450409,
+    "dc_phase_std_before": 0.01387746911495924,
+    "dc_phase_std_after": 0.00693873455747962,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "b54b86f72c479191c7747810bb76436e485b067f2b6f75e6b63817e3e26e1bd6",
+    "output_sha256": "627099e33729fc4ef5e589f4f781ce3b66db3f6843337b7f285a0c3336e1d47b"
+  },
+  {
+    "epoch": 189,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26210522651672363,
+    "dc_phase_std_before": 0.013880082406103611,
+    "dc_phase_std_after": 0.0069400412030518055,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "4eeb47f82bddd265d1cbe163c80e96aa3c0d0375952bcd33afb13416e0f01d10",
+    "output_sha256": "d32e0df54f1a2815ba9c5952d8eed5b78835d4b6ca3e6b39071cd1588df9aa89"
+  },
+  {
+    "epoch": 190,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26214727759361267,
+    "dc_phase_std_before": 0.013883830048143864,
+    "dc_phase_std_after": 0.006941915024071932,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "a155aa72b84501107e7d9fd84caf61c620e735324d54dab31d620ce7df668b2d",
+    "output_sha256": "d41e5514214d3b41d7d9330bebf20edd90ed59403c5f9c233920072050b72ffb"
+  },
+  {
+    "epoch": 191,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26215261220932007,
+    "dc_phase_std_before": 0.013883966952562332,
+    "dc_phase_std_after": 0.006941983476281166,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "57b8c498e65ac83b551f65992dc2ad2b10f5853479590add18cd908f3a783729",
+    "output_sha256": "f9c7d10a07ba2b9201b08dcdc91433a7e4d7ad8f9e036d31883bd0e68fcb1e98"
+  },
+  {
+    "epoch": 192,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26216888427734375,
+    "dc_phase_std_before": 0.013884484767913818,
+    "dc_phase_std_after": 0.006942242383956909,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "d0c0cc6ac42f6a597f21733bc3ae4858ee769dd82a179779d9999bffc5b99621",
+    "output_sha256": "49f44f89007136b2b9fdabe5bf049a33cb43b97bfa3bf770a01945e336883323"
+  },
+  {
+    "epoch": 193,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26223745942115784,
+    "dc_phase_std_before": 0.013886688277125359,
+    "dc_phase_std_after": 0.006943344138562679,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "f5c6a9cce515a1e17fd7f685f27bb3c2cb9937b1e1c7c53a14195038f8041143",
+    "output_sha256": "4651f9c48002a447f3cd886afec00e7df561e2246db699992086b361cecaec0c"
+  },
+  {
+    "epoch": 194,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2622811198234558,
+    "dc_phase_std_before": 0.013888263143599033,
+    "dc_phase_std_after": 0.006944132037460804,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "bcde2d67d7a6edf881de63ff574e83dd2aec54d513d3f4a59440da7836d96ae9",
+    "output_sha256": "6096ec0217a2a31d2ce7f42663e7a7f8280d30add64daa61de40dc1108cc9ec5"
+  },
+  {
+    "epoch": 195,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2622741162776947,
+    "dc_phase_std_before": 0.01388738863170147,
+    "dc_phase_std_after": 0.006943694781512022,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "0051d43b42c856c82986fcbc4768c1eb3843dfa4ca0c071a99468907b6f8a109",
+    "output_sha256": "95a18cb3b67f2479285f51069aa5dbce07329b16e05c986d49f6c3510bd42427"
+  },
+  {
+    "epoch": 196,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26230132579803467,
+    "dc_phase_std_before": 0.013888339512050152,
+    "dc_phase_std_after": 0.006944169756025076,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "50e2d30f483115363fc2c58a14134567a3fa7ff56094f4220f5efee2b9681dd5",
+    "output_sha256": "c60d154f3f92a39536f7ac05c2aafab392bda544cc03d6b1c23589ea12c846b7"
+  },
+  {
+    "epoch": 197,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.262340247631073,
+    "dc_phase_std_before": 0.013889270834624767,
+    "dc_phase_std_after": 0.006944635417312384,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "58d3bea7b2bce44dbb197b82c5e12b475d70c1f74a8e158532352e1d1a1183aa",
+    "output_sha256": "4e1e906330ff101602db55f6eb1955360e152cf6f89694496e3e376c79406131"
+  },
+  {
+    "epoch": 198,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26242032647132874,
+    "dc_phase_std_before": 0.013894917443394661,
+    "dc_phase_std_after": 0.0069474587216973305,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "e1ce5a23b864428e5f64fa9b86581c73f7b4ab7c88eef9129d5523993e5b085e",
+    "output_sha256": "a02e768fef9f90ddbb5eb86d1c1ecdf2a0e59cf01957bc90a0d17598bd30efa2"
+  },
+  {
+    "epoch": 199,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.2624349594116211,
+    "dc_phase_std_before": 0.013894246891140938,
+    "dc_phase_std_after": 0.006947123445570469,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "0efb75e1dcaa4f2bc2d214e0f402a3f1c272297c3cf14e5f03ee9ec3a32ef935",
+    "output_sha256": "03f351371d63d1c595ad0cecb50c8bfcce9214437ac1ca8b169fd5ec68229da6"
+  },
+  {
+    "epoch": 200,
+    "method": "second_stride8_upsampler_dc_phase_balance_v1",
+    "amount": 0.5,
+    "changed_tensors": [
+      "tts.generator.decoder.upsamples.1.1.weight_v",
+      "tts.generator.decoder.upsamples.1.1.weight_g"
+    ],
+    "effective_weight_relative_change": 0.26248350739479065,
+    "dc_phase_std_before": 0.013898087665438652,
+    "dc_phase_std_after": 0.006949044298380613,
+    "tensor_count": 1049,
+    "inference_only": true,
+    "input_sha256": "e2be393a46ffbba9153dda15b73b7fca63fc474ff504a93219a45c34a7c21d9e",
+    "output_sha256": "3a8635760e9344b6413a2c08430dd5d34de5937d2d7fe57f007a5975f4eef709"
+  }
+]
