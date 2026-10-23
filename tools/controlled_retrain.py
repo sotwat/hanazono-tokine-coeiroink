@@ -138,6 +138,46 @@ def prepare(args):
     print(json.dumps({k: v for k, v in report.items() if k != 'audio'}, indent=2))
 
 
+def stage_runtime_audio(run_dir, config, preparation, cache_root=Path('/content/tokine-controlled-cache')):
+    """Read training WAVs from verified local bytes instead of Drive FUSE workers."""
+    cache = cache_root / preparation['audio_zip_sha256'][:16]
+    wavdir = cache / 'wavs'
+    wavdir.mkdir(parents=True, exist_ok=True)
+    expected = preparation['audio']
+    missing = [key for key, item in expected.items()
+               if not (wavdir / (key + '.wav')).is_file()
+               or digest(wavdir / (key + '.wav')) != item['sha256']]
+    if missing:
+        archives = list(run_dir.parent.parent.parent.glob('*/花園トキネtalk_full_wavs.zip'))
+        assert len(archives) == 1, archives
+        archive_path = cache / 'source.zip'
+        shutil.copyfile(archives[0], archive_path)
+        assert digest(archive_path) == preparation['audio_zip_sha256']
+        with zipfile.ZipFile(archive_path) as archive:
+            for name in archive.namelist():
+                if not name.lower().endswith('.wav') or name.startswith('__MACOSX/'):
+                    continue
+                key = Path(name).stem
+                assert key in expected
+                content = archive.read(name)
+                assert hashlib.sha256(content).hexdigest() == expected[key]['sha256']
+                (wavdir / (key + '.wav')).write_bytes(content)
+    runtime = copy.deepcopy(config)
+    for key, item in expected.items():
+        assert digest(wavdir / (key + '.wav')) == item['sha256'], key
+    for split in ('train', 'valid'):
+        entries = runtime[split + '_data_path_and_name_and_type']
+        speech = next(entry for entry in entries if entry[1] == 'speech')
+        ids = [line.split()[0] for line in Path(speech[0]).read_text().splitlines()]
+        scp = cache / (split + '.scp')
+        scp.write_text(''.join(f'{key} {wavdir / (key + ".wav")}\n' for key in ids))
+        speech[0] = str(scp)
+    target = cache / (run_dir.name + '.yaml')
+    target.write_text(yaml.safe_dump(runtime, allow_unicode=True, sort_keys=False))
+    print('LOCAL_AUDIO_VERIFIED', len(expected), flush=True)
+    return target
+
+
 def run(args):
     import espnet
     import numpy as np
@@ -167,7 +207,8 @@ def run(args):
             step = moment['step']
             assert float(step) == epoch * 1000
     assert all(s['last_epoch'] == epoch for s in state['schedulers'])
-    parsed = GANTTSTask.get_parser().parse_args(['--config', str(config_path)])
+    runtime_config = stage_runtime_audio(run_dir, config, preparation)
+    parsed = GANTTSTask.get_parser().parse_args(['--config', str(runtime_config)])
     model = GANTTSTask.build_model(parsed)
     model.load_state_dict(state['model'], strict=True)
     optimizers = GANTTSTask.build_optimizers(parsed, model)
@@ -202,7 +243,7 @@ def run(args):
     # Preflight imports can install a WARNING-level root handler before ESPnet's
     # basicConfig call. Restore the configured level so batch progress is visible.
     logging.getLogger().setLevel(getattr(logging, parsed.log_level))
-    GANTTSTask.main(cmd=['--config', str(config_path)])
+    GANTTSTask.main(cmd=['--config', str(runtime_config)])
     completed = load(run_dir / 'model/checkpoint.pth')
     assert completed['reporter']['epoch'] == 182
     assert all((run_dir / f'model/{e}epoch.pth').is_file() for e in (180, 181, 182))
