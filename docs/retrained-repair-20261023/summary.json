@@ -1,0 +1,124 @@
+{
+  "texts": [
+    "user",
+    "travel",
+    "sibilants",
+    "current",
+    "library",
+    "meeting",
+    "thanks",
+    "park"
+  ],
+  "model_count": 13,
+  "waveforms_measured": 64,
+  "averages": {
+    "180_original": 0.26538225251391806,
+    "200_retrained": 0.4731411689612869,
+    "r200_balance0.5": 0.03260976201140074
+  },
+  "pairs": [
+    {
+      "text": "user",
+      "e180": 0.23737721518998378,
+      "r200": 0.4138419293879327,
+      "fixed": -0.35017092074523715
+    },
+    {
+      "text": "travel",
+      "e180": 0.2717946324865399,
+      "r200": 0.5109334111795618,
+      "fixed": -0.010831682182027477
+    },
+    {
+      "text": "sibilants",
+      "e180": 0.0933971013385284,
+      "r200": 0.18765006059364583,
+      "fixed": -0.2237086900999167
+    },
+    {
+      "text": "current",
+      "e180": -0.1627517503694984,
+      "r200": 0.7313762381116533,
+      "fixed": 0.0727378551055308
+    },
+    {
+      "text": "library",
+      "e180": 0.6720091950204167,
+      "r200": 0.43778156076696,
+      "fixed": 0.16160110153266394
+    },
+    {
+      "text": "meeting",
+      "e180": 0.0688156243665499,
+      "r200": 0.25882899330623677,
+      "fixed": 0.002824290666719311
+    },
+    {
+      "text": "thanks",
+      "e180": 0.3870267090573909,
+      "r200": 0.7952051864023187,
+      "fixed": 0.5363011493620851
+    },
+    {
+      "text": "park",
+      "e180": 0.5553892930214334,
+      "r200": 0.44951197194198544,
+      "fixed": 0.0721249924513881
+    }
+  ],
+  "listening_lufs_range": [
+    -23.02,
+    -22.99
+  ],
+  "listening_max_true_peak_dbtp": -4.22,
+  "asr_comparison": [
+    {
+      "text": "user",
+      "before": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ",
+      "after": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "travel",
+      "before": "東京から京都まで新幹線で旅行します。きっとお忘れないでください。",
+      "after": "東京から京都まで新幹線で旅行します。きっとお忘れないでください。",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "sibilants",
+      "before": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。",
+      "after": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "current",
+      "before": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。",
+      "after": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "library",
+      "before": "おはようございます。今日は図書館で本を借りてから友達と駅前で待ち合わせます。",
+      "after": "おはようございます。今日は図書館で本を借りてから友達と駅前で待ち合わせます。",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "meeting",
+      "before": "明日の午後3時に2階の会議室へ来てください。資料は25部用意しました。",
+      "after": "明日の午後3時に2階の会議室へ来てください。資料は25部用意しました。",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "thanks",
+      "before": "本当 それは嬉しいねありがとう また一緒に遊びに行こう",
+      "after": "本当 それは嬉しいね ありがとう また一緒に遊びに行こう",
+      "same_words_ignoring_punctuation": true
+    },
+    {
+      "text": "park",
+      "before": "夜の公園は静かで遠くから虫の声が聞こえてきます。",
+      "after": "夜の公園は静かで遠くから虫の声が聞こえてきます。",
+      "same_words_ignoring_punctuation": true
+    }
+  ]
+}

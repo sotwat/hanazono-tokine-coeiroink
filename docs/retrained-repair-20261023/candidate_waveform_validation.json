@@ -1,0 +1,58 @@
+[
+  {
+    "test": "library",
+    "samples": 300032,
+    "waveform_correlation": 0.9973012550333169,
+    "difference_relative_rms": 0.0734843974005141,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "sibilants",
+    "samples": 301056,
+    "waveform_correlation": 0.9911679923789348,
+    "difference_relative_rms": 0.13266565837002153,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "user",
+    "samples": 240128,
+    "waveform_correlation": 0.9975337962682168,
+    "difference_relative_rms": 0.07037095640949156,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "meeting",
+    "samples": 288768,
+    "waveform_correlation": 0.9948635336837579,
+    "difference_relative_rms": 0.10125441924819013,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "travel",
+    "samples": 279040,
+    "waveform_correlation": 0.9971425865481394,
+    "difference_relative_rms": 0.0755802984070135,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "park",
+    "samples": 223744,
+    "waveform_correlation": 0.9965150617533728,
+    "difference_relative_rms": 0.08343907379772925,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "current",
+    "samples": 291328,
+    "waveform_correlation": 0.9976720843430839,
+    "difference_relative_rms": 0.06826639910743973,
+    "identical_mora_durations": true
+  },
+  {
+    "test": "thanks",
+    "samples": 238592,
+    "waveform_correlation": 0.9972639810154483,
+    "difference_relative_rms": 0.07400317776767333,
+    "identical_mora_durations": true
+  }
+]
