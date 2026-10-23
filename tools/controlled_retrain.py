@@ -6,6 +6,7 @@ import io
 import inspect
 import importlib.metadata
 import json
+import logging
 import platform
 from pathlib import Path
 import shutil
@@ -198,6 +199,9 @@ def run(args):
     def skip_average(*a, **kw):
         print('PILOT_AVERAGING_DISABLED: retain individual unmodified epochs', flush=True)
     trainer.average_nbest_models = skip_average
+    # Preflight imports can install a WARNING-level root handler before ESPnet's
+    # basicConfig call. Restore the configured level so batch progress is visible.
+    logging.getLogger().setLevel(getattr(logging, parsed.log_level))
     GANTTSTask.main(cmd=['--config', str(config_path)])
     completed = load(run_dir / 'model/checkpoint.pth')
     assert completed['reporter']['epoch'] == 182
