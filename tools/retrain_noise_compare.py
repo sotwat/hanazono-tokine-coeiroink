@@ -16,7 +16,7 @@ import yaml
 from noise_audit import TEXTS, analyze, post
 from noise_spectral_detail import detail
 
-TEXTS = {**TEXTS,
+TEXTS = {**{k: v for k, v in TEXTS.items() if k != 'vowels'},
     'sibilants': '静かな朝、涼しい風が吹いています。写真を撮って、一緒に出発しましょう。',
     'current': 'でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って'}
 KINDS = ['180_original', '200_old', '200_retrained']
