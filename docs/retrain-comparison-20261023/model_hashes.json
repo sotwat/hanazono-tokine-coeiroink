@@ -1,0 +1,17 @@
+[
+  {
+    "kind": "180_original",
+    "sha256": "613144e98a4febe4cdd36495943be9100bc354df6cc09dfb1296ca90d5bbb6c3",
+    "tensors": 1049
+  },
+  {
+    "kind": "200_old",
+    "sha256": "e2be393a46ffbba9153dda15b73b7fca63fc474ff504a93219a45c34a7c21d9e",
+    "tensors": 1049
+  },
+  {
+    "kind": "200_retrained",
+    "sha256": "455da9ad765ae28cbf560d82385013cca5d542d476f763c3e55966783ac943ff",
+    "tensors": 1049
+  }
+]
