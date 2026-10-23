@@ -4,6 +4,10 @@
 
 ## 現在の状態
 
+2026-10-24 02:25 JST確認：controlは182完了マーカーとtraining_complete.jsonを保存済み。quarter_lrはDrive上QUESTION_025のWAV読込でsoundfile.LibsndfileErrorが発生して停止した。元GPUホストも消失していたため、新しいT4へ接続し旧環境を復元中。両条件の音質比較はまだ実施していない。
+
+復旧用の`stage_runtime_audio`は、元ZIPをローカルディスクへコピーし、ZIPと全WAVのSHA256をpreparation.jsonと照合する。永続設定と録音は変更せず、実行用YAML/wav.scpだけローカルに作る。同一波形を読むための変更で、音質補正ではない。fixtureでbyte一致・元設定保持・破損cache修復を検査済み。新GPUでの再開batchはまだ未確認。完了controlは再学習せず保持する。進捗と復旧処理は共有Obsidianの最新再開情報を優先する。
+
 2026-10-24 00:27 JST、通常利用のT4 GPUが回復した。既存アカウントのDriveを再接続し、旧環境を復元。Drive上に原本180から両条件を作成し、controlの開始前検査（652文の音素長、47音素順序、strict load、両optimizerのmomentum/step/LR/scheduler）を通過した。00:45頃に180checkpointから181/182epochへ再開。00:46頃に181epochの1〜50batch更新ログ（G/D LR各9.777e−5、train_time1.453秒/batch）とGPU本体PID16014を確認。両条件の品質比較は未実施で、改善完了ではない。
 
 開始前検査のimportがroot loggerをWARNINGに設定し、ESPnetのbasicConfigだけではINFO進捗を出せない問題を実機で確認した。学習条件を変えずに設定済みlog_levelをrootへ反映する修正を加え、最初の未保存181途中のプロセスを停止。完全checkpointが180のままであることを確認して再起動し、INFOの再開・epoch開始ログが出ることを確認した。前のログはcontrol/train_before_logging_fix.logに保持。ログ修正前の実行を完了epochとして数えない。
