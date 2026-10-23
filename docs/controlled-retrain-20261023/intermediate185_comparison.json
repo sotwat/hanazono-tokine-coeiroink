@@ -1,0 +1,178 @@
+{
+  "rows": [
+    {
+      "test": "user",
+      "180_original": {
+        "comb_mean_db": 0.23737721518998378,
+        "vowel_hf8_rel_db": -28.0876041749952,
+        "rms_dbfs": -30.85788796499749,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 0.31511715531989554,
+        "vowel_hf8_rel_db": -27.263796712055616,
+        "rms_dbfs": -31.213918008620844,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.4138419293879327,
+        "vowel_hf8_rel_db": -28.083377532856485,
+        "rms_dbfs": -30.771581368632233,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "travel",
+      "180_original": {
+        "comb_mean_db": 0.2717946324865399,
+        "vowel_hf8_rel_db": -27.329877392921848,
+        "rms_dbfs": -29.79806248536874,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 0.35221393966699316,
+        "vowel_hf8_rel_db": -26.992832199085232,
+        "rms_dbfs": -30.004970047232735,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.5109334111795618,
+        "vowel_hf8_rel_db": -28.26795385535821,
+        "rms_dbfs": -29.84287452688177,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "sibilants",
+      "180_original": {
+        "comb_mean_db": 0.0933971013385284,
+        "vowel_hf8_rel_db": -26.400484689564856,
+        "rms_dbfs": -31.507882356707356,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 0.037645052485950965,
+        "vowel_hf8_rel_db": -25.267387396592447,
+        "rms_dbfs": -31.832843281376313,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.18765006059364583,
+        "vowel_hf8_rel_db": -26.117713967309587,
+        "rms_dbfs": -31.53485982720664,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "current",
+      "180_original": {
+        "comb_mean_db": -0.1627517503694984,
+        "vowel_hf8_rel_db": -29.77381408169991,
+        "rms_dbfs": -29.243655112171698,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": -0.35334013039769646,
+        "vowel_hf8_rel_db": -29.167121592261477,
+        "rms_dbfs": -29.382593880748548,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.7313762381116533,
+        "vowel_hf8_rel_db": -29.541041034728067,
+        "rms_dbfs": -29.41581595083342,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "library",
+      "180_original": {
+        "comb_mean_db": 0.6720091950204167,
+        "vowel_hf8_rel_db": -30.377162293932543,
+        "rms_dbfs": -29.667164776728775,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": -0.12656985140315413,
+        "vowel_hf8_rel_db": -30.156713702441493,
+        "rms_dbfs": -29.847375300344872,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.43778156076696,
+        "vowel_hf8_rel_db": -30.104253473269477,
+        "rms_dbfs": -29.829594111614036,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "meeting",
+      "180_original": {
+        "comb_mean_db": 0.0688156243665499,
+        "vowel_hf8_rel_db": -28.121568890700523,
+        "rms_dbfs": -30.234760986424547,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 0.07351243646033744,
+        "vowel_hf8_rel_db": -27.75778980573614,
+        "rms_dbfs": -30.36767796234721,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.25882899330623677,
+        "vowel_hf8_rel_db": -27.595388650470408,
+        "rms_dbfs": -30.46650693116627,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "thanks",
+      "180_original": {
+        "comb_mean_db": 0.3870267090573909,
+        "vowel_hf8_rel_db": -33.03175064930778,
+        "rms_dbfs": -28.889777560383088,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 1.1300557145680425,
+        "vowel_hf8_rel_db": -31.867762492266294,
+        "rms_dbfs": -29.219733804765244,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.7952051864023187,
+        "vowel_hf8_rel_db": -32.969293520101864,
+        "rms_dbfs": -28.973591315061206,
+        "pcm_clip_count": 0
+      }
+    },
+    {
+      "test": "park",
+      "180_original": {
+        "comb_mean_db": 0.5553892930214334,
+        "vowel_hf8_rel_db": -25.977361815702338,
+        "rms_dbfs": -30.890959416727377,
+        "pcm_clip_count": 0
+      },
+      "185_retrained": {
+        "comb_mean_db": 0.2744995878481187,
+        "vowel_hf8_rel_db": -25.38471714465306,
+        "rms_dbfs": -30.909096490260893,
+        "pcm_clip_count": 0
+      },
+      "200_retrained": {
+        "comb_mean_db": 0.44951197194198544,
+        "vowel_hf8_rel_db": -25.82521153590221,
+        "rms_dbfs": -30.809887586329417,
+        "pcm_clip_count": 0
+      }
+    }
+  ],
+  "mean_comb_db": {
+    "180_original": 0.26538225251391806,
+    "185_retrained": 0.21289173806856096,
+    "200_retrained": 0.4731411689612869
+  },
+  "interpretation": "Not a uniform monotonic deterioration; no training cause has been proved."
+}

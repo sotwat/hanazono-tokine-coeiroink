@@ -1,0 +1,18 @@
+{
+  "model": "rejected",
+  "moment": "rejected",
+  "scheduler": "rejected",
+  "quarter_lr": {
+    "model_tensors_identical": 1049,
+    "optimizer_states_identical": [
+      942,
+      106
+    ],
+    "epoch": 180,
+    "lr_factor": 0.25,
+    "learning_rates": [
+      2.4443746552925693e-05,
+      2.4443746552925693e-05
+    ]
+  }
+}
