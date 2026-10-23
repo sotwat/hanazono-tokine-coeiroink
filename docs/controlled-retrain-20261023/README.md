@@ -4,6 +4,10 @@
 
 ## 現在の状態
 
+2026-10-24、両条件の完全checkpointを旧torchでロードし、内部epoch182、G/D全942/106 optimizer状態のstep182000、180/181/182個別モデルとtraining_complete.jsonを確認した。quarter_lrの読込障害からの復旧も成功し、対照2条件の学習部分は完了。新ホストでの復旧launcherも完了済みcheckpointを検出して両条件をスキップした。次は個別モデルを回収し、通常8文の未補正音声を原本180・従来再学習200と比較する。音質改善や劣化原因の特定はまだ確認できていない。最新のホスト・再開情報は共有Obsidianを参照する。
+
+以下は復旧途中の記録。
+
 2026-10-24 02:25 JST確認：controlは182完了マーカーとtraining_complete.jsonを保存済み。quarter_lrはDrive上QUESTION_025のWAV読込でsoundfile.LibsndfileErrorが発生して停止した。元GPUホストも消失していたため、新しいT4へ接続し旧環境を復元中。両条件の音質比較はまだ実施していない。
 
 復旧用の`stage_runtime_audio`は、元ZIPをローカルディスクへコピーし、ZIPと全WAVのSHA256をpreparation.jsonと照合する。永続設定と録音は変更せず、実行用YAML/wav.scpだけローカルに作る。同一波形を読むための変更で、音質補正ではない。fixtureでbyte一致・元設定保持・破損cache修復を検査済み。新GPUでの再開batchはまだ未確認。完了controlは再学習せず保持する。進捗と復旧処理は共有Obsidianの最新再開情報を優先する。
