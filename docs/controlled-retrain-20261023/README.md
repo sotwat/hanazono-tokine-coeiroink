@@ -4,7 +4,11 @@
 
 ## 現在の状態
 
-対照実験用のデータ、設定、完全checkpointをこのMacで作成・照合した。**学習は未開始**。23:13前後のColab接続で「バックエンドを割り当てられませんでした」「GPUを使用するバックエンドは利用できません」と表示された。回復時刻は不明。課金や上限回避はしない。
+2026-10-24 00:27 JST、通常利用のT4 GPUが回復した。既存アカウントのDriveを再接続し、旧環境を復元。Drive上に原本180から両条件を作成し、controlの開始前検査（652文の音素長、47音素順序、strict load、両optimizerのmomentum/step/LR/scheduler）を通過した。00:45頃に180checkpointから181/182epochへ再開。00:46頃に181epochの1〜50batch更新ログ（G/D LR各9.777e−5、train_time1.453秒/batch）とGPU本体PID16014を確認。両条件の品質比較は未実施で、改善完了ではない。
+
+開始前検査のimportがroot loggerをWARNINGに設定し、ESPnetのbasicConfigだけではINFO進捗を出せない問題を実機で確認した。学習条件を変えずに設定済みlog_levelをrootへ反映する修正を加え、最初の未保存181途中のプロセスを停止。完全checkpointが180のままであることを確認して再起動し、INFOの再開・epoch開始ログが出ることを確認した。前のログはcontrol/train_before_logging_fix.logに保持。ログ修正前の実行を完了epochとして数えない。
+
+保存先はDrive `MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/`。各arm/train.log、preflight.json、model/checkpoint.pth、pilot/paired_train.logを確認する。setupログは`MYCOEIROINK_WORK/controlled_setup_20261024.log`。既存プロセスを検査してから復旧し、prepareで上書きしない。前日23:13頃のGPU割当不可は解消したが、無料枠の継続時間は保証しない。
 
 元の180epochと再学習200の完全checkpointに保存された170〜200epochの損失を取り出した。[loss_history_170_200.json](loss_history_170_200.json)。181再開時に損失が急増した形跡はない。trainのmel損失は180で16.556、200で16.352、generator総損失は30.813→30.777。これらの値と高域周期ピークの悪化は一致しない。損失の低下を音質改善と扱えず、これだけで過学習や学習率を原因と断定しない。
 
@@ -33,7 +37,7 @@ G/D双方の学習率を同率で変えるため、まず全体の更新幅の�
 - 未補正180完全checkpointのSHA256 `ab6925215af0ea111939313749c64bab66743eef90411d9f30165c901687b097` を固定。
 - 両条件のモデル1049テンソルは原本と全件一致。optimizer942/106件のstep・momentum等も全件一致。変えたのは各param groupのlr/initial_lrとschedulerのbase_lrs/_last_lrのみ。schedulerのepoch/gammaは維持する。[integrity_checks.json](integrity_checks.json)。モデル、momentum、schedulerの意図しない変更を入れる負例も検査で拒否した。
 - 録音652WAVは元ZIPのバイト列を保存し、44.1kHz/16bit/mono、全IDと歴史的な波形長に一致。元ZIP hash `e34f05d23bf01b124658e8f2f1f6257d6834a053f5293c4754122b968c452915`。
-- ESPnet202211、torch1.12.1+cu113、NumPy1.23.5を要求。開始直前にCUDA、strict model load、両optimizerのmomentum形状・有限値、全652文の音素長を検査する。**この実行前検査と学習はGPU未確保のため未実施**。
+- ESPnet202211、torch1.12.1+cu113、NumPy1.23.5を要求。開始直前にCUDA、strict model load、両optimizerのmomentum形状・有限値、全652文の音素長を検査する。10月24日にcontrolの実行前検査をT4で通過。quarter_lrは順番が来た時点で同じ検査を行う。
 - 設定の差は出力先、optim_conf、optim2_confのみ。seed777、numel batch、元の損失と学習データを維持。cuDNN deterministic=falseも元のままであり、GPU計算のビット単位の再現性は保証しない。
 - Mac側の準備はPython3.10、torch1.12.1（CPU）、NumPy1.23.5でも実行し、両条件の保存ファイルを再ロードして上記一致を確認した。最初に最新NumPyで保存した検査用コピーは旧NumPyにない`numpy._core`を参照して読み込めなかったため、学習用と混同しない別ディレクトリへ隔離した。Colabでは必ず旧環境で原本からprepareする。Mac上のCUDA実学習を確認したという意味ではない。
 - validは元と同じ先頭5本でtrainに重複する。原因切り分けの対照を揃えるため初回は分割を変えない。未知音声の検証データとは扱わない。
