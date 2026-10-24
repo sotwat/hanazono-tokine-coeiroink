@@ -1,0 +1,13 @@
+{
+  "series": "original",
+  "models": 81,
+  "ordinary_texts": 8,
+  "waveforms": 648,
+  "all_wav_sha_verified": true,
+  "format": "44100Hz 16bit mono",
+  "all_pcm_clip_counts_zero": true,
+  "all_primary_metrics_finite": true,
+  "listening_verified": false,
+  "global_ranking_complete": false,
+  "results_sha256": "6c4e9c10be3e6a4e5df697e3b9842dd7d2cedd211eb4707f32703e5856547e38"
+}

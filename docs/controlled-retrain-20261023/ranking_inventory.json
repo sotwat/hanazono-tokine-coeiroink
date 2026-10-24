@@ -1,8 +1,8 @@
 {
   "complete_all_series": false,
-  "inventoried_file_count": 123,
-  "unique_file_sha_count": 122,
-  "pending": "Previous proper retrain hashing and backup checkpoint extraction; uniform eight-text evaluation and broad-harshness assessment pending",
+  "inventoried_file_count": 134,
+  "unique_file_sha_count": 133,
+  "pending": "Backup checkpoint189 extraction; recovery and uniform eight-text evaluation of missing local candidates; broad-harshness assessment",
   "missing_original_epochs": [
     148,
     149,
@@ -898,6 +898,84 @@
       "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/200epoch.pth",
       "size": 373246208,
       "sha256": "afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 191,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/191epoch.pth",
+      "size": 373246208,
+      "sha256": "39ccbb0914aacac8ff1709d75420fdecded911dd4f07b47c192943532e941652"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 192,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/192epoch.pth",
+      "size": 373246208,
+      "sha256": "8af3b14c96f9ae04a06335f02a11b76576dd1dcb9ecd0edfa1768fd97e14f887"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 193,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/193epoch.pth",
+      "size": 373246208,
+      "sha256": "88c85b6d66f5645b5b0f489f0e26188b156eb8ee72d71c15a281004e5f9aa871"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 194,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/194epoch.pth",
+      "size": 373246208,
+      "sha256": "fc69d737dc5a1d300172aae51bfcfd030b9856feb5476a5edb9c77ee01ab4ada"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 195,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/195epoch.pth",
+      "size": 373246208,
+      "sha256": "3a076958f8f80033e9211e3a58c01299df6f5897d301830374f600edb1355faa"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 196,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/196epoch.pth",
+      "size": 373246208,
+      "sha256": "c71788e778dab245a65b01c408bc1d24217ef39e81bfc8a9a7884b649fadd927"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 197,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/197epoch.pth",
+      "size": 373246208,
+      "sha256": "f825c5d43b0be60fb07ba39e5892f4aa82bb6664ff0a4a13e64ab6cecd23af85"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 198,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/198epoch.pth",
+      "size": 373246208,
+      "sha256": "87167cdad2a2bb58f24849142279044ed0963d4fd823175329738b44f5cf8809"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 199,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/199epoch.pth",
+      "size": 373246208,
+      "sha256": "fcb6a6cbf475f24550aa193f3b09f0afe3f0cbeb79b204bddb069dc3338bf5cd"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 200,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/200epoch.pth",
+      "size": 373246208,
+      "sha256": "455da9ad765ae28cbf560d82385013cca5d542d476f763c3e55966783ac943ff"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 185,
+      "size": 373232318,
+      "sha256": "09ac305862a42adb40e2b5ca2e48386be7224fd18f2ce069c94680ece7299e68",
+      "path": "OUTPUT/controlled_retrain_20261023/intermediate185/185epoch_unmodified.pth",
+      "source_checkpoint_sha256": "b539824e093a902e658df3414dbd7447a2ea6fb44548d59688da9804b1a7b33b"
     }
   ]
 }
