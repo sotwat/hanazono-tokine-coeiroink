@@ -1,5 +1,19 @@
 # 180epoch以降の劣化を切り分ける再学習
 
+## Ranking collection in progress (2026-10-25)
+
+Both training arms are complete; do not restart training. The ranking rule is frozen in [ranking-protocol.md](ranking-protocol.md). [ranking_inventory.json](ranking_inventory.json) currently covers 81 saved original models plus 42 control/quarter files, 123 file entries / 122 distinct file SHAs. The shared control/quarter epoch-180 SHA is an alias. The previous proper-retrain inventory and backup extraction are still pending; this is not a complete candidate list or a top-five result.
+
+`tools/ranking_original_survey.py` is running on this Mac, collecting all eight canonical ordinary sentences for the 81 original models. Output is `OUTPUT/controlled_retrain_20261023/ranking_original/{results.json,raw,engine.log,provenance.json}`. The existing 162 user/travel waveforms were checked against recorded model and WAV hashes and reused. Original and retrain comparison engine binaries have identical SHA256 `87dc472aa450fd6510111e0e0f3c9fccc55d141d20e560202b10a15e6adc79db`. The job uses isolated port 50033; production 50032 is preserved. Inspect actual PID/batch output before resuming; never start a second audit engine while this job is active. On completion, complete.json must contain 81 models / 648 waveforms. Do not rank partial coverage as global top five.
+
+Resume after confirming the old process has ended:
+
+```sh
+python tools/ranking_original_survey.py --root "$OUTPUT/controlled_retrain_20261023/ranking_original" --previous "$OUTPUT/noise_20261021" --cache "$OUTPUT/noise_onset_20261024"
+```
+
+Use the existing analysis Python environment. Source caches, model files and requests are verified before reuse. Interrupted WAV/JSON pairs are rejected for inspection rather than overwritten. The pending remote inventory hashes previous proper retrain model/191epoch.pth through 200epoch.pth; keep checkpoint_185 and checkpoint_189 backups for separate verified extraction. Remote log `/content/previous_rank_inventory.log`, result Drive `MYCOEIROINK_WORK/retrain_180_20261021/ranking_inventory.json`. No training was launched. All global rankings, broad-harshness assessment and listening remain pending.
+
 ## Quarter LR epoch 200 comparison (2026-10-25)
 
 Quarter LR completed epoch 200. After the old host ended, a normal T4 connection on host 85c5778453ef and the existing Google Drive mount recovered the actual files. Complete checkpoint epoch and both schedulers are 200; G/D optimizer states contain 942/106 entries, all at step 200000 with finite momentum. The individual model has 1049 finite tensors, exactly matching checkpoint model tensors. SHA256: `afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70`. No duplicate training was started.

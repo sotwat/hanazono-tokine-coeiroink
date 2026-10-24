@@ -1,0 +1,300 @@
+{
+  "complete": true,
+  "source": "Drive controlled_retrain_20261023/ranking_inventory.json; read through existing Colab terminal",
+  "rows": [
+    {
+      "series": "control",
+      "epoch": 180,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/180epoch.pth",
+      "size": 373231552,
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60"
+    },
+    {
+      "series": "control",
+      "epoch": 181,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/181epoch.pth",
+      "size": 373246208,
+      "sha256": "f4e16c30b42a64fcd9931621bcd32d53382a3eb5fe6b908b58a0dfeef7738dc7"
+    },
+    {
+      "series": "control",
+      "epoch": 182,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/182epoch.pth",
+      "size": 373246208,
+      "sha256": "59f2525cb118f44d13de896c48da0278f67894f94677f67912260e7aaccaa437"
+    },
+    {
+      "series": "control",
+      "epoch": 183,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/183epoch.pth",
+      "size": 373246208,
+      "sha256": "2b0740c69c356b7324fffd7e30ffa17b24c93c1c03462670d2e54ec0226077e4"
+    },
+    {
+      "series": "control",
+      "epoch": 184,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/184epoch.pth",
+      "size": 373246208,
+      "sha256": "721bbf77373d9e3e097be918bf498ef999c370169a2485cec61456ec33612dab"
+    },
+    {
+      "series": "control",
+      "epoch": 185,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/185epoch.pth",
+      "size": 373246208,
+      "sha256": "614a783dcc50d4bc4ca3a875ba93957db1a7354a0e807e2bce5827288f6896fe"
+    },
+    {
+      "series": "control",
+      "epoch": 186,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/186epoch.pth",
+      "size": 373246208,
+      "sha256": "726fe7f50f438a8f231d0cd84a8c7e3219dbe613641b2a4250d19d885ddeb880"
+    },
+    {
+      "series": "control",
+      "epoch": 187,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/187epoch.pth",
+      "size": 373246208,
+      "sha256": "0fc4e33098747a478c44335e6572612f4bc510aa6f9f38b819777ff20b3d1059"
+    },
+    {
+      "series": "control",
+      "epoch": 188,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/188epoch.pth",
+      "size": 373246208,
+      "sha256": "b621688dfd9ea0cbde2150234be4daed40adaf53cf88ac857e04c24f2f902d24"
+    },
+    {
+      "series": "control",
+      "epoch": 189,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/189epoch.pth",
+      "size": 373246208,
+      "sha256": "496d6bd7ad10aa6c1d6a5ddeb7379fc9787ac8e2e23f55e2b650028912436cb4"
+    },
+    {
+      "series": "control",
+      "epoch": 190,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/190epoch.pth",
+      "size": 373246208,
+      "sha256": "10ca5bd6a2568fd87423e4b00a5fc5e8b2cb9f4245fc9b7e94da88c248c179bb"
+    },
+    {
+      "series": "control",
+      "epoch": 191,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/191epoch.pth",
+      "size": 373246208,
+      "sha256": "33ddb4b3dead547199ec2017511c2874db39d0a942ae09ddcb1458ded37d9d12"
+    },
+    {
+      "series": "control",
+      "epoch": 192,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/192epoch.pth",
+      "size": 373246208,
+      "sha256": "77e557464ea28a4f13795da8bc653ed003ea3ff566dcbe19731466a0c22ee9dd"
+    },
+    {
+      "series": "control",
+      "epoch": 193,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/193epoch.pth",
+      "size": 373246208,
+      "sha256": "b962bbe16f1e9accf549a707b88fced267389cc882901606c55de4c9c9ae8f2b"
+    },
+    {
+      "series": "control",
+      "epoch": 194,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/194epoch.pth",
+      "size": 373246208,
+      "sha256": "bc45e9adfed7c1005fb7de78c1f5e0466eb56e6516e2657bbf430b27f1c5fea8"
+    },
+    {
+      "series": "control",
+      "epoch": 195,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/195epoch.pth",
+      "size": 373246208,
+      "sha256": "05b2d3c6347e69c2ab500e74ed64988532d94ca445f6a8e1c612fa2e47868f9a"
+    },
+    {
+      "series": "control",
+      "epoch": 196,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/196epoch.pth",
+      "size": 373246208,
+      "sha256": "0cfcba9a369b5610ae7a8a4f3c009e82ba44cd4f117e52dabefeb7639822dae5"
+    },
+    {
+      "series": "control",
+      "epoch": 197,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/197epoch.pth",
+      "size": 373246208,
+      "sha256": "86364232d59e79b75f0ba4aab96e56c6c22d36d8977e8966c3c78787102c36a9"
+    },
+    {
+      "series": "control",
+      "epoch": 198,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/198epoch.pth",
+      "size": 373246208,
+      "sha256": "0f3bb9e5819f31016ed6c285b698898a246167059357966fe51db33b53146d01"
+    },
+    {
+      "series": "control",
+      "epoch": 199,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/199epoch.pth",
+      "size": 373246208,
+      "sha256": "3a3d9a00742714bbc4606ce2ea344cf20f8f0055d526317022473eb5019f47ab"
+    },
+    {
+      "series": "control",
+      "epoch": 200,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/200epoch.pth",
+      "size": 373246208,
+      "sha256": "bab9630ac4e7a9da85d1097c4e8adfb7e7b42b2ed91952b0ef92abf193bf5730"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 180,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/180epoch.pth",
+      "size": 373231552,
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 181,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/181epoch.pth",
+      "size": 373246208,
+      "sha256": "0a50bf86e1edbc309b00c4bd1b05d6b0ad9fb75a8d905aedbfae41f2b18b86cc"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 182,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/182epoch.pth",
+      "size": 373246208,
+      "sha256": "4ae6e43fca7325b4a2e6039e0850c937886cad5515c161214200849746d95a0e"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 183,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/183epoch.pth",
+      "size": 373246208,
+      "sha256": "7c2707a514f159a55bc1e8a158539e9d4cbe8aeff8c12457a69abec22a4b76c1"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 184,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/184epoch.pth",
+      "size": 373246208,
+      "sha256": "f1e128f986363130ea3e85ab7f0957ba5cb4f0915c13a32c5cd47ebd2eb2cff0"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 185,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/185epoch.pth",
+      "size": 373246208,
+      "sha256": "e5f199c7d964c20626d0536845e18c958b35d9e636ded55561e364e396e3eb21"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 186,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/186epoch.pth",
+      "size": 373246208,
+      "sha256": "aa10686e91db4cef951cf1b6bf9e47a91d3f394b22f674f9b3c5a84216065d7a"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 187,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/187epoch.pth",
+      "size": 373246208,
+      "sha256": "0ecac2280ecca5719c245ffcf4a1907b4b3f2ca2392ab8945d580f05a282be6d"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 188,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/188epoch.pth",
+      "size": 373246208,
+      "sha256": "73ea39ea4f563957d9932c30428d6a05b93b0a264c9c30b7a759cc44b51e3a8f"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 189,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/189epoch.pth",
+      "size": 373246208,
+      "sha256": "eb3012f133376c9fdbf35947e70495777133de45515d29a1e8c3ec62f1405718"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 190,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/190epoch.pth",
+      "size": 373246208,
+      "sha256": "633229e9ee79b242e05f5bf1a7126f947fe3bf608cf1bac6dd4a52b4d000a086"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 191,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/191epoch.pth",
+      "size": 373246208,
+      "sha256": "2f6d6f119def7a719682da53fde7f99c84cb39608000dbbe8357bb2a910502da"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 192,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/192epoch.pth",
+      "size": 373246208,
+      "sha256": "78be84a7b9fb879dfc44cdbb4c12219006169b59f7a337d1df952b51826fff29"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 193,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/193epoch.pth",
+      "size": 373246208,
+      "sha256": "cc7e9a71e64f21632fa303a1286e7d97de3af43a99bccb8634401a3e4818370e"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 194,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/194epoch.pth",
+      "size": 373246208,
+      "sha256": "c74a7b43cb415e54a0a752bf7d4a610470657075f867369a5297882d15357934"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 195,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/195epoch.pth",
+      "size": 373246208,
+      "sha256": "529236f2e7dc5880d17bf00f1f69e34407ca9e8f3544cc61d6a0c8b91f53eaab"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 196,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/196epoch.pth",
+      "size": 373246208,
+      "sha256": "c4da3cbbb20f2b6909ae186b3b72516bc1dde0827bf78e9f62b11f3121b264ba"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 197,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/197epoch.pth",
+      "size": 373246208,
+      "sha256": "7e05c079da9543b75afb8d682ebdd7386da64f659e99ee6c2855d2bc7dd61ff7"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 198,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/198epoch.pth",
+      "size": 373246208,
+      "sha256": "fe25e58b9c0c9ee8f487f54980834243a86e11eb0b1b7624f7d8b3af9b81956c"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 199,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/199epoch.pth",
+      "size": 373246208,
+      "sha256": "26190dffd7e4dae99e6696665b23bc6d7c9ba6eb88c4b126778867f6ebb1673a"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 200,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/200epoch.pth",
+      "size": 373246208,
+      "sha256": "afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70"
+    }
+  ]
+}

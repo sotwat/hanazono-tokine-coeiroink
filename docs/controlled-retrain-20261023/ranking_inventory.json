@@ -1,0 +1,903 @@
+{
+  "complete_all_series": false,
+  "inventoried_file_count": 123,
+  "unique_file_sha_count": 122,
+  "pending": "Previous proper retrain hashing and backup checkpoint extraction; uniform eight-text evaluation and broad-harshness assessment pending",
+  "missing_original_epochs": [
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    169
+  ],
+  "duplicate_sha_groups": {
+    "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60": [
+      [
+        "control",
+        180
+      ],
+      [
+        "quarter_lr",
+        180
+      ]
+    ]
+  },
+  "rows": [
+    {
+      "series": "original",
+      "epoch": 100,
+      "size": 373246208,
+      "sha256": "ae070367eac1bda151f2112a3823a4728678046c946fca8ed5c74c793338c581",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 101,
+      "size": 373246208,
+      "sha256": "5a148cb11b82945eb3b12801521cd9e5c2803f9ee9132707e11271b8df2e8590",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 102,
+      "size": 373246208,
+      "sha256": "01a42df5e279b906bc1f1770dcd64d3f19a5f140e009f42ce7b41e084512add3",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 103,
+      "size": 373246208,
+      "sha256": "6f40913301b4c4b7b3787de1541afd2b7c278a5fcc5816f8c8b44681e405c0e9",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 104,
+      "size": 373246208,
+      "sha256": "394be0da73aa884468c5114698057a8af6716c81d712e06c80595173075009cc",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 105,
+      "size": 373246208,
+      "sha256": "e4b579d3515d959c4527d41032c9f83962629c506d5d69b4319ddd50f088ea63",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 106,
+      "size": 373246208,
+      "sha256": "f4a805e2a31800980fb0bbfc79e104f85c73afad22b62f9be0a527fbc1fea90f",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 107,
+      "size": 373246208,
+      "sha256": "376929b4ef34ac435aee1f085f19d70a139355172b97add380892d718aac2724",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 108,
+      "size": 373246208,
+      "sha256": "6cbf00d24fd3211033f98874ad19c49ee9423dd1468ae0603e6e08bec0e7238e",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 109,
+      "size": 373246208,
+      "sha256": "6aff16afdac0c3ccec68ad1fb940cbd5acc8b74609131340934e41ee5c792ce5",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 110,
+      "size": 373246208,
+      "sha256": "4eedff1356b02af94e64dd2670bd1d55185206657dbb10c281dc6fe654219c5b",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 111,
+      "size": 373246208,
+      "sha256": "a04c14436d7a92b7925552457343bd7739c32195ab23b1bb85f743cef2cef35d",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 112,
+      "size": 373246208,
+      "sha256": "a9220abffff14e22a8790f0fc040863d40fe04df90daab09071e0fef37ce5b14",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 113,
+      "size": 373246208,
+      "sha256": "cb75225570754acb6ed30099c33da332e27f60a68068f8d61aa390acdbe6688f",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 114,
+      "size": 373246208,
+      "sha256": "8262b8661bfb7a58ff02830223ff5fef00711fd9090201432fe2c12f043c8245",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 115,
+      "size": 373246208,
+      "sha256": "8884cc477b3c2e94c67ae7bf7fd9879846e67d86f43774e4b55d8c9ff0f0658b",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 116,
+      "size": 373246208,
+      "sha256": "9c1c546c06268c219301d803e5a7fdaa2e3b2462c78b9999bf103fcbc508f870",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 117,
+      "size": 373246208,
+      "sha256": "931b0c633362e7e4a710d0d05d3b8e1a0adeaaa01d5a8e91c8818fa0943856fb",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 118,
+      "size": 373246208,
+      "sha256": "b0796f33c2bd03d157c59922a982217b1a2d5bd7a142faa5e4e8dedd68fe0f38",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 119,
+      "size": 373246208,
+      "sha256": "0b5670b84fc1edcafcf1cc251067b52bf70ac391bd729759314f9c4b3a192182",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 120,
+      "size": 373246208,
+      "sha256": "71556a6568f2e897db1be2a6a14d63d419f253a7bc7a9d7fcddee0ae0a928ac1",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 121,
+      "size": 373246208,
+      "sha256": "bc06d30e6206062bf851ef1c06555f4d1689159144fcbc35bca690b87883bd73",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 122,
+      "size": 373246208,
+      "sha256": "4abfb8b98db4a0f7f7aec35cb8bd6aeb80ee35d91ce881086a10076103cb7abc",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 123,
+      "size": 373246208,
+      "sha256": "1c32bec24466b186634a95f1df51a094d40dfb01e1ae5a79fe8891978bf34f8b",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 124,
+      "size": 373246208,
+      "sha256": "4ddf119e036eee3fc999341d911ce120897405d0195187253b9def5f1e1480a3",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 125,
+      "size": 373248669,
+      "sha256": "f41e78940981996cfd72b2289f49b7d5f8818041f030ec9a2ac48974a9457553",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 126,
+      "size": 373248669,
+      "sha256": "374fb23b27708c0a115db7368ddd9a9c1fe34a143de7a03785b9aa40f5511bac",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 127,
+      "size": 373248669,
+      "sha256": "8258cc67bb6271370284c9d926237147fe2e0b90983cf232f2da1a8b57e41d0e",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 128,
+      "size": 373248669,
+      "sha256": "0c60e79f9077e3c9bd3b348505f39f08ce0c47f630d2ac38a1272fb5cf693172",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 129,
+      "size": 373248669,
+      "sha256": "5f67711bb5ed5d5ff96760855276a82d1a624899ceb2592486e7d85fab0c25ca",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 130,
+      "size": 373248669,
+      "sha256": "8d44ce7e2730b96aae04a252c1bdba64092aacd42407354fc9ed887510ba0f57",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 131,
+      "size": 373248669,
+      "sha256": "8700802c356a1f81e8b425072646faff3ecd4ebc9ea4ca0cf61acef46007c664",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 132,
+      "size": 373246208,
+      "sha256": "e288753659dcd85365bb78b2c96105784e47245129f370316ddb505890ab6607",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 133,
+      "size": 373246208,
+      "sha256": "8b72e2496fcb458633d6da4b2050325719bb8908beb879549efb26cbb2375968",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 134,
+      "size": 373246208,
+      "sha256": "b7f26079aafc5fb051b9016eb6d5add62796c484d55e0a7856086d77e6357672",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 135,
+      "size": 373246208,
+      "sha256": "c7885e0f11933181b3a371be7de7941f7274871a6e53f39d79f8c11b8c5f766c",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 136,
+      "size": 373246208,
+      "sha256": "0c695439c7a7e118363c3e4d49242edb5b327fa97cdffb23375cd0e249997dfe",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 137,
+      "size": 373246208,
+      "sha256": "4d742e77229d472322075cb4231c3a54921219ec9d828cb5d1db6cb3f020d266",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 138,
+      "size": 373246208,
+      "sha256": "fe68e2250eba388e4652f41c1a2d2db94e60799ea6b0a43339bed344ab6339aa",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 139,
+      "size": 373246208,
+      "sha256": "274df7dd1b926d6aaf748e644429754346316cb14382ba272d62a5c9026f5da6",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 140,
+      "size": 373246208,
+      "sha256": "098ee6259860c55eb1795f5423289537487780010ee33f6f326ec3242c47bd14",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 141,
+      "size": 373246208,
+      "sha256": "eddd131a4ef00eeb9c63d8125cfcc378099a8fb8a716d255d82319ae3a0dc029",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 142,
+      "size": 373246208,
+      "sha256": "096676caa1a0bf7d0280f9641c74c6df84e0c1b05e0be3f287c914c2f3bc4c72",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 143,
+      "size": 373246208,
+      "sha256": "f1ff65eb6a8af69aa1a2b96d7478952fe6a19b9587d340c6e46acaeabeca2bb2",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 144,
+      "size": 373246208,
+      "sha256": "8c294288d2716ef2ab1ae1b347b1ef93c2565e32b35c417ba8748a7aedbfc43d",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 145,
+      "size": 373246208,
+      "sha256": "ba9247cf0f55c562216da20a18fa490b4ab2318c140daa8364819433d7d2cb98",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 146,
+      "size": 373246208,
+      "sha256": "ec387bfe49e0a16398e73ec2490e1b0463a333b48e2cc8e9301d288b34fff68e",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 147,
+      "size": 373246208,
+      "sha256": "f2e91950c0d6a96a1dcd3283387f3e44b0bb6671da231146d6437b6c58f44a2d",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 160,
+      "size": 373246208,
+      "sha256": "1d277cbd21ef3b56573dac39d78b3cc3a621c4d0b00bbb6c79ec1186c30efb65",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 168,
+      "size": 373246208,
+      "sha256": "c7a3f09df2611d52cbb6348ee049be870ce47fbe3aabd804f36f93de43a3f38d",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 170,
+      "size": 373246208,
+      "sha256": "57f8a8f7547e91a3c8b6ef4c5eed02d0ecc37f1d866fd2f798e2d2c094f119e2",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 171,
+      "size": 373246208,
+      "sha256": "72769d7a778434ebd0243bbe43fc6ff4351a6deec34fbd65333ff116fe076fcc",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 172,
+      "size": 373246208,
+      "sha256": "63ffd0bc01e6d34f6758d062244ad10a1e7a2334bf432f0e9b30979e482d61b7",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 173,
+      "size": 373246208,
+      "sha256": "208ba2c16fd510fcfd0f75ed173026484320db589f495ed0cd82a300de5f3fa6",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 174,
+      "size": 373246208,
+      "sha256": "087262273e689954495d5c8555534413af23c500c103f096795cd6cabce41da3",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 175,
+      "size": 373246208,
+      "sha256": "96444b62aa4b9ac8678a0391db0d25fca4918a81464997455841d801defa5692",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 176,
+      "size": 373246208,
+      "sha256": "765cc1e3bbffdf3c8b741bd35dba34e79ccb9c72988b6edf1812f41e131caffc",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 177,
+      "size": 373246208,
+      "sha256": "ed5d7d2d3bcc05dd53a180b8a61fe766413a43e894663b64ab24e0a206292da1",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 178,
+      "size": 373246208,
+      "sha256": "59d5eb2f10efea2bc613fe67296cc7d9d5f68619e3c37ae8dc28a49c3ac4b1bd",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 179,
+      "size": 373246208,
+      "sha256": "0e4a01ceefea5f43b092a692c91fb2aea3cd479b22b2138cb0d00f014746d464",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 180,
+      "size": 373246208,
+      "sha256": "613144e98a4febe4cdd36495943be9100bc354df6cc09dfb1296ca90d5bbb6c3",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 181,
+      "size": 373249693,
+      "sha256": "7f9a4bf159056d1d0a5bc926b43432774f80d34f92092033488fb32daf254d43",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 182,
+      "size": 373249693,
+      "sha256": "43ee172c6dc722496396bb55af1b3d82a3f1d0fe67b0f34167a1312ac92c92dd",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 183,
+      "size": 373249693,
+      "sha256": "fb1c6b53f6d7a08667f64c923b89fa52ebdf8677036717a4e20e0177e880edbf",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 184,
+      "size": 373249693,
+      "sha256": "f86f298fc253c50f43def5fbb17d14bd9c12af51109cdaca69d6d8a169bdc212",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 185,
+      "size": 373249693,
+      "sha256": "d47135ca02d1908df57f91f116dd3fc71d06f037063dd7fc69567b9c9bc8d42c",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 186,
+      "size": 373249693,
+      "sha256": "4dabd36ab744b7a741101a136cf10c26bb80a0bb00506253160a0d34cf3d2841",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 187,
+      "size": 373249693,
+      "sha256": "a616e641faec9c24837131c440bbf22ec3c0bd6ec116e980ae6c7aff3cea2e55",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 188,
+      "size": 373249693,
+      "sha256": "b54b86f72c479191c7747810bb76436e485b067f2b6f75e6b63817e3e26e1bd6",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 189,
+      "size": 373249693,
+      "sha256": "4eeb47f82bddd265d1cbe163c80e96aa3c0d0375952bcd33afb13416e0f01d10",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 190,
+      "size": 373249693,
+      "sha256": "a155aa72b84501107e7d9fd84caf61c620e735324d54dab31d620ce7df668b2d",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 191,
+      "size": 373249693,
+      "sha256": "57b8c498e65ac83b551f65992dc2ad2b10f5853479590add18cd908f3a783729",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 192,
+      "size": 373249693,
+      "sha256": "d0c0cc6ac42f6a597f21733bc3ae4858ee769dd82a179779d9999bffc5b99621",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 193,
+      "size": 373249693,
+      "sha256": "f5c6a9cce515a1e17fd7f685f27bb3c2cb9937b1e1c7c53a14195038f8041143",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 194,
+      "size": 373249693,
+      "sha256": "bcde2d67d7a6edf881de63ff574e83dd2aec54d513d3f4a59440da7836d96ae9",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 195,
+      "size": 373249693,
+      "sha256": "0051d43b42c856c82986fcbc4768c1eb3843dfa4ca0c071a99468907b6f8a109",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 196,
+      "size": 373249693,
+      "sha256": "50e2d30f483115363fc2c58a14134567a3fa7ff56094f4220f5efee2b9681dd5",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 197,
+      "size": 373249693,
+      "sha256": "58d3bea7b2bce44dbb197b82c5e12b475d70c1f74a8e158532352e1d1a1183aa",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 198,
+      "size": 373249693,
+      "sha256": "e1ce5a23b864428e5f64fa9b86581c73f7b4ab7c88eef9129d5523993e5b085e",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 199,
+      "size": 373249693,
+      "sha256": "0efb75e1dcaa4f2bc2d214e0f402a3f1c272297c3cf14e5f03ee9ec3a32ef935",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "original",
+      "epoch": 200,
+      "size": 373249693,
+      "sha256": "e2be393a46ffbba9153dda15b73b7fca63fc474ff504a93219a45c34a7c21d9e",
+      "location": "noise_20261021/runtime/speaker_info/audit/model"
+    },
+    {
+      "series": "control",
+      "epoch": 180,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/180epoch.pth",
+      "size": 373231552,
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60"
+    },
+    {
+      "series": "control",
+      "epoch": 181,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/181epoch.pth",
+      "size": 373246208,
+      "sha256": "f4e16c30b42a64fcd9931621bcd32d53382a3eb5fe6b908b58a0dfeef7738dc7"
+    },
+    {
+      "series": "control",
+      "epoch": 182,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/182epoch.pth",
+      "size": 373246208,
+      "sha256": "59f2525cb118f44d13de896c48da0278f67894f94677f67912260e7aaccaa437"
+    },
+    {
+      "series": "control",
+      "epoch": 183,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/183epoch.pth",
+      "size": 373246208,
+      "sha256": "2b0740c69c356b7324fffd7e30ffa17b24c93c1c03462670d2e54ec0226077e4"
+    },
+    {
+      "series": "control",
+      "epoch": 184,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/184epoch.pth",
+      "size": 373246208,
+      "sha256": "721bbf77373d9e3e097be918bf498ef999c370169a2485cec61456ec33612dab"
+    },
+    {
+      "series": "control",
+      "epoch": 185,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/185epoch.pth",
+      "size": 373246208,
+      "sha256": "614a783dcc50d4bc4ca3a875ba93957db1a7354a0e807e2bce5827288f6896fe"
+    },
+    {
+      "series": "control",
+      "epoch": 186,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/186epoch.pth",
+      "size": 373246208,
+      "sha256": "726fe7f50f438a8f231d0cd84a8c7e3219dbe613641b2a4250d19d885ddeb880"
+    },
+    {
+      "series": "control",
+      "epoch": 187,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/187epoch.pth",
+      "size": 373246208,
+      "sha256": "0fc4e33098747a478c44335e6572612f4bc510aa6f9f38b819777ff20b3d1059"
+    },
+    {
+      "series": "control",
+      "epoch": 188,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/188epoch.pth",
+      "size": 373246208,
+      "sha256": "b621688dfd9ea0cbde2150234be4daed40adaf53cf88ac857e04c24f2f902d24"
+    },
+    {
+      "series": "control",
+      "epoch": 189,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/189epoch.pth",
+      "size": 373246208,
+      "sha256": "496d6bd7ad10aa6c1d6a5ddeb7379fc9787ac8e2e23f55e2b650028912436cb4"
+    },
+    {
+      "series": "control",
+      "epoch": 190,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/190epoch.pth",
+      "size": 373246208,
+      "sha256": "10ca5bd6a2568fd87423e4b00a5fc5e8b2cb9f4245fc9b7e94da88c248c179bb"
+    },
+    {
+      "series": "control",
+      "epoch": 191,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/191epoch.pth",
+      "size": 373246208,
+      "sha256": "33ddb4b3dead547199ec2017511c2874db39d0a942ae09ddcb1458ded37d9d12"
+    },
+    {
+      "series": "control",
+      "epoch": 192,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/192epoch.pth",
+      "size": 373246208,
+      "sha256": "77e557464ea28a4f13795da8bc653ed003ea3ff566dcbe19731466a0c22ee9dd"
+    },
+    {
+      "series": "control",
+      "epoch": 193,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/193epoch.pth",
+      "size": 373246208,
+      "sha256": "b962bbe16f1e9accf549a707b88fced267389cc882901606c55de4c9c9ae8f2b"
+    },
+    {
+      "series": "control",
+      "epoch": 194,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/194epoch.pth",
+      "size": 373246208,
+      "sha256": "bc45e9adfed7c1005fb7de78c1f5e0466eb56e6516e2657bbf430b27f1c5fea8"
+    },
+    {
+      "series": "control",
+      "epoch": 195,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/195epoch.pth",
+      "size": 373246208,
+      "sha256": "05b2d3c6347e69c2ab500e74ed64988532d94ca445f6a8e1c612fa2e47868f9a"
+    },
+    {
+      "series": "control",
+      "epoch": 196,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/196epoch.pth",
+      "size": 373246208,
+      "sha256": "0cfcba9a369b5610ae7a8a4f3c009e82ba44cd4f117e52dabefeb7639822dae5"
+    },
+    {
+      "series": "control",
+      "epoch": 197,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/197epoch.pth",
+      "size": 373246208,
+      "sha256": "86364232d59e79b75f0ba4aab96e56c6c22d36d8977e8966c3c78787102c36a9"
+    },
+    {
+      "series": "control",
+      "epoch": 198,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/198epoch.pth",
+      "size": 373246208,
+      "sha256": "0f3bb9e5819f31016ed6c285b698898a246167059357966fe51db33b53146d01"
+    },
+    {
+      "series": "control",
+      "epoch": 199,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/199epoch.pth",
+      "size": 373246208,
+      "sha256": "3a3d9a00742714bbc4606ce2ea344cf20f8f0055d526317022473eb5019f47ab"
+    },
+    {
+      "series": "control",
+      "epoch": 200,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/control/model/200epoch.pth",
+      "size": 373246208,
+      "sha256": "bab9630ac4e7a9da85d1097c4e8adfb7e7b42b2ed91952b0ef92abf193bf5730"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 180,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/180epoch.pth",
+      "size": 373231552,
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 181,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/181epoch.pth",
+      "size": 373246208,
+      "sha256": "0a50bf86e1edbc309b00c4bd1b05d6b0ad9fb75a8d905aedbfae41f2b18b86cc"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 182,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/182epoch.pth",
+      "size": 373246208,
+      "sha256": "4ae6e43fca7325b4a2e6039e0850c937886cad5515c161214200849746d95a0e"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 183,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/183epoch.pth",
+      "size": 373246208,
+      "sha256": "7c2707a514f159a55bc1e8a158539e9d4cbe8aeff8c12457a69abec22a4b76c1"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 184,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/184epoch.pth",
+      "size": 373246208,
+      "sha256": "f1e128f986363130ea3e85ab7f0957ba5cb4f0915c13a32c5cd47ebd2eb2cff0"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 185,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/185epoch.pth",
+      "size": 373246208,
+      "sha256": "e5f199c7d964c20626d0536845e18c958b35d9e636ded55561e364e396e3eb21"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 186,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/186epoch.pth",
+      "size": 373246208,
+      "sha256": "aa10686e91db4cef951cf1b6bf9e47a91d3f394b22f674f9b3c5a84216065d7a"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 187,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/187epoch.pth",
+      "size": 373246208,
+      "sha256": "0ecac2280ecca5719c245ffcf4a1907b4b3f2ca2392ab8945d580f05a282be6d"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 188,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/188epoch.pth",
+      "size": 373246208,
+      "sha256": "73ea39ea4f563957d9932c30428d6a05b93b0a264c9c30b7a759cc44b51e3a8f"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 189,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/189epoch.pth",
+      "size": 373246208,
+      "sha256": "eb3012f133376c9fdbf35947e70495777133de45515d29a1e8c3ec62f1405718"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 190,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/190epoch.pth",
+      "size": 373246208,
+      "sha256": "633229e9ee79b242e05f5bf1a7126f947fe3bf608cf1bac6dd4a52b4d000a086"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 191,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/191epoch.pth",
+      "size": 373246208,
+      "sha256": "2f6d6f119def7a719682da53fde7f99c84cb39608000dbbe8357bb2a910502da"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 192,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/192epoch.pth",
+      "size": 373246208,
+      "sha256": "78be84a7b9fb879dfc44cdbb4c12219006169b59f7a337d1df952b51826fff29"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 193,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/193epoch.pth",
+      "size": 373246208,
+      "sha256": "cc7e9a71e64f21632fa303a1286e7d97de3af43a99bccb8634401a3e4818370e"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 194,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/194epoch.pth",
+      "size": 373246208,
+      "sha256": "c74a7b43cb415e54a0a752bf7d4a610470657075f867369a5297882d15357934"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 195,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/195epoch.pth",
+      "size": 373246208,
+      "sha256": "529236f2e7dc5880d17bf00f1f69e34407ca9e8f3544cc61d6a0c8b91f53eaab"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 196,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/196epoch.pth",
+      "size": 373246208,
+      "sha256": "c4da3cbbb20f2b6909ae186b3b72516bc1dde0827bf78e9f62b11f3121b264ba"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 197,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/197epoch.pth",
+      "size": 373246208,
+      "sha256": "7e05c079da9543b75afb8d682ebdd7386da64f659e99ee6c2855d2bc7dd61ff7"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 198,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/198epoch.pth",
+      "size": 373246208,
+      "sha256": "fe25e58b9c0c9ee8f487f54980834243a86e11eb0b1b7624f7d8b3af9b81956c"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 199,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/199epoch.pth",
+      "size": 373246208,
+      "sha256": "26190dffd7e4dae99e6696665b23bc6d7c9ba6eb88c4b126778867f6ebb1673a"
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 200,
+      "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/controlled_retrain_20261023/pilot/quarter_lr/model/200epoch.pth",
+      "size": 373246208,
+      "sha256": "afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70"
+    }
+  ]
+}
