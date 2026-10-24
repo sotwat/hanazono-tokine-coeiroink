@@ -1,0 +1,127 @@
+{
+  "epochs": [
+    100,
+    140,
+    170,
+    180,
+    182,
+    184,
+    200
+  ],
+  "target_lufs": -23.0,
+  "processing": "linear gain only; one-second silence between complete original utterances",
+  "levels": [
+    {
+      "test": "user",
+      "epoch": 100,
+      "gain_db": -3.5199999999999996,
+      "lufs": -23.0,
+      "true_peak_dbtp": -4.89,
+      "samples": 227328
+    },
+    {
+      "test": "user",
+      "epoch": 140,
+      "gain_db": 7.829999999999998,
+      "lufs": -23.01,
+      "true_peak_dbtp": -3.88,
+      "samples": 248832
+    },
+    {
+      "test": "user",
+      "epoch": 170,
+      "gain_db": 7.649999999999999,
+      "lufs": -23.01,
+      "true_peak_dbtp": -4.99,
+      "samples": 249344
+    },
+    {
+      "test": "user",
+      "epoch": 180,
+      "gain_db": 7.600000000000001,
+      "lufs": -23.0,
+      "true_peak_dbtp": -5.26,
+      "samples": 249344
+    },
+    {
+      "test": "user",
+      "epoch": 182,
+      "gain_db": 7.370000000000001,
+      "lufs": -23.0,
+      "true_peak_dbtp": -5.35,
+      "samples": 256000
+    },
+    {
+      "test": "user",
+      "epoch": 184,
+      "gain_db": 7.75,
+      "lufs": -23.01,
+      "true_peak_dbtp": -5.78,
+      "samples": 257024
+    },
+    {
+      "test": "user",
+      "epoch": 200,
+      "gain_db": 7.149999999999999,
+      "lufs": -23.01,
+      "true_peak_dbtp": -4.79,
+      "samples": 246784
+    },
+    {
+      "test": "travel",
+      "epoch": 100,
+      "gain_db": -4.559999999999999,
+      "lufs": -23.01,
+      "true_peak_dbtp": -5.7,
+      "samples": 249856
+    },
+    {
+      "test": "travel",
+      "epoch": 140,
+      "gain_db": 7.0,
+      "lufs": -23.0,
+      "true_peak_dbtp": -5.46,
+      "samples": 281088
+    },
+    {
+      "test": "travel",
+      "epoch": 170,
+      "gain_db": 6.670000000000002,
+      "lufs": -22.99,
+      "true_peak_dbtp": -5.63,
+      "samples": 279552
+    },
+    {
+      "test": "travel",
+      "epoch": 180,
+      "gain_db": 6.66,
+      "lufs": -23.0,
+      "true_peak_dbtp": -5.18,
+      "samples": 283648
+    },
+    {
+      "test": "travel",
+      "epoch": 182,
+      "gain_db": 6.710000000000001,
+      "lufs": -22.99,
+      "true_peak_dbtp": -7.03,
+      "samples": 281600
+    },
+    {
+      "test": "travel",
+      "epoch": 184,
+      "gain_db": 6.859999999999999,
+      "lufs": -23.0,
+      "true_peak_dbtp": -6.68,
+      "samples": 282624
+    },
+    {
+      "test": "travel",
+      "epoch": 200,
+      "gain_db": 6.329999999999998,
+      "lufs": -23.01,
+      "true_peak_dbtp": -5.87,
+      "samples": 282624
+    }
+  ]
+}
