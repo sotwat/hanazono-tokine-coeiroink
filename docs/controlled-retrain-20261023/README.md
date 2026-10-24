@@ -4,6 +4,18 @@
 
 ## 現在の状態
 
+2026-10-24 19:46 JST、controlの完全checkpoint内部epoch200、両scheduler200、両optimizer942/106件の全step200000とmomentum有限値を確認した。未補正200epoch.pthの1049テンソルは完全checkpointのmodelと全件一致。SHA256 `bab9630ac4e7a9da85d1097c4e8adfb7e7b42b2ed91952b0ef92abf193bf5730`。quarter_lrは同じlauncherから183epochへ進み、GPU PID244617の301〜350batch、LR2.444e−5を確認した。ブラウザのアイドル切断表示から同じホストe5080efa989bへ再接続し、学習本体の継続を確認。重複起動なし。
+
+control200の回収・通常8文比較は完了した。[数値・ASR・checkpoint監査](control200_comparison.json)。周期ピーク指標平均は180=0.265、従来再学習200=0.473、今回control200=0.576dB。今回control200は180より6/8文で上昇・2/8文で低下した。母音の高域成分比平均は−28.637→−28.695dBと微減するが、これをノイズ改善とは扱わない。3dB超のグリッド成分は180で公園文に2本、今回control200で本人文・図書館文・会議文・感謝文に各1本。全条件で「6dB超の突出が母音フレームの25%超に存在するピーク」の増加は確認せず、周期指標の差をそのまま知覚ノイズ量・SNRに変換しない。**180よりノイズや総合音質が改善したとは確認できない。聴感確認は未実施。** quarter_lrは200まで継続し、結果を見ずに別条件へ切り替えない。
+
+24WAVは44.1kHz/16bit/mono、PCMクリップ0。180と従来再学習200の16本は前回と完全一致するキャッシュを使い、requestの通常8文・style・速度1を照合した。今回control200の8本のみ新規生成。比較24本は線形ゲインのみ−23.02〜−22.99LUFS、最大−4.22dBTP、サンプル数を保持し、連結PCMも一致。母音伸長・EQ・ノイズ除去・推論重み補正なし。Whisper-smallで今回8本を認識し、本人文の内容一致と他7文の内容保持を補助確認した。数字・句読点・切符の仮名表記差を発音異常とは扱わず、ASRを聴感検証の代わりにしない。
+
+Mac成果物は`output/talk_full_20260917/controlled_retrain_20261023/control200_comparison/`。`listening/user_180_candidate200.wav`は180→今回control200、`user_all_three.wav`は180→従来再学習200→今回control200、各1秒間隔。他7文も同じ構成。隔離エンジン50033は生成後終了、本番アプリと公開ZIPは変更なし。
+
+転送ZIPは373255292bytes、SHA256 `cf1c0badd18ec47157bf9ea66997b556d98afdecbe7d2004aa90f5afe17311a6`。64MiB×5と最終37710972bytesの6部を全size/SHA照合して結合した。Colab直接取得の一部待機をDriveフォルダ`MYCOEIROINK_WORK/tokine_control200_parts`からの取得で補い、canonical全6部を照合。Drive限定で一時変更した自動ダウンロードとポップアップ許可は両方デフォルトへ復元し、実画面を確認した。
+
+再現用`tools/controlled_200_compare.py`はZIP/全モデルhash、checkpoint監査、47音素順序、1049キー・形状・有限値を確認し、既存の隔離runtimeだけに登録する。`--root <比較先> --previous <retrain_comparison_20261023> --cache <pilot_comparison> --bundle <ZIP> --manifest <転送manifest>`で今回の実モデル・全24測定・比較音声まで実行済み。quarter_lr200も同形式のZIPとmanifestを別rootへ渡せる。元の180/181/182の48生成は再実行しない。
+
 2026-10-24 本人が「2epochでは比較する意味がない、進めて」と指示。従前の短期判定による延長保留を取り消し、controlとquarter_lrの両条件を保存済み182から200まで継続する。`bash tools/controlled_start.sh "$pilot" 200`を使用する。第2引数省略は従来どおり182。runの`--max-epoch 200`は実行用設定の終了epochだけを変え、元train.yaml、重み、optimizer、LR系列、損失、録音は維持する。既存のoptimizer stepとschedulerを検査して復元し、各epochを保持する。旧training_complete.jsonのepoch182を200完了と取り違えず、最新checkpoint内部epochとbatchログを確認する。以下の182比較結果は短期観測であり、長期結果の代用にしない。
 
 2026-10-24、両条件の完全checkpointを旧torchでロードし、内部epoch182、G/D全942/106 optimizer状態のstep182000、180/181/182個別モデルとtraining_complete.jsonを確認した。quarter_lrの読込障害からの復旧も成功し、対照2条件の学習部分は完了。新ホストでの復旧launcherも完了済みcheckpointを検出して両条件をスキップした。個別モデルの回収と通常8文×6条件48音声の未補正生成・測定・ASRを完了した。通常LRの182は周期ピークが6/8文で低下したが、高域全体の成分は7/8文で増加。LRを¼にした条件にも一貫した改善はなく、180を超える総合音質や劣化原因の特定はまだ確認できていない。下記の比較結果を参照。最新のホスト・再開情報は共有Obsidianを参照する。
