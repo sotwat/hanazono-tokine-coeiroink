@@ -195,11 +195,16 @@ def run(args):
     config_path = run_dir / 'train.yaml'
     config = yaml.safe_load(config_path.read_text())
     assert config['max_epoch'] == 182 and config['num_iters_per_epoch'] == 1000
+    target_epoch = args.max_epoch
+    assert 182 <= target_epoch <= 200
     assert Path(config['output_dir']) == run_dir / 'model'
     assert config['resume'] and not config['init_param'] and not config['use_amp']
     state = load(run_dir / 'model/checkpoint.pth')
     epoch = state['reporter']['epoch']
-    assert epoch in (180, 181), f'Pilot is already complete or invalid: {epoch}'
+    assert len(state['model']) == 1049 and all(torch.isfinite(v).all() for v in state['model'].values())
+    assert [len(o['state']) for o in state['optimizers']] == [942, 106]
+    assert len(state['schedulers']) == 2
+    assert 180 <= epoch < target_epoch, f'Run is already complete or invalid: {epoch}'
     expected_lr = preparation['arms'][run_dir.name]['learning_rates']
     for i, optimizer in enumerate(state['optimizers']):
         assert abs(optimizer['param_groups'][0]['lr'] - expected_lr[i] * .999875 ** (epoch - 180)) < 1e-14
@@ -208,6 +213,9 @@ def run(args):
             assert float(step) == epoch * 1000
     assert all(s['last_epoch'] == epoch for s in state['schedulers'])
     runtime_config = stage_runtime_audio(run_dir, config, preparation)
+    runtime = yaml.safe_load(runtime_config.read_text())
+    runtime['max_epoch'] = target_epoch
+    runtime_config.write_text(yaml.safe_dump(runtime, allow_unicode=True, sort_keys=False))
     parsed = GANTTSTask.get_parser().parse_args(['--config', str(runtime_config)])
     model = GANTTSTask.build_model(parsed)
     model.load_state_dict(state['model'], strict=True)
@@ -225,11 +233,12 @@ def run(args):
         key, shape = line.split()
         assert len(preprocess(key, {'text': text[key]})['text']) == int(shape.split(',')[0]), key
     assert parsed.token_list == yaml.safe_load((run_dir / 'config180.yaml').read_text())['token_list']
-    preflight = {'epoch': epoch, 'gpu': torch.cuda.get_device_name(), 'arm': run_dir.name,
+    preflight = {'epoch': epoch, 'target_epoch': target_epoch, 'gpu': torch.cuda.get_device_name(), 'arm': run_dir.name,
                  'token_count': 47, 'phoneme_lengths_verified': len(text),
                  'learning_rates': [o.param_groups[0]['lr'] for o in optimizers],
                  'source_checkpoint_sha256': preparation['checkpoint_sha256']}
     (run_dir / 'preflight.json').write_text(json.dumps(preflight, indent=2))
+    (run_dir / f'preflight_{epoch}_to_{target_epoch}.json').write_text(json.dumps(preflight, indent=2))
     print('CONTROLLED_PREFLIGHT_OK', json.dumps(preflight), flush=True)
     del model, optimizers, state
     import gc
@@ -245,11 +254,11 @@ def run(args):
     logging.getLogger().setLevel(getattr(logging, parsed.log_level))
     GANTTSTask.main(cmd=['--config', str(runtime_config)])
     completed = load(run_dir / 'model/checkpoint.pth')
-    assert completed['reporter']['epoch'] == 182
-    assert all((run_dir / f'model/{e}epoch.pth').is_file() for e in (180, 181, 182))
+    assert completed['reporter']['epoch'] == target_epoch
+    assert all((run_dir / f'model/{e}epoch.pth').is_file() for e in range(180, target_epoch + 1))
     assert all(torch.isfinite(v).all() for v in completed['model'].values())
-    assert all(float(m['step']) == 182000 for o in completed['optimizers'] for m in o['state'].values())
-    (run_dir / 'training_complete.json').write_text(json.dumps({'epoch': 182, 'quality': 'not_yet_evaluated', 'arm': run_dir.name}, indent=2))
+    assert all(float(m['step']) == target_epoch * 1000 for o in completed['optimizers'] for m in o['state'].values())
+    (run_dir / 'training_complete.json').write_text(json.dumps({'epoch': target_epoch, 'quality': 'not_yet_evaluated', 'arm': run_dir.name}, indent=2))
     print('PILOT_TRAINING_COMPLETE_QUALITY_NOT_YET_EVALUATED', flush=True)
 
 
@@ -261,6 +270,7 @@ if __name__ == '__main__':
         p.add_argument('--' + name, type=Path, required=True)
     p = commands.add_parser('run')
     p.add_argument('--run-dir', type=Path, required=True)
+    p.add_argument('--max-epoch', type=int, choices=range(182, 201), default=182)
     args = parser.parse_args()
     torch.set_num_threads(4)
     if args.command == 'prepare':

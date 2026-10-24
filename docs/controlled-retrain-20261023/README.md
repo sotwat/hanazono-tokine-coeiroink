@@ -4,6 +4,8 @@
 
 ## 現在の状態
 
+2026-10-24 本人が「2epochでは比較する意味がない、進めて」と指示。従前の短期判定による延長保留を取り消し、controlとquarter_lrの両条件を保存済み182から200まで継続する。`bash tools/controlled_start.sh "$pilot" 200`を使用する。第2引数省略は従来どおり182。runの`--max-epoch 200`は実行用設定の終了epochだけを変え、元train.yaml、重み、optimizer、LR系列、損失、録音は維持する。既存のoptimizer stepとschedulerを検査して復元し、各epochを保持する。旧training_complete.jsonのepoch182を200完了と取り違えず、最新checkpoint内部epochとbatchログを確認する。以下の182比較結果は短期観測であり、長期結果の代用にしない。
+
 2026-10-24、両条件の完全checkpointを旧torchでロードし、内部epoch182、G/D全942/106 optimizer状態のstep182000、180/181/182個別モデルとtraining_complete.jsonを確認した。quarter_lrの読込障害からの復旧も成功し、対照2条件の学習部分は完了。新ホストでの復旧launcherも完了済みcheckpointを検出して両条件をスキップした。個別モデルの回収と通常8文×6条件48音声の未補正生成・測定・ASRを完了した。通常LRの182は周期ピークが6/8文で低下したが、高域全体の成分は7/8文で増加。LRを¼にした条件にも一貫した改善はなく、180を超える総合音質や劣化原因の特定はまだ確認できていない。下記の比較結果を参照。最新のホスト・再開情報は共有Obsidianを参照する。
 
 以下は復旧途中の記録。

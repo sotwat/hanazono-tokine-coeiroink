@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 root="${1:?Pass the prepared pilot directory}"
+target="${2:-182}"
+[[ "$target" =~ ^[0-9]+$ ]] && (( target >= 182 && target <= 200 )) || { echo 'Target must be 182..200'; exit 1; }
 scripts="$(cd "$(dirname "$0")" && pwd)"
 source /content/tokine-202211/bin/activate
 export OMP_NUM_THREADS=1
@@ -15,10 +17,11 @@ import sys, torch
 print(torch.load(sys.argv[1], map_location='cpu')['reporter']['epoch'])
 PY
 )"
-  if test "$epoch" = 182; then
+  if test "$epoch" = "$target"; then
     echo "$arm already finished; preserving its checkpoint"
     continue
   fi
-  python "$scripts/controlled_retrain.py" run --run-dir "$root/$arm" >> "$root/$arm/train.log" 2>&1
+  (( epoch < target )) || { echo "Checkpoint $epoch exceeds requested target $target"; exit 1; }
+  python "$scripts/controlled_retrain.py" run --run-dir "$root/$arm" --max-epoch "$target" >> "$root/$arm/train.log" 2>&1
 done
-echo 'Paired pilot finished. Synthesis and quality comparison are still required.'
+echo "Paired training reached $target. Synthesis and quality comparison are still required."
