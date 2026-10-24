@@ -1,0 +1,762 @@
+{
+  "listening_order": [
+    "180_original",
+    "200_retrained",
+    "control_181",
+    "control_182",
+    "quarter_lr_181",
+    "quarter_lr_182"
+  ],
+  "tests": [
+    "user",
+    "travel",
+    "sibilants",
+    "current",
+    "library",
+    "meeting",
+    "thanks",
+    "park"
+  ],
+  "waveforms_measured": 48,
+  "quality_improved": null,
+  "listening_verified": false,
+  "processing": "linear gain only; no denoising, EQ, stretching or weight correction",
+  "averages": {
+    "180_original": {
+      "comb_mean_db": 0.26538225251391806,
+      "vowel_hf8_rel_db": -28.637452998603123,
+      "rms_dbfs": -30.136268832438635
+    },
+    "200_retrained": {
+      "comb_mean_db": 0.4731411689612869,
+      "vowel_hf8_rel_db": -28.563029196249538,
+      "rms_dbfs": -30.20558895221562
+    },
+    "control_181": {
+      "comb_mean_db": 0.40310315090041154,
+      "vowel_hf8_rel_db": -28.097216786362225,
+      "rms_dbfs": -30.727692711742606
+    },
+    "control_182": {
+      "comb_mean_db": 0.058867766328081314,
+      "vowel_hf8_rel_db": -28.048961182776928,
+      "rms_dbfs": -30.476810206380936
+    },
+    "quarter_lr_181": {
+      "comb_mean_db": 0.19550877347368237,
+      "vowel_hf8_rel_db": -28.569998724944725,
+      "rms_dbfs": -30.308880376167238
+    },
+    "quarter_lr_182": {
+      "comb_mean_db": 0.27482990860050094,
+      "vowel_hf8_rel_db": -28.444584274717727,
+      "rms_dbfs": -30.247353040686072
+    }
+  },
+  "bundle_sha256": "ad5dd85a6f117fc98c7add1b36adc384ba388bdfa761a6744debb025f0a1234c",
+  "measurements": [
+    {
+      "name": "180_original",
+      "test": "user",
+      "comb_mean_db": 0.23737721518998378,
+      "vowel_hf8_rel_db": -28.0876041749952,
+      "rms_dbfs": -30.85788796499749,
+      "pcm_clip_count": 0,
+      "seconds": 5.6540589569161
+    },
+    {
+      "name": "180_original",
+      "test": "travel",
+      "comb_mean_db": 0.2717946324865399,
+      "vowel_hf8_rel_db": -27.329877392921848,
+      "rms_dbfs": -29.79806248536874,
+      "pcm_clip_count": 0,
+      "seconds": 6.431927437641724
+    },
+    {
+      "name": "180_original",
+      "test": "sibilants",
+      "comb_mean_db": 0.0933971013385284,
+      "vowel_hf8_rel_db": -26.400484689564856,
+      "rms_dbfs": -31.507882356707356,
+      "pcm_clip_count": 0,
+      "seconds": 7.035646258503402
+    },
+    {
+      "name": "180_original",
+      "test": "current",
+      "comb_mean_db": -0.1627517503694984,
+      "vowel_hf8_rel_db": -29.77381408169991,
+      "rms_dbfs": -29.243655112171698,
+      "pcm_clip_count": 0,
+      "seconds": 6.629297052154195
+    },
+    {
+      "name": "180_original",
+      "test": "library",
+      "comb_mean_db": 0.6720091950204167,
+      "vowel_hf8_rel_db": -30.377162293932543,
+      "rms_dbfs": -29.667164776728775,
+      "pcm_clip_count": 0,
+      "seconds": 6.931156462585034
+    },
+    {
+      "name": "180_original",
+      "test": "meeting",
+      "comb_mean_db": 0.0688156243665499,
+      "vowel_hf8_rel_db": -28.121568890700523,
+      "rms_dbfs": -30.234760986424547,
+      "pcm_clip_count": 0,
+      "seconds": 6.780226757369615
+    },
+    {
+      "name": "180_original",
+      "test": "thanks",
+      "comb_mean_db": 0.3870267090573909,
+      "vowel_hf8_rel_db": -33.03175064930778,
+      "rms_dbfs": -28.889777560383088,
+      "pcm_clip_count": 0,
+      "seconds": 5.584399092970521
+    },
+    {
+      "name": "180_original",
+      "test": "park",
+      "comb_mean_db": 0.5553892930214334,
+      "vowel_hf8_rel_db": -25.977361815702338,
+      "rms_dbfs": -30.890959416727377,
+      "pcm_clip_count": 0,
+      "seconds": 5.108390022675737
+    },
+    {
+      "name": "200_retrained",
+      "test": "user",
+      "comb_mean_db": 0.4138419293879327,
+      "vowel_hf8_rel_db": -28.083377532856485,
+      "rms_dbfs": -30.771581368632233,
+      "pcm_clip_count": 0,
+      "seconds": 5.445079365079365
+    },
+    {
+      "name": "200_retrained",
+      "test": "travel",
+      "comb_mean_db": 0.5109334111795618,
+      "vowel_hf8_rel_db": -28.26795385535821,
+      "rms_dbfs": -29.84287452688177,
+      "pcm_clip_count": 0,
+      "seconds": 6.327437641723356
+    },
+    {
+      "name": "200_retrained",
+      "test": "sibilants",
+      "comb_mean_db": 0.18765006059364583,
+      "vowel_hf8_rel_db": -26.117713967309587,
+      "rms_dbfs": -31.53485982720664,
+      "pcm_clip_count": 0,
+      "seconds": 6.826666666666667
+    },
+    {
+      "name": "200_retrained",
+      "test": "current",
+      "comb_mean_db": 0.7313762381116533,
+      "vowel_hf8_rel_db": -29.541041034728067,
+      "rms_dbfs": -29.41581595083342,
+      "pcm_clip_count": 0,
+      "seconds": 6.606077097505669
+    },
+    {
+      "name": "200_retrained",
+      "test": "library",
+      "comb_mean_db": 0.43778156076696,
+      "vowel_hf8_rel_db": -30.104253473269477,
+      "rms_dbfs": -29.829594111614036,
+      "pcm_clip_count": 0,
+      "seconds": 6.8034467120181406
+    },
+    {
+      "name": "200_retrained",
+      "test": "meeting",
+      "comb_mean_db": 0.25882899330623677,
+      "vowel_hf8_rel_db": -27.595388650470408,
+      "rms_dbfs": -30.46650693116627,
+      "pcm_clip_count": 0,
+      "seconds": 6.548027210884354
+    },
+    {
+      "name": "200_retrained",
+      "test": "thanks",
+      "comb_mean_db": 0.7952051864023187,
+      "vowel_hf8_rel_db": -32.969293520101864,
+      "rms_dbfs": -28.973591315061206,
+      "pcm_clip_count": 0,
+      "seconds": 5.410249433106576
+    },
+    {
+      "name": "200_retrained",
+      "test": "park",
+      "comb_mean_db": 0.44951197194198544,
+      "vowel_hf8_rel_db": -25.82521153590221,
+      "rms_dbfs": -30.809887586329417,
+      "pcm_clip_count": 0,
+      "seconds": 5.073560090702948
+    },
+    {
+      "name": "control_181",
+      "test": "user",
+      "comb_mean_db": 0.31363436871415057,
+      "vowel_hf8_rel_db": -27.264125190989223,
+      "rms_dbfs": -31.696153267767926,
+      "pcm_clip_count": 0,
+      "seconds": 5.677278911564626
+    },
+    {
+      "name": "control_181",
+      "test": "travel",
+      "comb_mean_db": -0.0026463883402699064,
+      "vowel_hf8_rel_db": -27.67154466909905,
+      "rms_dbfs": -30.179913172854352,
+      "pcm_clip_count": 0,
+      "seconds": 6.443537414965986
+    },
+    {
+      "name": "control_181",
+      "test": "sibilants",
+      "comb_mean_db": -0.22666953329498335,
+      "vowel_hf8_rel_db": -25.397074305109093,
+      "rms_dbfs": -32.301718367202945,
+      "pcm_clip_count": 0,
+      "seconds": 7.163356009070295
+    },
+    {
+      "name": "control_181",
+      "test": "current",
+      "comb_mean_db": 0.3685126846425207,
+      "vowel_hf8_rel_db": -29.302140679885177,
+      "rms_dbfs": -29.891760411646327,
+      "pcm_clip_count": 0,
+      "seconds": 6.629297052154195
+    },
+    {
+      "name": "control_181",
+      "test": "library",
+      "comb_mean_db": 0.2406270861911165,
+      "vowel_hf8_rel_db": -30.10974171445854,
+      "rms_dbfs": -30.312412744502907,
+      "pcm_clip_count": 0,
+      "seconds": 6.8034467120181406
+    },
+    {
+      "name": "control_181",
+      "test": "meeting",
+      "comb_mean_db": 0.21281544189650123,
+      "vowel_hf8_rel_db": -27.310351244237797,
+      "rms_dbfs": -30.8502898525364,
+      "pcm_clip_count": 0,
+      "seconds": 6.698956916099773
+    },
+    {
+      "name": "control_181",
+      "test": "thanks",
+      "comb_mean_db": 1.0601586657256297,
+      "vowel_hf8_rel_db": -32.81332662746192,
+      "rms_dbfs": -29.32084763077973,
+      "pcm_clip_count": 0,
+      "seconds": 5.596009070294785
+    },
+    {
+      "name": "control_181",
+      "test": "park",
+      "comb_mean_db": 1.2583928816686267,
+      "vowel_hf8_rel_db": -24.90942985965699,
+      "rms_dbfs": -31.26844624665026,
+      "pcm_clip_count": 0,
+      "seconds": 5.0967800453514736
+    },
+    {
+      "name": "control_182",
+      "test": "user",
+      "comb_mean_db": 0.2278419120972464,
+      "vowel_hf8_rel_db": -27.09458771979255,
+      "rms_dbfs": -31.161468711630228,
+      "pcm_clip_count": 0,
+      "seconds": 5.630839002267574
+    },
+    {
+      "name": "control_182",
+      "test": "travel",
+      "comb_mean_db": -0.19481283778538608,
+      "vowel_hf8_rel_db": -27.674803681692545,
+      "rms_dbfs": -30.03268530527507,
+      "pcm_clip_count": 0,
+      "seconds": 6.466757369614513
+    },
+    {
+      "name": "control_182",
+      "test": "sibilants",
+      "comb_mean_db": -0.2592863468252292,
+      "vowel_hf8_rel_db": -25.4419826742837,
+      "rms_dbfs": -31.742993181810867,
+      "pcm_clip_count": 0,
+      "seconds": 6.768616780045352
+    },
+    {
+      "name": "control_182",
+      "test": "current",
+      "comb_mean_db": -0.28046563384322726,
+      "vowel_hf8_rel_db": -29.131984414046084,
+      "rms_dbfs": -29.69170505271906,
+      "pcm_clip_count": 0,
+      "seconds": 6.559637188208617
+    },
+    {
+      "name": "control_182",
+      "test": "library",
+      "comb_mean_db": 0.16026303494565752,
+      "vowel_hf8_rel_db": -30.247214722210003,
+      "rms_dbfs": -29.92878551109268,
+      "pcm_clip_count": 0,
+      "seconds": 6.8034467120181406
+    },
+    {
+      "name": "control_182",
+      "test": "meeting",
+      "comb_mean_db": 0.2657110691794775,
+      "vowel_hf8_rel_db": -27.198716461632312,
+      "rms_dbfs": -30.805287520169674,
+      "pcm_clip_count": 0,
+      "seconds": 6.733786848072563
+    },
+    {
+      "name": "control_182",
+      "test": "thanks",
+      "comb_mean_db": 0.82318837699365,
+      "vowel_hf8_rel_db": -32.42976037599967,
+      "rms_dbfs": -29.18119682520816,
+      "pcm_clip_count": 0,
+      "seconds": 5.607619047619048
+    },
+    {
+      "name": "control_182",
+      "test": "park",
+      "comb_mean_db": -0.27149744413753835,
+      "vowel_hf8_rel_db": -25.172639412558556,
+      "rms_dbfs": -31.27035954314174,
+      "pcm_clip_count": 0,
+      "seconds": 5.061950113378685
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "user",
+      "comb_mean_db": 0.43972882728463414,
+      "vowel_hf8_rel_db": -27.78373986482027,
+      "rms_dbfs": -31.040540936504332,
+      "pcm_clip_count": 0,
+      "seconds": 5.61922902494331
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "travel",
+      "comb_mean_db": -0.10302395665350078,
+      "vowel_hf8_rel_db": -27.687104266958013,
+      "rms_dbfs": -29.827646186193878,
+      "pcm_clip_count": 0,
+      "seconds": 6.443537414965986
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "sibilants",
+      "comb_mean_db": 0.30795452095604964,
+      "vowel_hf8_rel_db": -25.61618567955319,
+      "rms_dbfs": -31.80500041392726,
+      "pcm_clip_count": 0,
+      "seconds": 7.024036281179138
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "current",
+      "comb_mean_db": 0.015251793781385374,
+      "vowel_hf8_rel_db": -29.7296505040112,
+      "rms_dbfs": -29.527792170437387,
+      "pcm_clip_count": 0,
+      "seconds": 6.594467120181406
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "library",
+      "comb_mean_db": 0.31609448227631737,
+      "vowel_hf8_rel_db": -30.43866958130069,
+      "rms_dbfs": -29.805737309369903,
+      "pcm_clip_count": 0,
+      "seconds": 6.907936507936508
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "meeting",
+      "comb_mean_db": -0.04208275973397486,
+      "vowel_hf8_rel_db": -28.39792991860533,
+      "rms_dbfs": -30.31256577722209,
+      "pcm_clip_count": 0,
+      "seconds": 6.733786848072563
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "thanks",
+      "comb_mean_db": 0.6782427328395859,
+      "vowel_hf8_rel_db": -33.13771865539524,
+      "rms_dbfs": -29.088251695819398,
+      "pcm_clip_count": 0,
+      "seconds": 5.537959183673469
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "park",
+      "comb_mean_db": -0.04809545296103788,
+      "vowel_hf8_rel_db": -25.768991328913863,
+      "rms_dbfs": -31.063508519863664,
+      "pcm_clip_count": 0,
+      "seconds": 5.0967800453514736
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "user",
+      "comb_mean_db": 0.11852224204610744,
+      "vowel_hf8_rel_db": -27.64805618141122,
+      "rms_dbfs": -31.001359301174016,
+      "pcm_clip_count": 0,
+      "seconds": 5.561179138321996
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "travel",
+      "comb_mean_db": -0.011238610438643427,
+      "vowel_hf8_rel_db": -27.54445226659626,
+      "rms_dbfs": -29.758016985282545,
+      "pcm_clip_count": 0,
+      "seconds": 6.431927437641724
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "sibilants",
+      "comb_mean_db": 0.25635305390058627,
+      "vowel_hf8_rel_db": -25.701591178998928,
+      "rms_dbfs": -31.661916824312435,
+      "pcm_clip_count": 0,
+      "seconds": 7.047256235827664
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "current",
+      "comb_mean_db": 0.07016736755929914,
+      "vowel_hf8_rel_db": -29.710468295304196,
+      "rms_dbfs": -29.430478443120478,
+      "pcm_clip_count": 0,
+      "seconds": 6.582857142857143
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "library",
+      "comb_mean_db": 0.4680836496334501,
+      "vowel_hf8_rel_db": -30.664347152454617,
+      "rms_dbfs": -29.752216444699155,
+      "pcm_clip_count": 0,
+      "seconds": 6.873106575963718
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "meeting",
+      "comb_mean_db": 0.5301902530200117,
+      "vowel_hf8_rel_db": -27.98766170846822,
+      "rms_dbfs": -30.39732970659088,
+      "pcm_clip_count": 0,
+      "seconds": 6.757006802721088
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "thanks",
+      "comb_mean_db": 0.46083675183739314,
+      "vowel_hf8_rel_db": -32.943147420309195,
+      "rms_dbfs": -29.02519416682661,
+      "pcm_clip_count": 0,
+      "seconds": 5.5147392290249435
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "park",
+      "comb_mean_db": 0.3057245612458033,
+      "vowel_hf8_rel_db": -25.3569499941992,
+      "rms_dbfs": -30.952312453482442,
+      "pcm_clip_count": 0,
+      "seconds": 5.085170068027211
+    }
+  ],
+  "relative_to_180": {
+    "200_retrained": {
+      "comb_lower_sentences": 2,
+      "hf8_lower_sentences": 1
+    },
+    "control_181": {
+      "comb_lower_sentences": 3,
+      "hf8_lower_sentences": 1
+    },
+    "control_182": {
+      "comb_lower_sentences": 6,
+      "hf8_lower_sentences": 1
+    },
+    "quarter_lr_181": {
+      "comb_lower_sentences": 4,
+      "hf8_lower_sentences": 4
+    },
+    "quarter_lr_182": {
+      "comb_lower_sentences": 4,
+      "hf8_lower_sentences": 2
+    }
+  },
+  "asr_transcripts": [
+    {
+      "name": "180_original",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ"
+    },
+    {
+      "name": "180_original",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。キッドを忘れないでください。"
+    },
+    {
+      "name": "180_original",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "180_original",
+      "test": "current",
+      "transcript": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。"
+    },
+    {
+      "name": "180_original",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから友達と駅前で待ち合わせます。"
+    },
+    {
+      "name": "180_original",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2回の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "180_original",
+      "test": "thanks",
+      "transcript": "コント、それは嬉しいね。ありがとう。また一緒に遊びに行こう。"
+    },
+    {
+      "name": "180_original",
+      "test": "park",
+      "transcript": "夜の公園は静かで遠くから虫の声が聞こえてきます。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ"
+    },
+    {
+      "name": "200_retrained",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。きっとお忘れないでください。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "current",
+      "transcript": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから友達と駅前で待ち合わせます。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2階の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "200_retrained",
+      "test": "thanks",
+      "transcript": "本当 それは嬉しいねありがとう また一緒に遊びに行こう"
+    },
+    {
+      "name": "200_retrained",
+      "test": "park",
+      "transcript": "夜の公園は静かで遠くから虫の声が聞こえてきます。"
+    },
+    {
+      "name": "control_181",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね、こんなに長く外にいるつもりはなかったんだよ。"
+    },
+    {
+      "name": "control_181",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。キップを忘れないでください。"
+    },
+    {
+      "name": "control_181",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "control_181",
+      "test": "current",
+      "transcript": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。"
+    },
+    {
+      "name": "control_181",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから、友達と駅前で待ち合わせます。"
+    },
+    {
+      "name": "control_181",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2階の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "control_181",
+      "test": "thanks",
+      "transcript": "本当それは嬉しいねありがとうまた一緒に遊びに行こう"
+    },
+    {
+      "name": "control_181",
+      "test": "park",
+      "transcript": "夜の公園は静かで遠くから虫の声が聞こえてきます。"
+    },
+    {
+      "name": "control_182",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ"
+    },
+    {
+      "name": "control_182",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。きっと忘れないでください。"
+    },
+    {
+      "name": "control_182",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "control_182",
+      "test": "current",
+      "transcript": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。"
+    },
+    {
+      "name": "control_182",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから、友達と駅前で待ち合わせます。"
+    },
+    {
+      "name": "control_182",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2階の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "control_182",
+      "test": "thanks",
+      "transcript": "本当それは嬉しいねありがとうまた一緒に遊びに行こう"
+    },
+    {
+      "name": "control_182",
+      "test": "park",
+      "transcript": "夜の公園は静かで遠くから虫の声が聞こえてきます。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね こんなに長く外にいるつもりはなかったんだよ"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。きっと忘れないでください。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "current",
+      "transcript": "でも、このまま博士がくれた曲を歌うだけじゃ、私の気持ちを伝えきれないと思って。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから、友達と行き前で待ち合わせます。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2回の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "thanks",
+      "transcript": "本当、それは嬉しいね。ありがとう。また一緒に遊びに行こう。"
+    },
+    {
+      "name": "quarter_lr_181",
+      "test": "park",
+      "transcript": "夜の後編は静かで遠くから虫の声が聞こえてきます。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "user",
+      "transcript": "迷惑かけちゃってごめんね、こんなに長く外にいるつもりはなかったんだよ。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "travel",
+      "transcript": "東京から京都まで新幹線で旅行します。きっとお忘れないでください。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "sibilants",
+      "transcript": "静かな朝、涼しい風が吹いています。写真を撮って一緒に出発しましょう。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "current",
+      "transcript": "でもこのまま博士がくれた曲を歌うだけじゃ私の気持ちを伝えきれないと思って"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "library",
+      "transcript": "おはようございます。今日は図書館で本を借りてから、友達と行き前で待ち合わせます。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "meeting",
+      "transcript": "明日の午後3時に2回の会議室へ来てください。資料は25部用意しました。"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "thanks",
+      "transcript": "本当それは嬉しいねありがとうまた一緒に遊びに行こう"
+    },
+    {
+      "name": "quarter_lr_182",
+      "test": "park",
+      "transcript": "夜の後編は静かで遠くから虫の声が聞こえてきます。"
+    }
+  ],
+  "limitations": [
+    "One training run per arm; no statistical significance established.",
+    "High-frequency speech energy and periodic peak indicators are not noise SNR or overall quality.",
+    "ASR differences do not establish audible pronunciation errors.",
+    "Subjective voice quality and listening not verified.",
+    "Pilot models are epochs181/182; they are not new epoch200 models."
+  ]
+}
