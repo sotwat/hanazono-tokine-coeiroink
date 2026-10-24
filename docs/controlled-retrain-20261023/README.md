@@ -1,8 +1,21 @@
 # 180epoch以降の劣化を切り分ける再学習
 
+## Quarter LR epoch 200 comparison (2026-10-25)
+
+Quarter LR completed epoch 200. After the old host ended, a normal T4 connection on host 85c5778453ef and the existing Google Drive mount recovered the actual files. Complete checkpoint epoch and both schedulers are 200; G/D optimizer states contain 942/106 entries, all at step 200000 with finite momentum. The individual model has 1049 finite tensors, exactly matching checkpoint model tensors. SHA256: `afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70`. No duplicate training was started.
+
+[Measurements, ASR and audit](quarter200_comparison.json). The same eight ordinary sentences give periodic-peak means of 0.265 dB for original 180, 0.473 for previous retrained 200, and 0.318 for quarter LR 200. Four sentences decreased and four increased relative to 180. This does not establish consistent noise or overall quality improvement. Listening verification remains unperformed. High-band energy is not noise quantity.
+
+All 24 raw files have zero clipped samples. Listening files use linear gain only, -23.02 to -22.99 LUFS, maximum -4.22 dBTP, with original sample counts preserved. No vowel stretching, EQ, denoising or inference weight correction. The user sentence's ASR preserves content; travel/library recognition differences remain unseparated from possible pronunciation errors.
+
+Local results: `controlled_retrain_20261023/quarter200_comparison/`. Listening order for `user_180_candidate200.wav` is original 180 then quarter 200. The three-way file adds previous retrained 200 in the middle. Transfer ZIP: 373255339 bytes, SHA256 `36b4def58253f31982a4117a095f6ec7f3fc13c84ca13b09cdec1e99dda9b6ec`; all six parts and combined ZIP verified. Temporary Drive-only download/popup permissions were restored to defaults.
+
+Both arms reaching 200 does not complete the quality-improvement request. The requested top five across saved 100-200 models is still pending uniform eight-sentence evaluation. Initial skill research found no dedicated ranking skill; adjacent `kunitoki/sonic-skills/audio-artifacts-debug` addresses realtime DSP faults, insufficient for TTS ranking, so it was not installed. Primary-source MoSQITo suitability/license research has started but no adoption decision or new metric implementation has occurred.
+
+
 2026-10-23。本人の依頼は、学習方法の原因を切り分けて再学習し、未補正の出力音声で音質改善を確かめること。前回の推論用重み補正はこの依頼の完了ではない。
 
-## 現在の状態
+## control200 completion record (2026-10-24)
 
 2026-10-24 19:46 JST、controlの完全checkpoint内部epoch200、両scheduler200、両optimizer942/106件の全step200000とmomentum有限値を確認した。未補正200epoch.pthの1049テンソルは完全checkpointのmodelと全件一致。SHA256 `bab9630ac4e7a9da85d1097c4e8adfb7e7b42b2ed91952b0ef92abf193bf5730`。quarter_lrは同じlauncherから183epochへ進み、GPU PID244617の301〜350batch、LR2.444e−5を確認した。ブラウザのアイドル切断表示から同じホストe5080efa989bへ再接続し、学習本体の継続を確認。重複起動なし。
 
