@@ -1,0 +1,17 @@
+[
+  {
+    "file": "pilot/control/model/180epoch.pth",
+    "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60",
+    "mel_buffer_exact_match": true
+  },
+  {
+    "file": "control200_comparison/models/control_200.pth",
+    "sha256": "bab9630ac4e7a9da85d1097c4e8adfb7e7b42b2ed91952b0ef92abf193bf5730",
+    "mel_buffer_exact_match": true
+  },
+  {
+    "file": "quarter200_comparison/models/quarter_lr_200.pth",
+    "sha256": "afb53f814ce406dc39f2965bc2783cd187fe05549d92fced972fa2bd0f107c70",
+    "mel_buffer_exact_match": true
+  }
+]

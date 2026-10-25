@@ -1,5 +1,9 @@
 # 180epoch以降の劣化を切り分ける再学習
 
+## Training objective audit and isolated G/D condition (2026-10-25)
+
+See [training-objective-audit.md](training-objective-audit.md). The saved mel projection is identical at180 and both200 endpoints. It has magnitude-domain null directions, but all32 ordinary-waveform synthetic grid/noise perturbations increase mel loss: this does not establish a spectral-loss defect as the cause. Static G/D update/cache/gradient-clear inspection found no swapped update. A new `prepare-split` / `controlled_split_start.sh` path isolates D-only quarter LR, preserving G's control LR and full180 optimizer history. It does not restart either completed arm or establish improvement before untreated speech comparison. Runtime preparation/start evidence is recorded in Obsidian.
+
 ## Full saved-model proxy ranking collected (2026-10-25)
 
 All 34 missing control/quarter models183–199 have been recovered through the normal browser UI and matched to the independent series-specific size/SHA inventory. Control183 was assembled from 35 checked pieces; control184 used 45 pieces. Once network throughput recovered, the remaining 32 models downloaded individually from Drive. No new GPU allocation or training was started. `tools/ranking_download_verify.js ROOT INVENTORY SERIES EPOCH [DOWNLOADS]` verifies a completed browser download, distinguishes same-name models by SHA and refuses to overwrite a mismatching destination.

@@ -1,0 +1,828 @@
+{
+  "model_sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60",
+  "index_sha256": "3f6aa859e65a47faa711510be8203bf99ccf056819f689dd5493714dfe256029",
+  "mel_matrix_sha256": "363dad7295d8c6696270892a2edb87a6545195c8ed9391f4980edeebeb7afc6c",
+  "fft_bin_hz": 21.533203125,
+  "bands": [
+    {
+      "band": 0,
+      "low_hz": 21.533203125,
+      "high_hz": 86.1328125,
+      "bins": 4
+    },
+    {
+      "band": 1,
+      "low_hz": 64.599609375,
+      "high_hz": 129.19921875,
+      "bins": 4
+    },
+    {
+      "band": 2,
+      "low_hz": 107.666015625,
+      "high_hz": 193.798828125,
+      "bins": 5
+    },
+    {
+      "band": 3,
+      "low_hz": 150.732421875,
+      "high_hz": 236.865234375,
+      "bins": 5
+    },
+    {
+      "band": 4,
+      "low_hz": 215.33203125,
+      "high_hz": 279.931640625,
+      "bins": 4
+    },
+    {
+      "band": 5,
+      "low_hz": 258.3984375,
+      "high_hz": 344.53125,
+      "bins": 5
+    },
+    {
+      "band": 6,
+      "low_hz": 301.46484375,
+      "high_hz": 387.59765625,
+      "bins": 5
+    },
+    {
+      "band": 7,
+      "low_hz": 366.064453125,
+      "high_hz": 430.6640625,
+      "bins": 4
+    },
+    {
+      "band": 8,
+      "low_hz": 409.130859375,
+      "high_hz": 473.73046875,
+      "bins": 4
+    },
+    {
+      "band": 9,
+      "low_hz": 452.197265625,
+      "high_hz": 538.330078125,
+      "bins": 5
+    },
+    {
+      "band": 10,
+      "low_hz": 495.263671875,
+      "high_hz": 581.396484375,
+      "bins": 5
+    },
+    {
+      "band": 11,
+      "low_hz": 559.86328125,
+      "high_hz": 624.462890625,
+      "bins": 4
+    },
+    {
+      "band": 12,
+      "low_hz": 602.9296875,
+      "high_hz": 689.0625,
+      "bins": 5
+    },
+    {
+      "band": 13,
+      "low_hz": 645.99609375,
+      "high_hz": 732.12890625,
+      "bins": 5
+    },
+    {
+      "band": 14,
+      "low_hz": 710.595703125,
+      "high_hz": 775.1953125,
+      "bins": 4
+    },
+    {
+      "band": 15,
+      "low_hz": 753.662109375,
+      "high_hz": 818.26171875,
+      "bins": 4
+    },
+    {
+      "band": 16,
+      "low_hz": 796.728515625,
+      "high_hz": 882.861328125,
+      "bins": 5
+    },
+    {
+      "band": 17,
+      "low_hz": 839.794921875,
+      "high_hz": 925.927734375,
+      "bins": 5
+    },
+    {
+      "band": 18,
+      "low_hz": 904.39453125,
+      "high_hz": 968.994140625,
+      "bins": 4
+    },
+    {
+      "band": 19,
+      "low_hz": 947.4609375,
+      "high_hz": 1033.59375,
+      "bins": 5
+    },
+    {
+      "band": 20,
+      "low_hz": 990.52734375,
+      "high_hz": 1076.66015625,
+      "bins": 5
+    },
+    {
+      "band": 21,
+      "low_hz": 1055.126953125,
+      "high_hz": 1141.259765625,
+      "bins": 5
+    },
+    {
+      "band": 22,
+      "low_hz": 1098.193359375,
+      "high_hz": 1205.859375,
+      "bins": 6
+    },
+    {
+      "band": 23,
+      "low_hz": 1162.79296875,
+      "high_hz": 1270.458984375,
+      "bins": 6
+    },
+    {
+      "band": 24,
+      "low_hz": 1227.392578125,
+      "high_hz": 1335.05859375,
+      "bins": 6
+    },
+    {
+      "band": 25,
+      "low_hz": 1291.9921875,
+      "high_hz": 1399.658203125,
+      "bins": 6
+    },
+    {
+      "band": 26,
+      "low_hz": 1356.591796875,
+      "high_hz": 1464.2578125,
+      "bins": 6
+    },
+    {
+      "band": 27,
+      "low_hz": 1421.19140625,
+      "high_hz": 1550.390625,
+      "bins": 7
+    },
+    {
+      "band": 28,
+      "low_hz": 1485.791015625,
+      "high_hz": 1636.5234375,
+      "bins": 8
+    },
+    {
+      "band": 29,
+      "low_hz": 1571.923828125,
+      "high_hz": 1722.65625,
+      "bins": 8
+    },
+    {
+      "band": 30,
+      "low_hz": 1658.056640625,
+      "high_hz": 1808.7890625,
+      "bins": 8
+    },
+    {
+      "band": 31,
+      "low_hz": 1744.189453125,
+      "high_hz": 1894.921875,
+      "bins": 8
+    },
+    {
+      "band": 32,
+      "low_hz": 1830.322265625,
+      "high_hz": 2002.587890625,
+      "bins": 9
+    },
+    {
+      "band": 33,
+      "low_hz": 1916.455078125,
+      "high_hz": 2110.25390625,
+      "bins": 10
+    },
+    {
+      "band": 34,
+      "low_hz": 2024.12109375,
+      "high_hz": 2217.919921875,
+      "bins": 10
+    },
+    {
+      "band": 35,
+      "low_hz": 2131.787109375,
+      "high_hz": 2325.5859375,
+      "bins": 10
+    },
+    {
+      "band": 36,
+      "low_hz": 2239.453125,
+      "high_hz": 2454.78515625,
+      "bins": 11
+    },
+    {
+      "band": 37,
+      "low_hz": 2347.119140625,
+      "high_hz": 2583.984375,
+      "bins": 12
+    },
+    {
+      "band": 38,
+      "low_hz": 2476.318359375,
+      "high_hz": 2713.18359375,
+      "bins": 12
+    },
+    {
+      "band": 39,
+      "low_hz": 2605.517578125,
+      "high_hz": 2863.916015625,
+      "bins": 13
+    },
+    {
+      "band": 40,
+      "low_hz": 2734.716796875,
+      "high_hz": 3014.6484375,
+      "bins": 14
+    },
+    {
+      "band": 41,
+      "low_hz": 2885.44921875,
+      "high_hz": 3165.380859375,
+      "bins": 14
+    },
+    {
+      "band": 42,
+      "low_hz": 3036.181640625,
+      "high_hz": 3337.646484375,
+      "bins": 15
+    },
+    {
+      "band": 43,
+      "low_hz": 3186.9140625,
+      "high_hz": 3509.912109375,
+      "bins": 16
+    },
+    {
+      "band": 44,
+      "low_hz": 3359.1796875,
+      "high_hz": 3703.7109375,
+      "bins": 17
+    },
+    {
+      "band": 45,
+      "low_hz": 3531.4453125,
+      "high_hz": 3897.509765625,
+      "bins": 18
+    },
+    {
+      "band": 46,
+      "low_hz": 3725.244140625,
+      "high_hz": 4091.30859375,
+      "bins": 18
+    },
+    {
+      "band": 47,
+      "low_hz": 3919.04296875,
+      "high_hz": 4306.640625,
+      "bins": 19
+    },
+    {
+      "band": 48,
+      "low_hz": 4112.841796875,
+      "high_hz": 4543.505859375,
+      "bins": 21
+    },
+    {
+      "band": 49,
+      "low_hz": 4328.173828125,
+      "high_hz": 4780.37109375,
+      "bins": 22
+    },
+    {
+      "band": 50,
+      "low_hz": 4565.0390625,
+      "high_hz": 5017.236328125,
+      "bins": 22
+    },
+    {
+      "band": 51,
+      "low_hz": 4801.904296875,
+      "high_hz": 5297.16796875,
+      "bins": 24
+    },
+    {
+      "band": 52,
+      "low_hz": 5038.76953125,
+      "high_hz": 5555.56640625,
+      "bins": 25
+    },
+    {
+      "band": 53,
+      "low_hz": 5318.701171875,
+      "high_hz": 5857.03125,
+      "bins": 26
+    },
+    {
+      "band": 54,
+      "low_hz": 5577.099609375,
+      "high_hz": 6158.49609375,
+      "bins": 28
+    },
+    {
+      "band": 55,
+      "low_hz": 5878.564453125,
+      "high_hz": 6481.494140625,
+      "bins": 29
+    },
+    {
+      "band": 56,
+      "low_hz": 6180.029296875,
+      "high_hz": 6826.025390625,
+      "bins": 31
+    },
+    {
+      "band": 57,
+      "low_hz": 6503.02734375,
+      "high_hz": 7192.08984375,
+      "bins": 33
+    },
+    {
+      "band": 58,
+      "low_hz": 6847.55859375,
+      "high_hz": 7558.154296875,
+      "bins": 34
+    },
+    {
+      "band": 59,
+      "low_hz": 7213.623046875,
+      "high_hz": 7945.751953125,
+      "bins": 35
+    },
+    {
+      "band": 60,
+      "low_hz": 7579.6875,
+      "high_hz": 8376.416015625,
+      "bins": 38
+    },
+    {
+      "band": 61,
+      "low_hz": 7967.28515625,
+      "high_hz": 8807.080078125,
+      "bins": 40
+    },
+    {
+      "band": 62,
+      "low_hz": 8397.94921875,
+      "high_hz": 9259.27734375,
+      "bins": 41
+    },
+    {
+      "band": 63,
+      "low_hz": 8828.61328125,
+      "high_hz": 9754.541015625,
+      "bins": 44
+    },
+    {
+      "band": 64,
+      "low_hz": 9280.810546875,
+      "high_hz": 10271.337890625,
+      "bins": 47
+    },
+    {
+      "band": 65,
+      "low_hz": 9776.07421875,
+      "high_hz": 10788.134765625,
+      "bins": 48
+    },
+    {
+      "band": 66,
+      "low_hz": 10292.87109375,
+      "high_hz": 11369.53125,
+      "bins": 51
+    },
+    {
+      "band": 67,
+      "low_hz": 10809.66796875,
+      "high_hz": 11950.927734375,
+      "bins": 54
+    },
+    {
+      "band": 68,
+      "low_hz": 11391.064453125,
+      "high_hz": 12575.390625,
+      "bins": 56
+    },
+    {
+      "band": 69,
+      "low_hz": 11972.4609375,
+      "high_hz": 13242.919921875,
+      "bins": 60
+    },
+    {
+      "band": 70,
+      "low_hz": 12596.923828125,
+      "high_hz": 13931.982421875,
+      "bins": 63
+    },
+    {
+      "band": 71,
+      "low_hz": 13264.453125,
+      "high_hz": 14664.111328125,
+      "bins": 66
+    },
+    {
+      "band": 72,
+      "low_hz": 13953.515625,
+      "high_hz": 15417.7734375,
+      "bins": 69
+    },
+    {
+      "band": 73,
+      "low_hz": 14685.64453125,
+      "high_hz": 16236.03515625,
+      "bins": 73
+    },
+    {
+      "band": 74,
+      "low_hz": 15439.306640625,
+      "high_hz": 17075.830078125,
+      "bins": 77
+    },
+    {
+      "band": 75,
+      "low_hz": 16257.568359375,
+      "high_hz": 17980.224609375,
+      "bins": 81
+    },
+    {
+      "band": 76,
+      "low_hz": 17097.36328125,
+      "high_hz": 18906.15234375,
+      "bins": 85
+    },
+    {
+      "band": 77,
+      "low_hz": 18001.7578125,
+      "high_hz": 19896.6796875,
+      "bins": 89
+    },
+    {
+      "band": 78,
+      "low_hz": 18927.685546875,
+      "high_hz": 20951.806640625,
+      "bins": 95
+    },
+    {
+      "band": 79,
+      "low_hz": 19918.212890625,
+      "high_hz": 22050.0,
+      "bins": 100
+    }
+  ],
+  "high_region": {
+    "low_hz": 8000,
+    "high_hz": 20000,
+    "bins": 557,
+    "projection_rank": 20,
+    "null_dimensions": 537
+  },
+  "positive_spectral_null_example": {
+    "maximum_log_mel_error": 0.0,
+    "linear_bin_log_l1": 0.15978331076898386,
+    "is_consistent_waveform": "not established; magnitude-domain example only"
+  },
+  "waveform_sensitivity": [
+    {
+      "test": "user",
+      "wav_sha256": "6f654f2569f10ea32ff417a3015dab1ce8a8780c647d448b79100a89c7d4e150",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.1364135375768033,
+      "weighted_mel_l1": 6.138609190956148,
+      "linear_bin_log_l1": 0.1078237221157677,
+      "would_clip": false
+    },
+    {
+      "test": "user",
+      "wav_sha256": "6f654f2569f10ea32ff417a3015dab1ce8a8780c647d448b79100a89c7d4e150",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.2694726362697101,
+      "weighted_mel_l1": 12.126268632136954,
+      "linear_bin_log_l1": 0.16181268097701726,
+      "would_clip": false
+    },
+    {
+      "test": "user",
+      "wav_sha256": "6f654f2569f10ea32ff417a3015dab1ce8a8780c647d448b79100a89c7d4e150",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.2185714664079256,
+      "weighted_mel_l1": 9.835715988356652,
+      "linear_bin_log_l1": 0.558519765799224,
+      "would_clip": false
+    },
+    {
+      "test": "user",
+      "wav_sha256": "6f654f2569f10ea32ff417a3015dab1ce8a8780c647d448b79100a89c7d4e150",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.39913415015326625,
+      "weighted_mel_l1": 17.96103675689698,
+      "linear_bin_log_l1": 0.9401204031248769,
+      "would_clip": false
+    },
+    {
+      "test": "travel",
+      "wav_sha256": "0b79b75c3b9caea739e1c947683f902198dfbd877af58de304767e62ac4861a7",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.14705803082524319,
+      "weighted_mel_l1": 6.617611387135943,
+      "linear_bin_log_l1": 0.10986234138062785,
+      "would_clip": false
+    },
+    {
+      "test": "travel",
+      "wav_sha256": "0b79b75c3b9caea739e1c947683f902198dfbd877af58de304767e62ac4861a7",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.2803156692020559,
+      "weighted_mel_l1": 12.614205114092517,
+      "linear_bin_log_l1": 0.16211602613329595,
+      "would_clip": false
+    },
+    {
+      "test": "travel",
+      "wav_sha256": "0b79b75c3b9caea739e1c947683f902198dfbd877af58de304767e62ac4861a7",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.23307864284816032,
+      "weighted_mel_l1": 10.488538928167214,
+      "linear_bin_log_l1": 0.5819803293319413,
+      "would_clip": false
+    },
+    {
+      "test": "travel",
+      "wav_sha256": "0b79b75c3b9caea739e1c947683f902198dfbd877af58de304767e62ac4861a7",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.4096796977277269,
+      "weighted_mel_l1": 18.43558639774771,
+      "linear_bin_log_l1": 0.9593072353009919,
+      "would_clip": false
+    },
+    {
+      "test": "sibilants",
+      "wav_sha256": "aeee198b56361964ae187bd622cbb5adc753dff11c8cc282b4cfcc06f4da7dd9",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.11771571751924093,
+      "weighted_mel_l1": 5.297207288365842,
+      "linear_bin_log_l1": 0.09338583924289998,
+      "would_clip": false
+    },
+    {
+      "test": "sibilants",
+      "wav_sha256": "aeee198b56361964ae187bd622cbb5adc753dff11c8cc282b4cfcc06f4da7dd9",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.231889170272603,
+      "weighted_mel_l1": 10.435012662267136,
+      "linear_bin_log_l1": 0.14132759074393222,
+      "would_clip": false
+    },
+    {
+      "test": "sibilants",
+      "wav_sha256": "aeee198b56361964ae187bd622cbb5adc753dff11c8cc282b4cfcc06f4da7dd9",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.1890121142707163,
+      "weighted_mel_l1": 8.505545142182234,
+      "linear_bin_log_l1": 0.48271237647313175,
+      "would_clip": false
+    },
+    {
+      "test": "sibilants",
+      "wav_sha256": "aeee198b56361964ae187bd622cbb5adc753dff11c8cc282b4cfcc06f4da7dd9",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.3424459704487226,
+      "weighted_mel_l1": 15.410068670192517,
+      "linear_bin_log_l1": 0.8169092829233897,
+      "would_clip": false
+    },
+    {
+      "test": "current",
+      "wav_sha256": "6fa584ac01de69a55918714d78409dc2c1a6d7c61a94ec51d39c01c5d3d57306",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.13823401031378985,
+      "weighted_mel_l1": 6.220530464120543,
+      "linear_bin_log_l1": 0.10790952997545128,
+      "would_clip": false
+    },
+    {
+      "test": "current",
+      "wav_sha256": "6fa584ac01de69a55918714d78409dc2c1a6d7c61a94ec51d39c01c5d3d57306",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.2702857004936591,
+      "weighted_mel_l1": 12.162856522214659,
+      "linear_bin_log_l1": 0.16077636216309885,
+      "would_clip": false
+    },
+    {
+      "test": "current",
+      "wav_sha256": "6fa584ac01de69a55918714d78409dc2c1a6d7c61a94ec51d39c01c5d3d57306",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.22033137194083524,
+      "weighted_mel_l1": 9.914911737337587,
+      "linear_bin_log_l1": 0.5642451239614644,
+      "would_clip": false
+    },
+    {
+      "test": "current",
+      "wav_sha256": "6fa584ac01de69a55918714d78409dc2c1a6d7c61a94ec51d39c01c5d3d57306",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.4001147187808249,
+      "weighted_mel_l1": 18.00516234513712,
+      "linear_bin_log_l1": 0.9445465581620764,
+      "would_clip": false
+    },
+    {
+      "test": "library",
+      "wav_sha256": "6026adb11283ef7ff540855d6931f27af1ca6bf40dfab6b79371ca604b2c06a4",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.13775807253460653,
+      "weighted_mel_l1": 6.199113264057294,
+      "linear_bin_log_l1": 0.10584214500172225,
+      "would_clip": false
+    },
+    {
+      "test": "library",
+      "wav_sha256": "6026adb11283ef7ff540855d6931f27af1ca6bf40dfab6b79371ca604b2c06a4",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.26668508234952865,
+      "weighted_mel_l1": 12.00082870572879,
+      "linear_bin_log_l1": 0.15796512663153137,
+      "would_clip": false
+    },
+    {
+      "test": "library",
+      "wav_sha256": "6026adb11283ef7ff540855d6931f27af1ca6bf40dfab6b79371ca604b2c06a4",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.21814533387592572,
+      "weighted_mel_l1": 9.816540024416657,
+      "linear_bin_log_l1": 0.5573996478217661,
+      "would_clip": false
+    },
+    {
+      "test": "library",
+      "wav_sha256": "6026adb11283ef7ff540855d6931f27af1ca6bf40dfab6b79371ca604b2c06a4",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.3921240622847215,
+      "weighted_mel_l1": 17.64558280281247,
+      "linear_bin_log_l1": 0.9288110001151912,
+      "would_clip": false
+    },
+    {
+      "test": "meeting",
+      "wav_sha256": "132c82ac55d899ef53d6bce98dec0d93aa267f04f9106e45172ed08cced1cf8b",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.11833682960014112,
+      "weighted_mel_l1": 5.32515733200635,
+      "linear_bin_log_l1": 0.09747065392145242,
+      "would_clip": false
+    },
+    {
+      "test": "meeting",
+      "wav_sha256": "132c82ac55d899ef53d6bce98dec0d93aa267f04f9106e45172ed08cced1cf8b",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.23469437581154903,
+      "weighted_mel_l1": 10.561246911519707,
+      "linear_bin_log_l1": 0.1476209483945123,
+      "would_clip": false
+    },
+    {
+      "test": "meeting",
+      "wav_sha256": "132c82ac55d899ef53d6bce98dec0d93aa267f04f9106e45172ed08cced1cf8b",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.18745765133115272,
+      "weighted_mel_l1": 8.435594309901873,
+      "linear_bin_log_l1": 0.4955735815505692,
+      "would_clip": false
+    },
+    {
+      "test": "meeting",
+      "wav_sha256": "132c82ac55d899ef53d6bce98dec0d93aa267f04f9106e45172ed08cced1cf8b",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.3467111710812186,
+      "weighted_mel_l1": 15.602002698654838,
+      "linear_bin_log_l1": 0.8412189381491753,
+      "would_clip": false
+    },
+    {
+      "test": "thanks",
+      "wav_sha256": "6e1ca18a790ae16707784f4dede961f2d6848fc2a984d83aeb8a27dd52f07da3",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.15154029105785405,
+      "weighted_mel_l1": 6.819313097603432,
+      "linear_bin_log_l1": 0.11468002430096647,
+      "would_clip": false
+    },
+    {
+      "test": "thanks",
+      "wav_sha256": "6e1ca18a790ae16707784f4dede961f2d6848fc2a984d83aeb8a27dd52f07da3",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.29250679347353853,
+      "weighted_mel_l1": 13.162805706309234,
+      "linear_bin_log_l1": 0.1694344977931088,
+      "would_clip": false
+    },
+    {
+      "test": "thanks",
+      "wav_sha256": "6e1ca18a790ae16707784f4dede961f2d6848fc2a984d83aeb8a27dd52f07da3",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.24266511085837347,
+      "weighted_mel_l1": 10.919929988626807,
+      "linear_bin_log_l1": 0.608515318752409,
+      "would_clip": false
+    },
+    {
+      "test": "thanks",
+      "wav_sha256": "6e1ca18a790ae16707784f4dede961f2d6848fc2a984d83aeb8a27dd52f07da3",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.43135257203874533,
+      "weighted_mel_l1": 19.41086574174354,
+      "linear_bin_log_l1": 1.003598956277413,
+      "would_clip": false
+    },
+    {
+      "test": "park",
+      "wav_sha256": "9f3d6221d6b951204945e43f45c285dffc6f3867c5f985411f75b710b15df3fe",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -40,
+      "mel_l1": 0.13864381433374673,
+      "weighted_mel_l1": 6.238971645018603,
+      "linear_bin_log_l1": 0.10825107391090986,
+      "would_clip": false
+    },
+    {
+      "test": "park",
+      "wav_sha256": "9f3d6221d6b951204945e43f45c285dffc6f3867c5f985411f75b710b15df3fe",
+      "perturbation": "periodic_grid",
+      "relative_rms_db": -30,
+      "mel_l1": 0.26978131005983724,
+      "weighted_mel_l1": 12.140158952692676,
+      "linear_bin_log_l1": 0.1617777727271497,
+      "would_clip": false
+    },
+    {
+      "test": "park",
+      "wav_sha256": "9f3d6221d6b951204945e43f45c285dffc6f3867c5f985411f75b710b15df3fe",
+      "perturbation": "band_noise",
+      "relative_rms_db": -40,
+      "mel_l1": 0.21929714203531886,
+      "weighted_mel_l1": 9.86837139158935,
+      "linear_bin_log_l1": 0.5561083874549994,
+      "would_clip": false
+    },
+    {
+      "test": "park",
+      "wav_sha256": "9f3d6221d6b951204945e43f45c285dffc6f3867c5f985411f75b710b15df3fe",
+      "perturbation": "band_noise",
+      "relative_rms_db": -30,
+      "mel_l1": 0.3937378668725608,
+      "weighted_mel_l1": 17.718204009265236,
+      "linear_bin_log_l1": 0.9286220807681957,
+      "would_clip": false
+    }
+  ],
+  "limits": [
+    "Synthetic perturbations are diagnostic, not retrained output or listening tests.",
+    "Raw losses have different scales; their ratios are not perceptual sensitivity ratios.",
+    "The discriminator and feature-matching losses can still detect mel-null changes.",
+    "No causal attribution or trained quality improvement is established."
+  ]
+}

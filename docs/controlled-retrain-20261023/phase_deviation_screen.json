@@ -1,0 +1,20 @@
+[
+  {
+    "name": "180",
+    "phase_deviation_rms": 0.013904442465011253,
+    "phase_total_rms": 0.0207956498644273,
+    "relative_deviation": 0.6686226473160616
+  },
+  {
+    "name": "control200",
+    "phase_deviation_rms": 0.013926463604205998,
+    "phase_total_rms": 0.02082596310089523,
+    "relative_deviation": 0.6687068221880794
+  },
+  {
+    "name": "quarter200",
+    "phase_deviation_rms": 0.0139056790392324,
+    "phase_total_rms": 0.020798875589071703,
+    "relative_deviation": 0.6685784036584574
+  }
+]

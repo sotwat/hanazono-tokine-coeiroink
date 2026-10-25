@@ -18,6 +18,7 @@ import yaml
 
 CHECKPOINT_SHA256 = 'ab6925215af0ea111939313749c64bab66743eef90411d9f30165c901687b097'
 ARMS = {'control': 1.0, 'quarter_lr': 0.25}
+SPLIT_ARM = 'discriminator_quarter'
 
 
 def digest(path):
@@ -30,11 +31,15 @@ def load(path):
 
 
 def compare_states(original, candidate, factor):
+    factors = [factor, factor] if isinstance(factor, (int, float)) else list(factor)
+    assert len(factors) == 2
+    assert len(original['optimizers']) == len(candidate['optimizers']) == 2
+    assert len(original['schedulers']) == len(candidate['schedulers']) == 2
     assert candidate['reporter']['epoch'] == original['reporter']['epoch'] == 180
     assert len(original['model']) == len(candidate['model']) == 1049
     assert all(torch.equal(v, candidate['model'][k]) for k, v in original['model'].items())
     counts = []
-    for a, b in zip(original['optimizers'], candidate['optimizers']):
+    for a, b, scale in zip(original['optimizers'], candidate['optimizers'], factors):
         assert a['state'].keys() == b['state'].keys()
         counts.append(len(a['state']))
         for pid, state in a['state'].items():
@@ -43,16 +48,65 @@ def compare_states(original, candidate, factor):
                 assert torch.equal(value, actual) if torch.is_tensor(value) else value == actual
                 if torch.is_tensor(actual):
                     assert torch.isfinite(actual).all()
+        assert len(a['param_groups']) == len(b['param_groups'])
         for ga, gb in zip(a['param_groups'], b['param_groups']):
+            assert ga.keys() == gb.keys()
             for key, value in ga.items():
-                assert gb[key] == (value * factor if key in ('lr', 'initial_lr') else value)
+                assert gb[key] == (value * scale if key in ('lr', 'initial_lr') else value)
     assert counts == [942, 106]
-    for a, b in zip(original['schedulers'], candidate['schedulers']):
+    for a, b, scale in zip(original['schedulers'], candidate['schedulers'], factors):
+        assert a.keys() == b.keys()
         for key, value in a.items():
-            assert b[key] == ([x * factor for x in value] if key in ('base_lrs', '_last_lr') else value)
+            assert b[key] == ([x * scale for x in value] if key in ('base_lrs', '_last_lr') else value)
     return {'model_tensors_identical': 1049, 'optimizer_states_identical': counts,
             'epoch': 180, 'lr_factor': factor,
             'learning_rates': [o['param_groups'][0]['lr'] for o in candidate['optimizers']]}
+
+
+def prepare_split(args):
+    """Reuse verified pilot data; change only the discriminator LR trajectory."""
+    pilot, reference, destination = (p.resolve() for p in
+                                   (args.pilot, args.reference, args.destination))
+    assert not destination.exists(), 'Refusing to overwrite an existing experiment'
+    source = reference / 'checkpoint180_recovered.pth'
+    assert digest(source) == CHECKPOINT_SHA256
+    original = load(source)
+    preparation = json.loads((pilot / 'preparation.json').read_text())
+    assert preparation['checkpoint_sha256'] == CHECKPOINT_SHA256
+    assert len(preparation['audio']) == 652
+    config = yaml.safe_load((pilot / 'control/train.yaml').read_text())
+    original_config = copy.deepcopy(config)
+    assert config['max_epoch'] == 182 and config['optim_conf']['lr'] == .0001
+    assert config['optim2_conf']['lr'] == .0001 and config['generator_first'] is False
+    assert len(config['token_list']) == 47
+    for item in preparation['audio'].values():
+        assert digest(Path(item['path'])) == item['sha256']
+    candidate = copy.deepcopy(original)
+    for group in candidate['optimizers'][1]['param_groups']:
+        for key in ('lr', 'initial_lr'):
+            if key in group:
+                group[key] *= .25
+    for key in ('base_lrs', '_last_lr'):
+        if key in candidate['schedulers'][1]:
+            candidate['schedulers'][1][key] = [v * .25 for v in candidate['schedulers'][1][key]]
+    report = compare_states(original, candidate, [1., .25])
+    folder = destination / SPLIT_ARM
+    modeldir = folder / 'model'
+    config['output_dir'] = str(modeldir)
+    config['optim2_conf']['lr'] *= .25
+    differences = [k for k in config if config[k] != original_config[k]]
+    assert set(differences) == {'output_dir', 'optim2_conf'}
+    modeldir.mkdir(parents=True)
+    torch.save(candidate, modeldir / 'checkpoint.pth')
+    compare_states(original, load(modeldir / 'checkpoint.pth'), [1., .25])
+    torch.save(original['model'], modeldir / '180epoch.pth')
+    shutil.copy2(reference / 'config180.yaml', folder / 'config180.yaml')
+    (folder / 'train.yaml').write_text(yaml.safe_dump(config, allow_unicode=True, sort_keys=False))
+    preparation.update(status='prepared_not_started', arms={SPLIT_ARM: report},
+                       source_pilot=str(pilot), config_difference_keys=differences,
+                       intervention='Generator LR unchanged; discriminator LR and scheduler base divided by four.')
+    (destination / 'preparation.json').write_text(json.dumps(preparation, ensure_ascii=False, indent=2))
+    print(json.dumps(report), flush=True)
 
 
 def prepare(args):
@@ -191,7 +245,7 @@ def run(args):
     torch.set_num_threads(1)
     run_dir = args.run_dir.resolve()
     preparation = json.loads((run_dir.parent / 'preparation.json').read_text())
-    assert run_dir.name in ARMS
+    assert run_dir.name in (*ARMS, SPLIT_ARM)
     config_path = run_dir / 'train.yaml'
     config = yaml.safe_load(config_path.read_text())
     assert config['max_epoch'] == 182 and config['num_iters_per_epoch'] == 1000
@@ -268,6 +322,9 @@ if __name__ == '__main__':
     p = commands.add_parser('prepare')
     for name in ('reference', 'destination', 'audio-zip', 'corpus'):
         p.add_argument('--' + name, type=Path, required=True)
+    p = commands.add_parser('prepare-split')
+    for name in ('pilot', 'reference', 'destination'):
+        p.add_argument('--' + name, type=Path, required=True)
     p = commands.add_parser('run')
     p.add_argument('--run-dir', type=Path, required=True)
     p.add_argument('--max-epoch', type=int, choices=range(182, 201), default=182)
@@ -275,5 +332,7 @@ if __name__ == '__main__':
     torch.set_num_threads(4)
     if args.command == 'prepare':
         prepare(args)
+    elif args.command == 'prepare-split':
+        prepare_split(args)
     else:
         run(args)
