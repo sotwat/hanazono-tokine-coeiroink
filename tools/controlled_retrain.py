@@ -43,6 +43,7 @@ def compare_states(original, candidate, factor):
         assert a['state'].keys() == b['state'].keys()
         counts.append(len(a['state']))
         for pid, state in a['state'].items():
+            assert state.keys() == b['state'][pid].keys()
             for key, value in state.items():
                 actual = b['state'][pid][key]
                 assert torch.equal(value, actual) if torch.is_tensor(value) else value == actual
@@ -289,7 +290,10 @@ def run(args):
                     assert torch.isfinite(optimizer.state[p][key]).all()
     preprocess = GANTTSTask.build_preprocess_fn(parsed, train=True)
     text = dict(l.split(maxsplit=1) for l in Path(parsed.train_data_path_and_name_and_type[0][0]).read_text().splitlines())
-    for line in Path(parsed.train_shape_file[0]).read_text().splitlines():
+    shape_lines = Path(parsed.train_shape_file[0]).read_text().splitlines()
+    assert len(text) == len(shape_lines) == 652
+    assert set(text) == {line.split()[0] for line in shape_lines} == set(preparation['audio'])
+    for line in shape_lines:
         key, shape = line.split()
         assert len(preprocess(key, {'text': text[key]})['text']) == int(shape.split(',')[0]), key
     assert parsed.token_list == yaml.safe_load((run_dir / 'config180.yaml').read_text())['token_list']
