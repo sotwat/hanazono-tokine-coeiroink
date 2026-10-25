@@ -128,6 +128,9 @@ def build(root):
                     per_text=vrows)
     output.sort(key=lambda x: (x['provisional_rank'], x['model_sha256']))
     result = dict(inventory_complete=index['complete'], missing=index['missing'],
+                  measurement_coverage_complete=index['complete'],
+                  proxy_ranking_complete=index['complete'] and validity['asr_complete'],
+                  perceptual_quality_verified=False,
                   global_top_five_confirmed=False, models=len(output),
                   inputs={str(p): digest(p) for p in (index_path, spectral_path, validity_path)},
                   interpretation='Fixed/persistent/periodic artifact proxies only; not SNR or overall quality.',
