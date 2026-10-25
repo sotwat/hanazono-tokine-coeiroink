@@ -1,0 +1,21 @@
+{
+  "reference_sha256": "613144e98a4febe4cdd36495943be9100bc354df6cc09dfb1296ca90d5bbb6c3",
+  "aliases": [
+    {
+      "series": "control",
+      "epoch": 180,
+      "path": "/Users/aaa/Documents/COEIROINK/\u82b1\u5712\u30c8\u30ad\u30cd_MYCOEIROINK\u6e96\u5099/output/talk_full_20260917/controlled_retrain_20261023/pilot/control/model/180epoch.pth",
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60",
+      "tensor_count": 1049,
+      "all_tensors_exactly_equal": true
+    },
+    {
+      "series": "quarter_lr",
+      "epoch": 180,
+      "path": "/Users/aaa/Documents/COEIROINK/\u82b1\u5712\u30c8\u30ad\u30cd_MYCOEIROINK\u6e96\u5099/output/talk_full_20260917/controlled_retrain_20261023/pilot/quarter_lr/model/180epoch.pth",
+      "sha256": "3a29c1cf64ff9f76fbbe01e66f4ad3fc85f005f055984dc04743a7645a902a60",
+      "tensor_count": 1049,
+      "all_tensors_exactly_equal": true
+    }
+  ]
+}

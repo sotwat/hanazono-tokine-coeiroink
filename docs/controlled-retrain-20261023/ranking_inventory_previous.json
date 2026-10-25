@@ -70,6 +70,14 @@
       "path": "/content/drive/MyDrive/MYCOEIROINK_WORK/retrain_180_20261021/model/200epoch.pth",
       "size": 373246208,
       "sha256": "455da9ad765ae28cbf560d82385013cca5d542d476f763c3e55966783ac943ff"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 189,
+      "path": "/Users/aaa/Documents/COEIROINK/\u82b1\u5712\u30c8\u30ad\u30cd_MYCOEIROINK\u6e96\u5099/output/talk_full_20260917/controlled_retrain_20261023/ranking_models/previous_retrain/189epoch.pth",
+      "size": 373232318,
+      "sha256": "f3c2de1dd2f935b0a513c5fbb69b63fd4d2bee7f34ef2c30a0b690b5254a05ee",
+      "source_checkpoint_sha256": "d89adea97435c9d98f4a015ef11600b4dfa50a641663b46fdce26171ed46c04c"
     }
   ],
   "checkpoint_backups": [

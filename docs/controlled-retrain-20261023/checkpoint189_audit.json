@@ -1,0 +1,30 @@
+{
+  "epoch": 189,
+  "source": "Drive UI checkpoint_189.pth",
+  "checkpoint_size": 1119384440,
+  "checkpoint_sha256": "d89adea97435c9d98f4a015ef11600b4dfa50a641663b46fdce26171ed46c04c",
+  "independent_remote_sha_available": false,
+  "scheduler_epochs": [
+    189,
+    189
+  ],
+  "optimizer_counts": [
+    942,
+    106
+  ],
+  "optimizer_steps": [
+    [
+      189000.0
+    ],
+    [
+      189000.0
+    ]
+  ],
+  "model_tensors": 1049,
+  "strict_key_shape_finite_check": true,
+  "model_matches_checkpoint": true,
+  "model_path": "/Users/aaa/Documents/COEIROINK/\u82b1\u5712\u30c8\u30ad\u30cd_MYCOEIROINK\u6e96\u5099/output/talk_full_20260917/controlled_retrain_20261023/ranking_models/previous_retrain/189epoch.pth",
+  "model_size": 373232318,
+  "model_sha256": "f3c2de1dd2f935b0a513c5fbb69b63fd4d2bee7f34ef2c30a0b690b5254a05ee",
+  "postprocessing": false
+}

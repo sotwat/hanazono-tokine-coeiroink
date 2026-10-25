@@ -1,0 +1,24 @@
+{
+  "models": 10,
+  "epochs": [
+    189,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+  ],
+  "ordinary_texts": 8,
+  "waveforms": 80,
+  "wav_hashes_verified": true,
+  "sample_format": "44100 Hz / int16 / mono",
+  "pcm_clip_count": 0,
+  "finite_primary_metrics": true,
+  "results_sha256": "e6181e658a27e4c5955c18cecc2076f9be7fa691371bc8613e968dd376e55b3b",
+  "listening_verified": false,
+  "global_ranking_complete": false
+}

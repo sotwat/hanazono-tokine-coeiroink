@@ -1,8 +1,8 @@
 {
   "complete_all_series": false,
-  "inventoried_file_count": 134,
-  "unique_file_sha_count": 133,
-  "pending": "Backup checkpoint189 extraction; recovery and uniform eight-text evaluation of missing local candidates; broad-harshness assessment",
+  "inventoried_file_count": 135,
+  "unique_file_sha_count": 134,
+  "pending": "Recovery and uniform eight-text evaluation of control/quarter183-199; checkpoint189 eight-text evaluation; global ranking and broad-harshness assessment",
   "missing_original_epochs": [
     148,
     149,
@@ -976,6 +976,14 @@
       "sha256": "09ac305862a42adb40e2b5ca2e48386be7224fd18f2ce069c94680ece7299e68",
       "path": "OUTPUT/controlled_retrain_20261023/intermediate185/185epoch_unmodified.pth",
       "source_checkpoint_sha256": "b539824e093a902e658df3414dbd7447a2ea6fb44548d59688da9804b1a7b33b"
+    },
+    {
+      "series": "previous_retrain",
+      "epoch": 189,
+      "path": "/Users/aaa/Documents/COEIROINK/\u82b1\u5712\u30c8\u30ad\u30cd_MYCOEIROINK\u6e96\u5099/output/talk_full_20260917/controlled_retrain_20261023/ranking_models/previous_retrain/189epoch.pth",
+      "size": 373232318,
+      "sha256": "f3c2de1dd2f935b0a513c5fbb69b63fd4d2bee7f34ef2c30a0b690b5254a05ee",
+      "source_checkpoint_sha256": "d89adea97435c9d98f4a015ef11600b4dfa50a641663b46fdce26171ed46c04c"
     }
   ]
 }

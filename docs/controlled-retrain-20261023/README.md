@@ -156,3 +156,15 @@ prepareは既存の実験先を上書きしない。一度準備した後の切�
 4. 候補の改善を確認してから追加学習する。200まで到達したことだけで完了とせず、未補正音声での改善確認まで継続する。アプリや公開ZIPは検証前に置換しない。
 
 現時点で劣化原因の特定、修正学習の完了、音質改善は未達。
+
+## 回収済み候補の通常8文検査（2026-10-25）
+
+`tools/ranking_candidate_survey.py` は既存のSHA棚卸しJSON、ローカルの`<epoch>epoch.pth`、隔離runtimeを受け取る。`--root` は系列ごとに固定し、`--previous` は`retrain_comparison_20261023`、`--inventory` は棚卸しJSON、`--models` は回収先、`--series` は`previous_retrain` / `control` / `quarter_lr`を指定する。ローカルにないepochは処理せず、181/182と200は既存cacheがあるため生成対象から除く。全候補完了の判定はこのスクリプトのcompleteだけで行わず、全系列棚卸しとの突合で行う。
+
+モデルのsize/SHA・1049テンソルのkey/shapeと有限値を180原本に照合する。隔離50033が使用中なら起動せず、終了時に自身のengineだけを停止する。本番50032は変更しない。再開時は既存WAV/JSONの対、本文・速度・style・モデルSHA・WAV SHA・engine SHAを照合し、既存音声を再生成しない。44.1kHz/16bit/mono・クリップ0・有声音フレームと主要測定値の有限値も確認する。母音伸長・EQ・除去・推論重み補正はしない。
+
+前回正規再学習189・191〜199の10モデル80音声は測定・ハッシュ照合を完了した。`ranking_previous_validation.json` とOUTPUTの`ranking_previous`を参照。全条件上位5と広帯域ざらつきの評価、聴感確認は未完了。
+
+`tools/ranking_evidence_index.py` は原本81モデル、pilot、両200、185、追加回収候補の一致する通常文cacheを統合し、欠損を明示する。モデルSHA、本文、速度、WAV SHAを照合し、同一モデル・同一文に異なるWAVがあれば停止する。感度検査用の3dB以上の全ピークを既存のSTFT手順で再計算する。`noise_spectral_detail.detail` の既定4dB・最大8本は従来どおりで、感度用だけ引数を変更する。順位はこのindex作成だけでは確定しない。
+
+189はDrive UIから完全checkpointを回収し、内部epoch189、両scheduler189、optimizer942/106・全step189000・有限momentum、1049モデルテンソルのkey/shape/有限値と抽出後完全一致を確認。無補正の抽出モデルを候補に追加した。`checkpoint189_audit.json`に取得ファイルのローカルSHAを保存したが、Drive側の独立したSHAは未取得と明記する。control/quarterの180は原本180と全1049テンソルの完全一致を確認した。保存形式によるファイルSHA差は`ranking_weight_aliases.json`に記録し、別の音質のモデルと解釈しない。
