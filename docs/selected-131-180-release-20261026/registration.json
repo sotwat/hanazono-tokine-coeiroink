@@ -1,0 +1,200 @@
+[
+  {
+    "speakerName": "カテナ",
+    "speakerUuid": "22c0827c-d4fb-11ec-a0c6-0242ac1c0002",
+    "styles": [
+      {
+        "styleName": "いつも",
+        "styleId": 908420948
+      },
+      {
+        "styleName": "お元気",
+        "styleId": 908420949
+      },
+      {
+        "styleName": "めそめそ",
+        "styleId": 908420950
+      },
+      {
+        "styleName": "キザ",
+        "styleId": 908420951
+      },
+      {
+        "styleName": "でたらめβ ",
+        "styleId": 908420952
+      },
+      {
+        "styleName": "ちびβ",
+        "styleId": 908420953
+      }
+    ]
+  },
+  {
+    "speakerName": "ナースロボ＿タイプＴ",
+    "speakerUuid": "9bf2ab50-c756-11ec-9374-0242ac1c0002",
+    "styles": [
+      {
+        "styleName": "通常",
+        "styleId": 1403759395
+      },
+      {
+        "styleName": "内緒話",
+        "styleId": 1403759396
+      },
+      {
+        "styleName": "淡々",
+        "styleId": 1403759397
+      },
+      {
+        "styleName": "恐怖",
+        "styleId": 1403759398
+      },
+      {
+        "styleName": "楽々",
+        "styleId": 1403759399
+      }
+    ]
+  },
+  {
+    "speakerName": "AI声優-青葉",
+    "speakerUuid": "d219f5ab-a50b-4d99-a26a-a9fc213e9100",
+    "styles": [
+      {
+        "styleName": "のーまる",
+        "styleId": 60
+      },
+      {
+        "styleName": "感情的",
+        "styleId": 61
+      }
+    ]
+  },
+  {
+    "speakerName": "クロワちゃん",
+    "speakerUuid": "cc1153b4-d20c-46dd-a308-73ca38c0e85a",
+    "styles": [
+      {
+        "styleName": "素顔の女騎士",
+        "styleId": 110
+      },
+      {
+        "styleName": "気高き女騎士",
+        "styleId": 111
+      }
+    ]
+  },
+  {
+    "speakerName": "祇音鐘",
+    "speakerUuid": "ea947b4c-f806-11ef-83ad-0242ac1c000c",
+    "styles": [
+      {
+        "styleName": "のーまる",
+        "styleId": 421848950
+      },
+      {
+        "styleName": "のーまるV2",
+        "styleId": 544080697
+      },
+      {
+        "styleName": "のーまるV3",
+        "styleId": 557825412
+      },
+      {
+        "styleName": "はきはき",
+        "styleId": 1050648069
+      },
+      {
+        "styleName": "おすがき",
+        "styleId": 419633319
+      },
+      {
+        "styleName": "よくよう",
+        "styleId": 1295174545
+      },
+      {
+        "styleName": "ふきげん",
+        "styleId": 185577941
+      },
+      {
+        "styleName": "おちつき",
+        "styleId": 147640115
+      },
+      {
+        "styleName": "ていおん",
+        "styleId": 841157160
+      },
+      {
+        "styleName": "ささやき",
+        "styleId": 1846189605
+      },
+      {
+        "styleName": "へろへろ",
+        "styleId": 343918208
+      },
+      {
+        "styleName": "ぜっきょー仮",
+        "styleId": 2009799708
+      },
+      {
+        "styleName": "べそべそ仮",
+        "styleId": 1121171565
+      },
+      {
+        "styleName": "かぜひき",
+        "styleId": 863022099
+      }
+    ]
+  },
+  {
+    "speakerName": "花園トキネ",
+    "speakerUuid": "6cf172a4-b091-11f1-ace8-0242ac1c000c",
+    "styles": [
+      {
+        "styleName": "131epoch",
+        "styleId": 1131
+      },
+      {
+        "styleName": "180epoch",
+        "styleId": 1180
+      }
+    ]
+  },
+  {
+    "speakerName": "ひなりんつ",
+    "speakerUuid": "7e80f072-88a9-11f1-8ed7-0242ac1c000c",
+    "styles": [
+      {
+        "styleName": "のーまる",
+        "styleId": 1163398454
+      }
+    ]
+  },
+  {
+    "speakerName": "MANA",
+    "speakerUuid": "292ea286-3d5f-f1cc-157c-66462a6a9d08",
+    "styles": [
+      {
+        "styleName": "のーまる",
+        "styleId": 1
+      },
+      {
+        "styleName": "ひっさつわざ",
+        "styleId": 44
+      }
+    ]
+  },
+  {
+    "speakerName": "つくよみちゃん",
+    "speakerUuid": "3c37646f-3881-5374-2a83-149267990abc",
+    "styles": [
+      {
+        "styleName": "れいせい",
+        "styleId": 0
+      },
+      {
+        "styleName": "げんき",
+        "styleId": 6
+      }
+    ]
+  }
+]
