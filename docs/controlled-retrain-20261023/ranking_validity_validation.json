@@ -1,0 +1,31 @@
+{
+  "models": 99,
+  "utterances": 792,
+  "asr_outputs_present": 792,
+  "blank_asr": 0,
+  "raw_wav_hashes_verified": 792,
+  "loudness_finite": 792,
+  "clips_total": 0,
+  "rms_below_180_by_more_than_6db": 0,
+  "min_lufs": -32.23,
+  "max_lufs": -17.44,
+  "summary_sha256": "fb885abbb2370335733dc9920f164b11343451dcd5c45d00c48d649e23b2425e",
+  "records_sha256": "adde6e8f373f8016c8236081712dd8bb53b918bac114e0451a2bb2bbd57c06ad",
+  "missing_candidates": 34,
+  "inventory_complete": false,
+  "listening_verified": false,
+  "content_review_complete": false,
+  "phonetic_accuracy_verified": false,
+  "limitation": "ASR output coverage and loudness validity only; not a noise rank or listening verdict",
+  "orthographic_exact_counts": {
+    "user": 87,
+    "travel": 0,
+    "sibilants": 98,
+    "current": 96,
+    "library": 74,
+    "meeting": 0,
+    "thanks": 56,
+    "park": 89
+  },
+  "orthographic_comparison": "NFKC; remove punctuation/separators/whitespace; 99 per text. Kanji/Arabic number variants remain different. Not pronunciation accuracy, no eligibility decision from this count."
+}
