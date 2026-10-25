@@ -1,5 +1,11 @@
 # 180epoch以降の劣化を切り分ける再学習
 
+## Ranking aggregation remains provisional (2026-10-25)
+
+The current combined inventory has 135 file entries / 134 distinct file hashes, and 133 distinct tensor states after canonicalizing the two epoch-180 serialization aliases. Previous proper-retrain epoch189 has been extracted and audited; the older extraction-pending statements below are historical. Matched evidence currently covers 99 models / 792 ordinary utterances. Their loudness and local ASR collection is complete; all WAV hashes and finite loudness values were verified, zero clips and no RMS drop greater than 6 dB from the same-text original180 were found. ASR is a content screen, not listening or pronunciation verification. See `ranking_validity_validation.json`.
+
+`tools/ranking_aggregate.py --root <controlled_retrain_20261023>` reuses the index, complete spectral peak lists and validity summaries. It applies the frozen lexicographic rule and all 27 threshold combinations, and writes `ranking_evidence/aggregate_provisional.{json,csv}` with per-text evidence, spread, loudness and sensitivity ranks. Missing control/quarter epochs183–199 (34 models), content review and broad-harshness/listening verification prevent a confirmed global top five. The output deliberately leaves `global_top_five_confirmed=false`, even if the numerical collection later becomes complete. Do not infer a training cause or overall quality from the proxy order.
+
 ## Ranking collection: original-series measurement complete (2026-10-25)
 
 Both training arms are complete; do not restart training. The ranking rule is frozen in [ranking-protocol.md](ranking-protocol.md). [ranking_inventory.json](ranking_inventory.json) currently covers 81 saved original models, 42 control/quarter files and 11 previous-retrain models, 134 file entries / 133 distinct file SHAs. The shared control/quarter epoch-180 SHA is an alias. The previous proper-retrain individual-model inventory covers 191–200 (10 models); epoch185 is already extracted and evaluated locally; epoch189 backup extraction is still pending; this is not a complete candidate list or a top-five result.

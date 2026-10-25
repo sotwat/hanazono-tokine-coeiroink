@@ -1,0 +1,118 @@
+{
+  "models": 99,
+  "utterances": 792,
+  "missing_models": 34,
+  "inventory_complete": false,
+  "global_top_five_confirmed": false,
+  "content_reviewed": false,
+  "listening_verified": false,
+  "aggregate_sha256": "718dbbe3470fe5cd5f3913f33a37f1017588497354e81c58d278158318201271",
+  "inputs": {
+    "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/output/talk_full_20260917/controlled_retrain_20261023/ranking_evidence/index.json": "1cfcc0e0ac947fdbeaf32e69c681d3b9abcff9e60997a529f95eb9f6784c03d2",
+    "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/output/talk_full_20260917/controlled_retrain_20261023/ranking_evidence/spectral.json": "8105f811351dbd1a944d2c6d8ecb6f415c0378ff11591e4e5c4dba8361edb8a0",
+    "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/output/talk_full_20260917/controlled_retrain_20261023/ranking_evidence/validity/summary.json": "fb885abbb2370335733dc9920f164b11343451dcd5c45d00c48d649e23b2425e"
+  },
+  "scenario_count": 27,
+  "validity_flagged_models": 0,
+  "validation": [
+    "lexicographic integer priority and numerical ties",
+    "tie ordering independent of input order",
+    "frequency cluster counts distinct texts",
+    "99 models x 8 texts and 27 scenarios",
+    "CSV column alignment",
+    "independent original180/prior200/control200/quarter200 mean agreement"
+  ],
+  "provisional_leaders": [
+    {
+      "series": "original",
+      "epoch": 111,
+      "rank": 1,
+      "order": [
+        0,
+        0,
+        0,
+        0.18770684579466157,
+        0.02918396489232421,
+        0,
+        0
+      ],
+      "sensitivity_best_rank": 1,
+      "sensitivity_worst_rank": 13,
+      "top_five_scenarios": 18
+    },
+    {
+      "series": "original",
+      "epoch": 117,
+      "rank": 2,
+      "order": [
+        0,
+        0,
+        0,
+        0.2656733230696401,
+        0.15343409501968336,
+        0,
+        0
+      ],
+      "sensitivity_best_rank": 2,
+      "sensitivity_worst_rank": 6,
+      "top_five_scenarios": 18
+    },
+    {
+      "series": "original",
+      "epoch": 134,
+      "rank": 3,
+      "order": [
+        0,
+        0,
+        0,
+        0.34453616390650826,
+        0.13584390567157262,
+        0,
+        0
+      ],
+      "sensitivity_best_rank": 3,
+      "sensitivity_worst_rank": 72,
+      "top_five_scenarios": 18
+    },
+    {
+      "series": "original",
+      "epoch": 119,
+      "rank": 4,
+      "order": [
+        0,
+        0,
+        0,
+        0.3674545152932977,
+        0.009447086949902775,
+        0,
+        0
+      ],
+      "sensitivity_best_rank": 4,
+      "sensitivity_worst_rank": 24,
+      "top_five_scenarios": 9
+    },
+    {
+      "series": "original",
+      "epoch": 141,
+      "rank": 5,
+      "order": [
+        0,
+        0,
+        0,
+        0.35818289190851216,
+        0.04323072417904542,
+        0,
+        0
+      ],
+      "sensitivity_best_rank": 3,
+      "sensitivity_worst_rank": 6,
+      "top_five_scenarios": 18
+    }
+  ],
+  "limitations": [
+    "34 candidates missing; not global top five",
+    "fixed/persistent/periodic artifact proxies; not true SNR or overall voice quality",
+    "content review and broad harshness assessment incomplete",
+    "no listening verification"
+  ]
+}
