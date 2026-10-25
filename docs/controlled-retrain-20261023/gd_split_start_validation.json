@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-25T09:08:48.297643+00:00",
+  "source_commit": "5b17d837f440090a6dc351b56e1807dacaca1964",
+  "host": "85c5778453ef",
+  "torch": "1.12.1+cu113",
+  "arm": "discriminator_quarter",
+  "initial_checkpoint_epoch": 180,
+  "scheduler_epochs": [
+    180,
+    180
+  ],
+  "optimizer_counts": [
+    942,
+    106
+  ],
+  "all_optimizer_steps": 180000,
+  "momenta_finite": true,
+  "preparation_audit": {
+    "model_tensors_identical": 1049,
+    "optimizer_states_identical": [
+      942,
+      106
+    ],
+    "epoch": 180,
+    "lr_factor": [
+      1,
+      0.25
+    ],
+    "learning_rates": [
+      0.00009777498621170277,
+      0.000024443746552925693
+    ]
+  },
+  "config_difference_keys": [
+    "output_dir",
+    "optim2_conf"
+  ],
+  "phoneme_lengths_verified": 652,
+  "token_count": 47,
+  "target_epoch": 200,
+  "running_epoch": 181,
+  "batch_start": 151,
+  "batch_end": 200,
+  "gpu_process": "215120, python, 8794 MiB",
+  "quality_verified": false
+}
