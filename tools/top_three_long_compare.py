@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render one shared long passage through the installed top three raw models."""
+"""Render one shared long passage through selected raw models."""
 import argparse
 import array
 import base64
@@ -114,7 +114,7 @@ def main(root, epochs=(111, 117, 134), audit=None):
     report = dict(text=TEXT, order=list(epochs), speedScale=1, target_lufs=target,
         processing='constant gain only; full utterances; one-second gaps', listening_verified=False,
         rows=rows, combined_sha256=digest(combined), combined_loudness=measure(combined),
-        combined_duration_seconds=sum(r['duration_seconds'] for r in rows) + 2)
+        combined_duration_seconds=sum(r['duration_seconds'] for r in rows) + len(rows) - 1)
     (root / 'manifest.json').write_text(json.dumps(report, ensure_ascii=False, indent=2, allow_nan=False))
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
 
