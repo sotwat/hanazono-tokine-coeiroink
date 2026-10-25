@@ -114,5 +114,48 @@
     "fixed/persistent/periodic artifact proxies; not true SNR or overall voice quality",
     "content review and broad harshness assessment incomplete",
     "no listening verification"
-  ]
+  ],
+  "listening_files": {
+    "order": [
+      "original_180",
+      "original_111",
+      "original_117",
+      "original_134",
+      "original_119",
+      "original_141"
+    ],
+    "utterances": 48,
+    "joined_files": 8,
+    "lufs_min": -23.11,
+    "lufs_max": -22.98,
+    "max_true_peak_dbtp": -3.61,
+    "manifest_sha256": "4dc2e990bb800bd70f1b186c54a139b9aa715dfd4f97e2eac122fe6cb5119906",
+    "processing": "linear gain only; one-second gaps; unchanged utterance lengths",
+    "listening_verified": false
+  },
+  "asr_text_review": {
+    "utterances": 40,
+    "user_sentence_content_preserved_all_five": true,
+    "unresolved_differences": {
+      "original111": [
+        "travel: 切符→きっと",
+        "thanks: 本当→コント"
+      ],
+      "original117": [
+        "park: 公園→公平"
+      ],
+      "original134": [
+        "travel: 切符→きっと",
+        "library: 友達→ポノダチ",
+        "thanks: 本当→コント"
+      ],
+      "original119": [
+        "travel: 切符→きっと"
+      ],
+      "original141": [
+        "travel: 切符→きっと"
+      ]
+    },
+    "interpretation": "ASR text differences reviewed; recognition error and actual pronunciation not separated"
+  }
 }

@@ -6,6 +6,7 @@ import itertools
 import json
 import math
 import statistics
+import subprocess
 from collections import defaultdict
 from pathlib import Path
 
@@ -149,9 +150,60 @@ def build(root):
     return result
 
 
+def listening_files(root, result):
+    import numpy as np
+    from scipy.io import wavfile
+    from retrain_noise_compare import loudness
+
+    selected = [next(r for r in result['rows'] if r['series'] == 'original' and r['epoch'] == 180)]
+    selected += [r for r in result['rows'] if r['provisional_rank'] <= 5
+                 and r['model_sha256'] != selected[0]['model_sha256']]
+    assert not any(r['validity_flags'] for r in selected), 'Review flagged candidates first'
+    folder = root / 'ranking_evidence/listening_provisional'
+    folder.mkdir(exist_ok=True)
+    order = [f"{r['series']}_{r['epoch']}" for r in selected]
+    levels = []
+    tests = {r['test'] for r in selected[0]['per_text']}
+    for test in sorted(tests):
+        rows = [next(v for v in r['per_text'] if v['test'] == test) for r in selected]
+        target = min(-23., *(-1.1 - r['loudness']['input_tp'] + r['loudness']['input_i'] for r in rows))
+        chunks = []
+        for name, row in zip(order, rows):
+            source = Path(row['wav'])
+            assert digest(source) == row['wav_sha256']
+            rate, original = wavfile.read(source)
+            assert rate == 44100 and original.dtype == np.int16 and original.ndim == 1
+            output = folder / f'{test}_{name}.wav'
+            gain = target - row['loudness']['input_i']
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(source),
+                            '-af', f'volume={gain}dB', '-c:a', 'pcm_s16le', str(output)], check=True)
+            rate2, pcm = wavfile.read(output)
+            measured = loudness(output)
+            assert rate2 == rate and pcm.dtype == original.dtype and pcm.shape == original.shape
+            assert np.max(np.abs(pcm.astype(np.int32))) < 32767
+            assert abs(float(measured['input_i']) - target) < .12 and float(measured['input_tp']) < -1
+            if chunks:
+                chunks.append(np.zeros(44100, dtype=np.int16))
+            chunks.append(pcm)
+            levels.append(dict(test=test, name=name, gain_db=gain, target_lufs=target,
+                               measured=measured, source_sha256=row['wav_sha256'],
+                               output_sha256=digest(output), samples=len(pcm)))
+        joined = np.concatenate(chunks)
+        path = folder / f'{test}_180_then_provisional_top5.wav'
+        wavfile.write(path, 44100, joined)
+        assert np.array_equal(wavfile.read(path)[1], joined)
+    (folder / 'manifest.json').write_text(json.dumps(dict(order=order, levels=levels,
+        inventory_complete=result['inventory_complete'], global_top_five_confirmed=False,
+        listening_verified=False, processing='linear gain only; one-second gaps; unchanged utterance lengths'),
+        ensure_ascii=False, indent=2, allow_nan=False))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', type=Path, required=True)
+    parser.add_argument('--make-listening', action='store_true')
     args = parser.parse_args()
     result = build(args.root)
+    if args.make_listening:
+        listening_files(args.root, result)
     print(json.dumps({k: result[k] for k in ('models', 'inventory_complete', 'global_top_five_confirmed')}))
