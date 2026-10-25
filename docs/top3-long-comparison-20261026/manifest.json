@@ -1,0 +1,130 @@
+{
+  "text": "今日は来てくれてありがとう。駅で君を見つけたとき、少しだけ安心したんだ。さっきまで雨が降っていたのに、今はすっかり晴れているね。帰り道、川の向こうにある小さな喫茶店へ寄ってみない？窓際の席に座って、温かい飲み物を飲みながら、今日あったことを聞かせてほしい。うまく話そうとしなくていいよ。楽しかったことも、少し困ったことも、僕はちゃんと聞いているから。そういえば、借りていた本を持ってきたんだ。最後の場面が気になって、昨日は夜遅くまで読んでしまった。君はあの結末をどう思った？僕は、もう一度最初から読み返してみたいと思ったよ。それじゃ、そろそろ行こうか。急がなくて大丈夫。今日はまだ、ゆっくり話せる時間があるからね。",
+  "order": [
+    111,
+    117,
+    134
+  ],
+  "speedScale": 1,
+  "target_lufs": -23.0,
+  "processing": "constant gain only; full utterances; one-second gaps",
+  "listening_verified": false,
+  "rows": [
+    {
+      "epoch": 111,
+      "model_sha256": "a04c14436d7a92b7925552457343bd7739c32195ab23b1bb85f743cef2cef35d",
+      "raw_sha256": "680db11d664f898863f976e1ad479219fde5f591420579ea3a65df4c53e7d626",
+      "raw_loudness": {
+        "input_i": "-30.55",
+        "input_tp": "-12.06",
+        "input_lra": "2.30",
+        "input_thresh": "-40.85",
+        "output_i": "-23.75",
+        "output_tp": "-5.48",
+        "output_lra": "1.70",
+        "output_thresh": "-34.02",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.25"
+      },
+      "samples": 2187264,
+      "duration_seconds": 49.5978231292517,
+      "gain_db": 7.550000000000001,
+      "matched_loudness": {
+        "input_i": "-23.00",
+        "input_tp": "-4.51",
+        "input_lra": "2.20",
+        "input_thresh": "-33.30",
+        "output_i": "-23.75",
+        "output_tp": "-5.49",
+        "output_lra": "1.70",
+        "output_thresh": "-34.02",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.25"
+      },
+      "matched_sha256": "3783169e61d75d2d4530ac4c58f4a0e135aaf1f4f24294eb45ebf4af529b23da",
+      "constant_gain_error_lsb": 0.5007589401520818
+    },
+    {
+      "epoch": 117,
+      "model_sha256": "931b0c633362e7e4a710d0d05d3b8e1a0adeaaa01d5a8e91c8818fa0943856fb",
+      "raw_sha256": "f5e6d906ed2f1a6e51293afaa8914c6d70e41758b239edfad060a614616ef0a9",
+      "raw_loudness": {
+        "input_i": "-30.09",
+        "input_tp": "-11.93",
+        "input_lra": "2.20",
+        "input_thresh": "-40.35",
+        "output_i": "-23.78",
+        "output_tp": "-5.95",
+        "output_lra": "1.80",
+        "output_thresh": "-34.06",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.22"
+      },
+      "samples": 2193920,
+      "duration_seconds": 49.74875283446712,
+      "gain_db": 7.09,
+      "matched_loudness": {
+        "input_i": "-23.00",
+        "input_tp": "-4.84",
+        "input_lra": "2.20",
+        "input_thresh": "-33.28",
+        "output_i": "-23.77",
+        "output_tp": "-5.94",
+        "output_lra": "1.80",
+        "output_thresh": "-34.05",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.23"
+      },
+      "matched_sha256": "fef671f8979ed48acfb56a951bc39f98d128671982c42957d4613f96f131d1ab",
+      "constant_gain_error_lsb": 0.5004776731129823
+    },
+    {
+      "epoch": 134,
+      "model_sha256": "b7f26079aafc5fb051b9016eb6d5add62796c484d55e0a7856086d77e6357672",
+      "raw_sha256": "cdeb2967caf6b60e841e93c24676de3fb33f31273d944fcd1e9cae234375acdb",
+      "raw_loudness": {
+        "input_i": "-19.33",
+        "input_tp": "-0.79",
+        "input_lra": "2.40",
+        "input_thresh": "-29.65",
+        "output_i": "-23.80",
+        "output_tp": "-5.34",
+        "output_lra": "2.10",
+        "output_thresh": "-34.11",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.20"
+      },
+      "samples": 2164224,
+      "duration_seconds": 49.075374149659865,
+      "gain_db": -3.6700000000000017,
+      "matched_loudness": {
+        "input_i": "-23.00",
+        "input_tp": "-4.46",
+        "input_lra": "2.40",
+        "input_thresh": "-33.32",
+        "output_i": "-23.80",
+        "output_tp": "-5.35",
+        "output_lra": "2.10",
+        "output_thresh": "-34.12",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.20"
+      },
+      "matched_sha256": "999ef849b0e69244695d97516b0ad3a0a31e56f51c15c177960c9f1d17a7bba0",
+      "constant_gain_error_lsb": 0.5007270014120877
+    }
+  ],
+  "combined_sha256": "966ee6104539ee526ed87cd5d544d4fa4c412cee6fc420b6264bade7250f7f52",
+  "combined_loudness": {
+    "input_i": "-22.96",
+    "input_tp": "-4.46",
+    "input_lra": "2.40",
+    "input_thresh": "-33.24",
+    "output_i": "-23.90",
+    "output_tp": "-5.49",
+    "output_lra": "2.30",
+    "output_thresh": "-34.18",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.10"
+  },
+  "combined_duration_seconds": 150.42195011337867
+}
