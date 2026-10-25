@@ -59,6 +59,13 @@ def audit(model, index):
             assert (wav.getframerate(), wav.getsampwidth(), wav.getnchannels()) == (44100, 2, 1)
             x = torch.from_numpy(np.frombuffer(wav.readframes(wav.getnframes()),
                                               dtype="<i2").astype(np.float64) / 32768)
+        # Match training's 32-frame segment length and avoid silence dominating log loss.
+        segment_size = 32 * 512
+        assert x.numel() >= segment_size
+        energies = torch.nn.functional.avg_pool1d(x.square()[None, None],
+                                                  segment_size, stride=512).flatten()
+        start = int(energies.argmax()) * 512
+        x = x[start:start + segment_size]
         baseline = magnitude(x)
         t = torch.arange(x.numel(), dtype=torch.float64) / 44100
         tones = torch.stack([torch.sin(2 * torch.pi * (44100 / 64) * k * t)
@@ -78,6 +85,7 @@ def audit(model, index):
                           - (baseline @ matrix).clamp_min(1e-10).log()).abs().mean()
                 log_l1 = (generated.log() - baseline.log()).abs().mean()
                 results.append({"test": row["test"], "wav_sha256": row["wav_sha256"],
+                                "segment_start_sample": start, "segment_samples": segment_size,
                                 "perturbation": name, "relative_rms_db": relative_db,
                                 "mel_l1": float(mel_l1), "weighted_mel_l1": float(mel_l1 * 45),
                                 "linear_bin_log_l1": float(log_l1),
@@ -95,6 +103,7 @@ def audit(model, index):
                 "is_consistent_waveform": "not established; magnitude-domain example only"},
             "waveform_sensitivity": results,
             "limits": ["Synthetic perturbations are diagnostic, not retrained output or listening tests.",
+                       "Segments are highest-RMS original180 synthesis, not ground-truth training audio.",
                        "Raw losses have different scales; their ratios are not perceptual sensitivity ratios.",
                        "The discriminator and feature-matching losses can still detect mel-null changes.",
                        "No causal attribution or trained quality improvement is established."]}
