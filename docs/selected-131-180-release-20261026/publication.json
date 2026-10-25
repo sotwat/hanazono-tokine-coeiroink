@@ -1,0 +1,22 @@
+{
+  "url": "https://github.com/sotwat/hanazono-tokine-coeiroink/releases/tag/v1.3.0",
+  "id": 423627322,
+  "published_at": "2026-10-25T20:03:44Z",
+  "latest_verified": true,
+  "assets": [
+    {
+      "name": "hanazono-tokine-coeiroink-131-180epoch-v1.3.0.zip",
+      "size": 696813712,
+      "state": "uploaded",
+      "digest": "sha256:144c4d8f477e6b78b32b697939cf1731824318f40d4a2ad38ac64649b53aaaf7",
+      "browser_download_url": "https://github.com/sotwat/hanazono-tokine-coeiroink/releases/download/v1.3.0/hanazono-tokine-coeiroink-131-180epoch-v1.3.0.zip"
+    },
+    {
+      "name": "hanazono-tokine-coeiroink-131-180epoch-v1.3.0.zip.sha256",
+      "size": 116,
+      "state": "uploaded",
+      "digest": "sha256:c3ebb790daaeafd675e75bc3c1b7ee1887822b796cba26c4c07f49b18ce7598b",
+      "browser_download_url": "https://github.com/sotwat/hanazono-tokine-coeiroink/releases/download/v1.3.0/hanazono-tokine-coeiroink-131-180epoch-v1.3.0.zip.sha256"
+    }
+  ]
+}
