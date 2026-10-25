@@ -60,7 +60,7 @@ def prepare(root, previous, cache, bundle, external):
                          'model_tensors': 1049, 'model_matches_checkpoint': True,
                          'postprocessing': False}
         arm = next(iter(hashes)).split('/')[0]
-        assert arm in ('control', 'quarter_lr')
+        assert arm in ('control', 'quarter_lr', 'discriminator_quarter')
         for name, digest in hashes.items():
             assert sha(archive.read(name)) == digest, name
         assert json.loads(archive.read(f'{arm}/training_complete.json'))['epoch'] == 200
@@ -76,7 +76,8 @@ def prepare(root, previous, cache, bundle, external):
         state = torch.load(path, map_location='cpu', weights_only=True)
         assert len(state) == 1049 and state.keys() == reference.keys()
         assert all(state[k].shape == reference[k].shape and torch.isfinite(state[k]).all() for k in state)
-        sid = 980200 if arm == 'control' else 980201
+        sid = {'control': 980200, 'quarter_lr': 980201,
+               'discriminator_quarter': 980202}[arm]
         folder = speaker / 'model' / str(sid)
         folder.mkdir(exist_ok=True)
         target = folder / 'model.pth'

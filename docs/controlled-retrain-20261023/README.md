@@ -2,6 +2,12 @@
 
 ## Training objective audit and isolated G/D condition (2026-10-25)
 
+The D-only quarter-LR arm finished at200 on2026-10-26 JST. Both schedulers are200; all942/106 optimizer states have step200000 and finite moments; the individual200 model matches all1049 checkpoint tensors. Its SHA256 is `95c99fa5610a0dffc7a15a6cb2e8ed6377a3cbebae24abe87c74f40ea07574a9`. Do not restart it. See `discriminator_quarter200_checkpoint_audit.json` and `discriminator_quarter200_comparison.json`.
+
+Only eight new untreated ordinary sentences were generated; sixteen baseline files were reused. The periodic-grid proxy mean is0.417dB versus180's0.265dB, control200's0.576dB, and both-quarter200's0.318dB. Four sentences decrease versus180 and four increase. Mean HF8 energy is−28.253dB versus−28.637dB at180; energy is not itself noise. RMS is−30.154 versus−30.136dBFS, with no clipping. Local ASR retains the expected content, but neither ASR nor these proxies establish pronunciation, voice quality, broad roughness, or perceptual improvement. Listening remains unverified. This intervention has not demonstrated consistent improvement over180, and does not establish a unique learning-rate cause.
+
+Mac output `controlled_retrain_20261023/discriminator_quarter200_comparison` contains raw audio, measurements, transcripts, and gain-only listening comparisons. `listening/user_180_candidate200.wav` is180 followed by D-only-quarter200. The existing comparison tool accepts this arm with a separate isolated style ID980202; other arms retain their IDs. Six transferred parts and the combined ZIP were SHA256-verified. Existing133-model ranking caches were preserved. Further diagnosis remains open; do not substitute corrected weights or deploy this untreated candidate as an improvement.
+
 See [training-objective-audit.md](training-objective-audit.md). The saved mel projection is identical at180 and both200 endpoints. It has magnitude-domain null directions, but all32 ordinary-waveform synthetic grid/noise perturbations increase mel loss: this does not establish a spectral-loss defect as the cause. Static G/D update/cache/gradient-clear inspection found no swapped update. A new `prepare-split` / `controlled_split_start.sh` path isolates D-only quarter LR, preserving G's control LR and full180 optimizer history. It does not restart either completed arm or establish improvement before untreated speech comparison. Runtime preparation/start evidence is recorded in Obsidian.
 
 ## Full saved-model proxy ranking collected (2026-10-25)

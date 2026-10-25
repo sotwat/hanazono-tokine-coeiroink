@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-10-25T17:59:25Z",
+  "host": "85c5778453ef",
+  "source_commit": "5b17d837f440090a6dc351b56e1807dacaca1964",
+  "audit": {
+    "epoch": 200,
+    "scheduler_epochs": [
+      200,
+      200
+    ],
+    "optimizer_counts": [
+      942,
+      106
+    ],
+    "optimizer_steps": 200000,
+    "model_tensors": 1049,
+    "model_matches_checkpoint": true,
+    "postprocessing": false
+  },
+  "model_sha256": "95c99fa5610a0dffc7a15a6cb2e8ed6377a3cbebae24abe87c74f40ea07574a9",
+  "optimizer_momentum_finite": true,
+  "listening_verified": false,
+  "quality_improved": null
+}
