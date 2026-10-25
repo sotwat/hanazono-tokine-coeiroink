@@ -9,6 +9,8 @@ import math
 from pathlib import Path
 import re
 import subprocess
+import socket
+import time
 import urllib.request
 import wave
 
@@ -49,20 +51,28 @@ def pcm(path):
     return data
 
 
-def main(root):
+def main(root, epochs=(111, 117, 134), audit=None):
     root.mkdir(parents=True, exist_ok=True)
     (root / 'text.txt').write_text(TEXT + '\n')
     installed = Path('/Applications/COEIROINKv2.app/Contents/MacOS/speaker_info/hanazono-tokine-2.1.0/model')
+    uuid, port, style_base = UUID, 50032, 1000
+    hashes = MODEL_SHA
+    if audit:
+        uuid = json.loads((audit / 'inventory.json').read_text())['uuid']
+        hashes = {r['epoch']: r['sha256'] for r in json.loads((audit / 'model_hashes.json').read_text())}
+        installed = audit / 'runtime/speaker_info/audit/model'
+        port, style_base = 50033, 500000
     rows = []
-    for epoch, expected_sha in MODEL_SHA.items():
-        assert digest(installed / str(1000 + epoch) / f'{epoch}epoch.pth') == expected_sha
-        request = dict(speakerUuid=UUID, styleId=1000 + epoch, text=TEXT, speedScale=1)
+    for epoch in epochs:
+        expected_sha = hashes[epoch]
+        assert digest(installed / str(style_base + epoch) / f'{epoch}epoch.pth') == expected_sha
+        request = dict(speakerUuid=uuid, styleId=style_base + epoch, text=TEXT, speedScale=1)
         raw = root / f'{epoch}_raw.wav'
         meta = root / f'{epoch}_request.json'
         if raw.exists():
             assert json.loads(meta.read_text())['request'] == request
         else:
-            req = urllib.request.Request('http://127.0.0.1:50032/v1/predict_with_duration',
+            req = urllib.request.Request(f'http://127.0.0.1:{port}/v1/predict_with_duration',
                 data=json.dumps(request).encode(), headers={'Content-Type': 'application/json'})
             with urllib.request.urlopen(req, timeout=600) as response:
                 result = json.load(response)
@@ -96,12 +106,12 @@ def main(root):
         if chunks:
             chunks.append(b'\0' * 88200)
         chunks.append(data)
-    combined = root / 'compare_111_117_134.wav'
+    combined = root / ('compare_' + '_'.join(map(str, epochs)) + '.wav')
     with wave.open(str(combined), 'wb') as wav:
         wav.setparams((1, 2, 44100, 0, 'NONE', 'not compressed'))
         wav.writeframes(b''.join(chunks))
     assert pcm(combined) == b''.join(chunks)
-    report = dict(text=TEXT, order=[111, 117, 134], speedScale=1, target_lufs=target,
+    report = dict(text=TEXT, order=list(epochs), speedScale=1, target_lufs=target,
         processing='constant gain only; full utterances; one-second gaps', listening_verified=False,
         rows=rows, combined_sha256=digest(combined), combined_loudness=measure(combined),
         combined_duration_seconds=sum(r['duration_seconds'] for r in rows) + 2)
@@ -112,4 +122,34 @@ def main(root):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', type=Path, required=True)
-    main(parser.parse_args().root)
+    parser.add_argument('--epochs', nargs='+', type=int, default=[111, 117, 134])
+    parser.add_argument('--audit', type=Path, help='Existing isolated audit directory; never changes app registration')
+    args = parser.parse_args()
+    assert len(args.epochs) == len(set(args.epochs)) and args.epochs
+    if not args.audit:
+        main(args.root, args.epochs)
+    else:
+        with socket.socket() as sock:
+            assert sock.connect_ex(('127.0.0.1', 50033)) != 0, 'Preserve occupied audit port'
+        args.root.mkdir(parents=True, exist_ok=True)
+        with (args.root / 'engine.log').open('a') as log:
+            engine = subprocess.Popen([str(args.audit / 'runtime/engine/engine')],
+                cwd=args.audit / 'runtime', stdout=log, stderr=subprocess.STDOUT)
+            try:
+                for _ in range(120):
+                    assert engine.poll() is None, 'Audit engine exited'
+                    try:
+                        urllib.request.urlopen('http://127.0.0.1:50033/v1/speakers', timeout=2).close()
+                        break
+                    except OSError:
+                        time.sleep(1)
+                else:
+                    raise TimeoutError('Audit engine unavailable')
+                main(args.root, args.epochs, args.audit)
+            finally:
+                engine.terminate()
+                try:
+                    engine.wait(timeout=15)
+                except subprocess.TimeoutExpired:
+                    engine.kill()
+                    engine.wait()
