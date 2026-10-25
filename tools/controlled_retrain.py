@@ -65,6 +65,10 @@ def compare_states(original, candidate, factor):
 
 def prepare_split(args):
     """Reuse verified pilot data; change only the discriminator LR trajectory."""
+    import espnet
+    import numpy as np
+    assert espnet.__version__ == '202211'
+    assert torch.__version__ == '1.12.1+cu113' and np.__version__ == '1.23.5'
     pilot, reference, destination = (p.resolve() for p in
                                    (args.pilot, args.reference, args.destination))
     assert not destination.exists(), 'Refusing to overwrite an existing experiment'
@@ -104,6 +108,8 @@ def prepare_split(args):
     (folder / 'train.yaml').write_text(yaml.safe_dump(config, allow_unicode=True, sort_keys=False))
     preparation.update(status='prepared_not_started', arms={SPLIT_ARM: report},
                        source_pilot=str(pilot), config_difference_keys=differences,
+                       preparation_environment={'python': platform.python_version(),
+                                                'torch': torch.__version__, 'numpy': np.__version__},
                        intervention='Generator LR unchanged; discriminator LR and scheduler base divided by four.')
     (destination / 'preparation.json').write_text(json.dumps(preparation, ensure_ascii=False, indent=2))
     print(json.dumps(report), flush=True)
