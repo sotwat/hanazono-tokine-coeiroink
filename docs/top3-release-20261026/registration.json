@@ -1,0 +1,83 @@
+{
+  "registered_styles": [
+    {
+      "styleName": "111epoch",
+      "styleId": 1111
+    },
+    {
+      "styleName": "117epoch",
+      "styleId": 1117
+    },
+    {
+      "styleName": "134epoch",
+      "styleId": 1134
+    }
+  ],
+  "removed_style_ids": [
+    1010,
+    1015,
+    1020,
+    1030,
+    1040,
+    1050,
+    1060,
+    1070,
+    1080,
+    1090,
+    1100,
+    1110,
+    1120,
+    1130,
+    1140,
+    1160,
+    1170,
+    1180,
+    1190,
+    1200
+  ],
+  "other_speakers": [
+    {
+      "name": "カテナ",
+      "uuid": "22c0827c-d4fb-11ec-a0c6-0242ac1c0002",
+      "styles": 6
+    },
+    {
+      "name": "ナースロボ＿タイプＴ",
+      "uuid": "9bf2ab50-c756-11ec-9374-0242ac1c0002",
+      "styles": 5
+    },
+    {
+      "name": "AI声優-青葉",
+      "uuid": "d219f5ab-a50b-4d99-a26a-a9fc213e9100",
+      "styles": 2
+    },
+    {
+      "name": "クロワちゃん",
+      "uuid": "cc1153b4-d20c-46dd-a308-73ca38c0e85a",
+      "styles": 2
+    },
+    {
+      "name": "祇音鐘",
+      "uuid": "ea947b4c-f806-11ef-83ad-0242ac1c000c",
+      "styles": 14
+    },
+    {
+      "name": "ひなりんつ",
+      "uuid": "7e80f072-88a9-11f1-8ed7-0242ac1c000c",
+      "styles": 1
+    },
+    {
+      "name": "MANA",
+      "uuid": "292ea286-3d5f-f1cc-157c-66462a6a9d08",
+      "styles": 2
+    },
+    {
+      "name": "つくよみちゃん",
+      "uuid": "3c37646f-3881-5374-2a83-149267990abc",
+      "styles": 2
+    }
+  ],
+  "metas_sha256": "ca0c26816fbcb29e8118f6e4a9b464beab1eb8f0ad4f9f14a01a2ee06e4fa5b2",
+  "old_model_files_retained": true,
+  "working_project_restored": "上位3登録後_111epoch_20261026.cink"
+}

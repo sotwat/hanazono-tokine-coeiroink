@@ -1,0 +1,66 @@
+{
+  "package": "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/配布用パッケージ/花園トキネ_COEIROINK_111-117-134epoch_v1.2.0",
+  "archive": "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/配布用パッケージ/hanazono-tokine-coeiroink-111-117-134epoch-v1.2.0.zip",
+  "bytes": 1045389268,
+  "sha256": "8aefc9f203c82661d51f3315672833e275ff415b30871e99bbd15ae9c365b6be",
+  "ranking_sha256": "0adf555ac04594bcaedcc372e9b535f71ead0d36d4e86a547948771423a454c3",
+  "postprocessing": false,
+  "weight_correction": false,
+  "listening_verified": false,
+  "models": [
+    {
+      "rank": 1,
+      "series": "original",
+      "epoch": 111,
+      "styleId": 1111,
+      "model_sha256": "a04c14436d7a92b7925552457343bd7739c32195ab23b1bb85f743cef2cef35d",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b",
+      "periodic_prominence_db": {
+        "mean": 0.02918396489232421,
+        "worst": 0.18770684579466157,
+        "std": 0.09751149327972129,
+        "minimum": -0.1437091313856986
+      },
+      "sensitivity_rank_range": [
+        1,
+        14
+      ]
+    },
+    {
+      "rank": 2,
+      "series": "original",
+      "epoch": 117,
+      "styleId": 1117,
+      "model_sha256": "931b0c633362e7e4a710d0d05d3b8e1a0adeaaa01d5a8e91c8818fa0943856fb",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b",
+      "periodic_prominence_db": {
+        "mean": 0.15343409501968336,
+        "worst": 0.2656733230696401,
+        "std": 0.12911026339594522,
+        "minimum": -0.17057029798429155
+      },
+      "sensitivity_rank_range": [
+        2,
+        6
+      ]
+    },
+    {
+      "rank": 3,
+      "series": "original",
+      "epoch": 134,
+      "styleId": 1134,
+      "model_sha256": "b7f26079aafc5fb051b9016eb6d5add62796c484d55e0a7856086d77e6357672",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b",
+      "periodic_prominence_db": {
+        "mean": 0.13584390567157262,
+        "worst": 0.34453616390650826,
+        "std": 0.1803656763983972,
+        "minimum": -0.12814661754209603
+      },
+      "sensitivity_rank_range": [
+        3,
+        95
+      ]
+    }
+  ]
+}
