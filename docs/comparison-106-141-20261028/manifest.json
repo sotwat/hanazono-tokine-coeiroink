@@ -1,0 +1,95 @@
+{
+  "text": "すごい、みんなの力で素敵な歌詞ができたよ！",
+  "order": [
+    106,
+    141
+  ],
+  "speedScale": 1,
+  "target_lufs": -23.0,
+  "processing": "constant gain only; full utterances; one-second gaps",
+  "listening_verified": false,
+  "rows": [
+    {
+      "epoch": 106,
+      "model_sha256": "f4a805e2a31800980fb0bbfc79e104f85c73afad22b62f9be0a527fbc1fea90f",
+      "raw_sha256": "8bb3b1d724ab41e47e4add95f0f8c53b150b15e58d3b36cc37b6b09319d944d2",
+      "raw_loudness": {
+        "input_i": "-29.29",
+        "input_tp": "-11.45",
+        "input_lra": "0.70",
+        "input_thresh": "-39.57",
+        "output_i": "-24.13",
+        "output_tp": "-6.29",
+        "output_lra": "0.00",
+        "output_thresh": "-34.38",
+        "normalization_type": "dynamic",
+        "target_offset": "0.13"
+      },
+      "samples": 168960,
+      "duration_seconds": 3.8312925170068026,
+      "gain_db": 6.289999999999999,
+      "matched_loudness": {
+        "input_i": "-23.00",
+        "input_tp": "-5.16",
+        "input_lra": "0.80",
+        "input_thresh": "-33.28",
+        "output_i": "-24.13",
+        "output_tp": "-6.29",
+        "output_lra": "0.00",
+        "output_thresh": "-34.38",
+        "normalization_type": "dynamic",
+        "target_offset": "0.13"
+      },
+      "matched_sha256": "4fa2563e7610ea9ceac5b74fa7c8b7b60a35ca6490c1588d73864296f5ec0055",
+      "constant_gain_error_lsb": 0.5003561486619219
+    },
+    {
+      "epoch": 141,
+      "model_sha256": "eddd131a4ef00eeb9c63d8125cfcc378099a8fb8a716d255d82319ae3a0dc029",
+      "raw_sha256": "7a6860cb15d167fbef00a4ce325f6274c7b6acfde7e257c4650367e1c9175a83",
+      "raw_loudness": {
+        "input_i": "-29.45",
+        "input_tp": "-11.77",
+        "input_lra": "0.60",
+        "input_thresh": "-39.60",
+        "output_i": "-23.93",
+        "output_tp": "-6.31",
+        "output_lra": "0.00",
+        "output_thresh": "-34.06",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.07"
+      },
+      "samples": 162816,
+      "duration_seconds": 3.6919727891156464,
+      "gain_db": 6.449999999999999,
+      "matched_loudness": {
+        "input_i": "-22.99",
+        "input_tp": "-5.32",
+        "input_lra": "0.60",
+        "input_thresh": "-33.21",
+        "output_i": "-23.93",
+        "output_tp": "-6.31",
+        "output_lra": "0.00",
+        "output_thresh": "-34.06",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.07"
+      },
+      "matched_sha256": "267365e8671e0157962a7cb8cdcf904a623997882a6656aedbc2b7cc4f38d3d6",
+      "constant_gain_error_lsb": 0.5005840515605087
+    }
+  ],
+  "combined_sha256": "0f9505ba718cea3a39ba827c071e9947f2a9cdcc3924e21c82104d8b2f2684e7",
+  "combined_loudness": {
+    "input_i": "-23.00",
+    "input_tp": "-5.16",
+    "input_lra": "4.80",
+    "input_thresh": "-33.36",
+    "output_i": "-24.11",
+    "output_tp": "-6.37",
+    "output_lra": "4.60",
+    "output_thresh": "-34.49",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "combined_duration_seconds": 8.523265306122449
+}

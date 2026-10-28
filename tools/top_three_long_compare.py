@@ -47,7 +47,7 @@ def pcm(path):
         assert (wav.getnchannels(), wav.getsampwidth(), wav.getframerate()) == (1, 2, 44100)
         data = wav.readframes(wav.getnframes())
     samples = array.array('h', data)
-    assert len(samples) > 44100 * 10 and max(abs(v) for v in samples) < 32767
+    assert len(samples) > 44100 and max(abs(v) for v in samples) < 32767
     return data
 
 
@@ -124,7 +124,11 @@ if __name__ == '__main__':
     parser.add_argument('--root', type=Path, required=True)
     parser.add_argument('--epochs', nargs='+', type=int, default=[111, 117, 134])
     parser.add_argument('--audit', type=Path, help='Existing isolated audit directory; never changes app registration')
+    parser.add_argument('--text-file', type=Path, help='UTF-8 passage; otherwise use the original long comparison text')
     args = parser.parse_args()
+    if args.text_file:
+        TEXT = args.text_file.read_text().strip()
+        assert TEXT, 'Comparison passage must not be empty'
     assert len(args.epochs) == len(set(args.epochs)) and args.epochs
     if not args.audit:
         main(args.root, args.epochs)
