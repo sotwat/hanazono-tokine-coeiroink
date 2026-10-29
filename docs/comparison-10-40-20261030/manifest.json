@@ -1,0 +1,200 @@
+{
+  "text": "すごい！ 全部言葉になったよ！",
+  "order": [
+    10,
+    15,
+    20,
+    30,
+    40
+  ],
+  "speedScale": 1,
+  "target_lufs": -23.0,
+  "processing": "constant gain only; full utterances; one-second gaps",
+  "listening_verified": false,
+  "rows": [
+    {
+      "epoch": 10,
+      "model_sha256": "d286fac88582731f8d8003121d2fb91586f8ee3218531bfb420b25fe712af265",
+      "raw_sha256": "d4d2887036255e0715b1c52b6ab8a1e2801b00fc5aca61ac5597f7a150415ecb",
+      "raw_loudness": {
+        "input_i": "-19.17",
+        "input_tp": "-2.98",
+        "input_lra": "0.00",
+        "input_thresh": "-29.36",
+        "output_i": "-24.00",
+        "output_tp": "-7.81",
+        "output_lra": "0.00",
+        "output_thresh": "-34.19",
+        "normalization_type": "linear",
+        "target_offset": "0.00"
+      },
+      "samples": 120832,
+      "duration_seconds": 2.7399546485260773,
+      "gain_db": -3.8299999999999983,
+      "matched_loudness": {
+        "input_i": "-23.01",
+        "input_tp": "-6.81",
+        "input_lra": "0.00",
+        "input_thresh": "-33.19",
+        "output_i": "-24.00",
+        "output_tp": "-7.80",
+        "output_lra": "0.00",
+        "output_thresh": "-34.18",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "matched_sha256": "790fd3d3f9f70b25c86e180b8144bb3654a569414182027377e5cdb6768ab47b",
+      "constant_gain_error_lsb": 0.5000106319293991
+    },
+    {
+      "epoch": 15,
+      "model_sha256": "86f0c3f95978cef37df7d94513a8d3899ca8269ebeefeebf7729e8c4f9d89604",
+      "raw_sha256": "5fe2ceaa016978a629427e746174a76223dbbf3f84f2e467f235127b8a68726d",
+      "raw_loudness": {
+        "input_i": "-18.99",
+        "input_tp": "-2.11",
+        "input_lra": "0.00",
+        "input_thresh": "-29.36",
+        "output_i": "-24.00",
+        "output_tp": "-7.12",
+        "output_lra": "0.00",
+        "output_thresh": "-34.37",
+        "normalization_type": "linear",
+        "target_offset": "0.00"
+      },
+      "samples": 123392,
+      "duration_seconds": 2.7980045351473923,
+      "gain_db": -4.010000000000002,
+      "matched_loudness": {
+        "input_i": "-23.00",
+        "input_tp": "-6.12",
+        "input_lra": "0.00",
+        "input_thresh": "-33.37",
+        "output_i": "-24.00",
+        "output_tp": "-7.12",
+        "output_lra": "0.00",
+        "output_thresh": "-34.37",
+        "normalization_type": "linear",
+        "target_offset": "0.00"
+      },
+      "matched_sha256": "00fcab910c608f1da2321739fae56c6698434684aa3cf91d7a04a41a690ebe70",
+      "constant_gain_error_lsb": 0.5001003729967124
+    },
+    {
+      "epoch": 20,
+      "model_sha256": "7cfbced5afb67ee4083b63d05fe4b423f23f5be7a1d2953b0c502e0a45e19b47",
+      "raw_sha256": "416e6e4e206ddfce130ade2fb892d641dfe621d8c6b8451b226fe892e19bf8ba",
+      "raw_loudness": {
+        "input_i": "-19.26",
+        "input_tp": "-2.51",
+        "input_lra": "0.00",
+        "input_thresh": "-29.62",
+        "output_i": "-23.98",
+        "output_tp": "-7.26",
+        "output_lra": "0.00",
+        "output_thresh": "-34.35",
+        "normalization_type": "linear",
+        "target_offset": "-0.02"
+      },
+      "samples": 122880,
+      "duration_seconds": 2.786394557823129,
+      "gain_db": -3.7399999999999984,
+      "matched_loudness": {
+        "input_i": "-22.98",
+        "input_tp": "-6.25",
+        "input_lra": "0.00",
+        "input_thresh": "-33.35",
+        "output_i": "-24.01",
+        "output_tp": "-7.28",
+        "output_lra": "0.00",
+        "output_thresh": "-34.38",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "matched_sha256": "25883005a25288ce72535e18f9ea7c3aec9284a1fac617c4df50d7a4dc7e6dfb",
+      "constant_gain_error_lsb": 0.5002411438263152
+    },
+    {
+      "epoch": 30,
+      "model_sha256": "0056e29d4142f650424ef1d4fe29e8f65b8a95afabbe43bf8edd8c7d2173ee4b",
+      "raw_sha256": "dd7c176010f467a286772cb3e47f106b4bc4429f6f99e3bd00f611b6f5103776",
+      "raw_loudness": {
+        "input_i": "-18.73",
+        "input_tp": "-1.93",
+        "input_lra": "0.00",
+        "input_thresh": "-29.09",
+        "output_i": "-24.01",
+        "output_tp": "-7.20",
+        "output_lra": "0.00",
+        "output_thresh": "-34.37",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "samples": 121856,
+      "duration_seconds": 2.7631746031746034,
+      "gain_db": -4.27,
+      "matched_loudness": {
+        "input_i": "-23.01",
+        "input_tp": "-6.20",
+        "input_lra": "0.00",
+        "input_thresh": "-33.37",
+        "output_i": "-23.99",
+        "output_tp": "-7.20",
+        "output_lra": "0.00",
+        "output_thresh": "-34.35",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "matched_sha256": "9d0acb6c6b01e4acc3f8a6c5507c453c1da83da180bd56d0918d327a8d2a0319",
+      "constant_gain_error_lsb": 0.5000536505299351
+    },
+    {
+      "epoch": 40,
+      "model_sha256": "856abbefd93ff737908dc64d28f4ba5f2ddfeb9e15a5f5615a61c6b971d17fe1",
+      "raw_sha256": "9e4f80e2f4ef55bf2860a9afc57734b6599a9f3f6f3ae6210d0095aa6ec4c4e6",
+      "raw_loudness": {
+        "input_i": "-17.95",
+        "input_tp": "-1.39",
+        "input_lra": "0.00",
+        "input_thresh": "-28.21",
+        "output_i": "-24.00",
+        "output_tp": "-7.43",
+        "output_lra": "0.00",
+        "output_thresh": "-34.25",
+        "normalization_type": "linear",
+        "target_offset": "-0.00"
+      },
+      "samples": 91136,
+      "duration_seconds": 2.066575963718821,
+      "gain_db": -5.050000000000001,
+      "matched_loudness": {
+        "input_i": "-23.01",
+        "input_tp": "-6.44",
+        "input_lra": "0.00",
+        "input_thresh": "-33.26",
+        "output_i": "-23.98",
+        "output_tp": "-7.42",
+        "output_lra": "0.00",
+        "output_thresh": "-34.24",
+        "normalization_type": "linear",
+        "target_offset": "-0.02"
+      },
+      "matched_sha256": "331c7ab59652deaa4a45001781827c6acf211e5daf07137ffd4889f88662b936",
+      "constant_gain_error_lsb": 0.5006016501447448
+    }
+  ],
+  "combined_sha256": "de6a1dd3650f6ec44ce590503330c13675b7fb768718473dbe64185e9a57f0ff",
+  "combined_loudness": {
+    "input_i": "-23.10",
+    "input_tp": "-6.13",
+    "input_lra": "1.90",
+    "input_thresh": "-33.68",
+    "output_i": "-23.76",
+    "output_tp": "-6.66",
+    "output_lra": "2.20",
+    "output_thresh": "-34.38",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.24"
+  },
+  "combined_duration_seconds": 17.154104308390025
+}
