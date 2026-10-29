@@ -1,0 +1,14 @@
+{
+  "project_byte_exact": true,
+  "project_sha256": "298e26f65b09eb4f71349ffb8adfd60b5e8ed3e33edcf2ad55803dc39681a48b",
+  "gui_styles": [
+    70,
+    131,
+    180
+  ],
+  "gui_restored_selection": 180,
+  "gui_speed": 1.07,
+  "gui_pitch": 0.05,
+  "gui_processing": "RESAMPLING",
+  "instruction_correction": "retain 131/180 and add 70; no unregistration performed"
+}
