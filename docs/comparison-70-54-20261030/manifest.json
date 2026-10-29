@@ -1,0 +1,95 @@
+{
+  "text": "すごい！ 全部言葉になったよ！",
+  "order": [
+    70,
+    54
+  ],
+  "speedScale": 1,
+  "target_lufs": -23.0,
+  "processing": "constant gain only; full utterances; one-second gaps",
+  "listening_verified": false,
+  "rows": [
+    {
+      "epoch": 70,
+      "model_sha256": "b40722a6784c32f6c065b522d72a5d7756daadabe7131b0e6236c06db9168a0d",
+      "raw_sha256": "d7d66f68df8e0f6f76105b0fd8013143bc1b514a99c2b8e89a47bedf8ce3d0a3",
+      "raw_loudness": {
+        "input_i": "-18.13",
+        "input_tp": "-2.42",
+        "input_lra": "0.00",
+        "input_thresh": "-28.35",
+        "output_i": "-23.98",
+        "output_tp": "-8.28",
+        "output_lra": "0.00",
+        "output_thresh": "-34.20",
+        "normalization_type": "linear",
+        "target_offset": "-0.02"
+      },
+      "samples": 103424,
+      "duration_seconds": 2.345215419501134,
+      "gain_db": -4.870000000000001,
+      "matched_loudness": {
+        "input_i": "-22.98",
+        "input_tp": "-7.28",
+        "input_lra": "0.00",
+        "input_thresh": "-33.20",
+        "output_i": "-24.01",
+        "output_tp": "-8.30",
+        "output_lra": "0.00",
+        "output_thresh": "-34.23",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "matched_sha256": "81c9929cc755a40e8c4bab03e861ac314df522184b79a6234d081d1cf9b8ae32",
+      "constant_gain_error_lsb": 0.5006594783826586
+    },
+    {
+      "epoch": 54,
+      "model_sha256": "0d4a92176f2b86c92693904b5baa7610f946e96bf34c3026c892e211b0739f82",
+      "raw_sha256": "36a4e97ae7e5a995683e5961f4b47dfc4e7e3f4ca188b4e9fdc84d06dd8ee89e",
+      "raw_loudness": {
+        "input_i": "-18.51",
+        "input_tp": "-2.54",
+        "input_lra": "0.00",
+        "input_thresh": "-28.76",
+        "output_i": "-23.99",
+        "output_tp": "-8.03",
+        "output_lra": "0.00",
+        "output_thresh": "-34.24",
+        "normalization_type": "linear",
+        "target_offset": "-0.01"
+      },
+      "samples": 90624,
+      "duration_seconds": 2.0549659863945577,
+      "gain_db": -4.489999999999998,
+      "matched_loudness": {
+        "input_i": "-22.99",
+        "input_tp": "-7.03",
+        "input_lra": "0.00",
+        "input_thresh": "-33.24",
+        "output_i": "-24.01",
+        "output_tp": "-8.04",
+        "output_lra": "0.00",
+        "output_thresh": "-34.26",
+        "normalization_type": "linear",
+        "target_offset": "0.01"
+      },
+      "matched_sha256": "8ca70bc16c62dd7d761531afd84bd814e8c6bfbb180f862f87fbf8b1094f7862",
+      "constant_gain_error_lsb": 0.5002504075405341
+    }
+  ],
+  "combined_sha256": "b30c786cc9328f0c7aade0b9b56891418df8b5cf9e6d36a59adbefc253daf391",
+  "combined_loudness": {
+    "input_i": "-23.49",
+    "input_tp": "-7.03",
+    "input_lra": "0.20",
+    "input_thresh": "-33.62",
+    "output_i": "-23.21",
+    "output_tp": "-6.49",
+    "output_lra": "1.20",
+    "output_thresh": "-33.41",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.79"
+  },
+  "combined_duration_seconds": 5.400181405895692
+}
