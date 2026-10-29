@@ -1,0 +1,54 @@
+{
+  "selection_basis": "User listening selection: add 70, retain 131 and 180",
+  "postprocessing": false,
+  "weight_correction": false,
+  "models": [
+    {
+      "epoch": 70,
+      "series": "original",
+      "styleId": 1070,
+      "model_sha256": "b40722a6784c32f6c065b522d72a5d7756daadabe7131b0e6236c06db9168a0d",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b"
+    },
+    {
+      "display_order": 1,
+      "series": "original",
+      "epoch": 131,
+      "styleId": 1131,
+      "model_sha256": "8700802c356a1f81e8b425072646faff3ecd4ebc9ea4ca0cf61acef46007c664",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b",
+      "periodic_prominence_db": {
+        "mean": 0.14031693728265662,
+        "worst": 0.40707535576058135,
+        "std": 0.2213338981609252,
+        "minimum": -0.2552495451071542
+      },
+      "sensitivity_rank_range": [
+        4,
+        12
+      ]
+    },
+    {
+      "display_order": 2,
+      "series": "original",
+      "epoch": 180,
+      "styleId": 1180,
+      "model_sha256": "613144e98a4febe4cdd36495943be9100bc354df6cc09dfb1296ca90d5bbb6c3",
+      "config_sha256": "c56c70c8b6fea3fdd679eee3dea23be622a6f5a762ffa2b33c660b5795c5509b",
+      "periodic_prominence_db": {
+        "mean": 0.26538225251391806,
+        "worst": 0.6720091950204167,
+        "std": 0.2541132583139162,
+        "minimum": -0.1627517503694984
+      },
+      "sensitivity_rank_range": [
+        51,
+        106
+      ]
+    }
+  ],
+  "package": "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/配布用パッケージ/selected-70-131-180-v1.4.0",
+  "archive": "/Users/aaa/Documents/COEIROINK/花園トキネ_MYCOEIROINK準備/配布用パッケージ/hanazono-tokine-coeiroink-70-131-180epoch-v1.4.0.zip",
+  "bytes": 1045026602,
+  "sha256": "36cd7e7cecef59f2deeac3ee94c5ea98f178b7574b5e486d7a2922df48611f67"
+}
